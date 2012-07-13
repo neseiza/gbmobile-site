@@ -20,7 +20,8 @@ function heightPer(perHei) {
 
 
 DEMO.run = function() {
-
+	var rel_posX = 20;
+	var rel_posY = 277;
 	var maxX = $(document).width() - 100;
 	var maxY = $(document).height() - 100;
 	
@@ -34,8 +35,8 @@ DEMO.run = function() {
 	var points = [];
 	console.log('pos: ' + $("#maquina").position().left);
 	// Make a random list of waypoints for the animation to follow
-	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-25,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
-	var box_points = [[POS_MAQUINA,(heightPer(-11)+277)],[POS_MAQUINA,(heightPer(6)+277)],[POS_MAQUINA-25,(heightPer(-11)+277)],[POS_TUBO,(heightPer(-13)+277)],[POS_MAQUINA,(heightPer(-11)+277)]];
+	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55+rel_posX,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
+	var box_points = [[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(6)+rel_posY)],[POS_MAQUINA-5,(heightPer(-11)+rel_posY)],[POS_TUBO+rel_posX,(heightPer(-13)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)]];
 	// -- Important bit #1: Generate the spline animation object --
 	var spline = $.crSpline.buildSequence(points);
 	var box_spline = $.crSpline.buildSequence(box_points);

@@ -7,14 +7,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style.css')}" />
+<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'website.css')}" />
 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}"></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'caja.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}"></script>
 
-
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#slider1').tinycarousel();	
+			$('#slider2').tinycarousel();	
+			$('#slider3').tinycarousel();	
+			$('#slider4').tinycarousel();	
+			$('#slider5').tinycarousel();	
+			$('#slider6').tinycarousel();
+		});
+</script>
 <script type="text/javascript">
 	(function($) {
             $(document).ready(function() {
@@ -122,117 +132,238 @@ $('#garra')
 
 
 <body>
-
-    <div id="page">
-      	<div id="pagetop">			
-			<div id="menu" class="links"> 	
-			
-            	<ul>
-	                <li><a id="menu-item" href="#">Web</a></li>
-	                <li><a id="menu-item" href="#">mCoupons</a></li>	                
-	                <li><a id="menu-item" href="#">Apps</a></li>
-	                <li><a id="menu-item" href="#">mSites</a></li>
-	           	   	<li><a id="menu-item" href="#">SMS</a></li>
-	               	<li><img id="logo" src="images/logogb.png" /></li>
-	             </ul>
-	               
-	        </div>
-	    </div>
-	    <div id="line">
-	    </div>
-	        	
-	    <div id="main">
-
-	    	<div id="animation1">
-	    	
-	    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
-	    		<div id="tubo"></div>
-			    <div id="banda"></div>
-			    <div id="rightmiddle">	
-			    	<div id="foco"></div>		    	
-			    	<div id="maquina">
-				    	<table class="buttomRight">
-						<tr>
-					    	<td><p>E</p></td>
-					     	<td>mpresa mexicana de servicios de valor agregado a telefon&iacute;a m&oacute;vil para M&eacute;xico y America Latina desde el 2003</td>
-					    </tr>
-				    </table>
-			    	</div>			    				    	
-			    </div>
-			    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
-		    </div>	     	
-	     	<div id="menu1"></div>
-	     	
-	     	<div id="animation2">
-		     	<table class="buttomRight">
-		     	<tr>
-		     		<td><p>D</p></td>
-		     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
-		     	</tr>
-		     	</table>
-	     	</div>	     	
-	     	<div id="menu2">
-
-	     	</div>
-	     	<div id="animation3">
-	     		<div id="rightcolumn">
-			     		<div id="maquina"></div>
-			    </div>
-	     		<table>
-	     			<tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr>
-			     	<tr>
-			     		<td><p>D</p></td>
-			     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
-			     	</tr>
-			     	<tr>
-				     	<td></td>
-			     	</tr><div id ="menu3"><p></p></div>
-			     	<tr>
-			     		<td><p>g</p></td>
-			     		<td>b Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
-			     	</tr>
-		     	</table>
-	     	</div>   
-	     	<div id="animation4"><p>animacion4</p>
-	     		<div id="rightcolumn">
-			    	<div id="maquina"></div>
-			    </div>
-			    <table class="buttomRight">
-			    	<tr>
-			     		<td><p>C</p></td>
-			     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
-			     	</tr>
-		     	</table>
-	     	</div>
-	     	<div id="menu4">
-		     	<p></p>
+<body>	
+	    <div id="page">
+	      	<div id="pagetop">			
+				<div id="menu" class="links"> 	
+				
+	            	<ul>
+		                <li><a id="menu-item" href="#">Web</a></li>
+		                <li><a id="menu-item" href="#">mCoupons</a></li>	                
+		                <li><a id="menu-item" href="#">Apps</a></li>
+		                <li><a id="menu-item" href="#">mSites</a></li>
+		           	   	<li><a id="menu-item" href="#">SMS</a></li>
+		               	<li><img id="logo" src="images/logogb.png" /></li>
+		             </ul>
+		               
+		        </div>
 		    </div>
-	     	<div id="animation5"><p>animacion5</p>
-	     		<div id="rightcolumn">
-			    	<div id="maquina"></div>
-			    </div>
-	     	</div>
-	     	<div id="menu5">
-
-	     	</div>
-	     	<div id="animation6"><p>animacion6</p>
-	     		<div id="rightcolumn">
-	     			<div id="maquina"></div>
-			    </div>
-	     	</div>
-	     	<div id="menu6">
-
-	     	</div>
+		    <div id="line">
+		    </div>
+		    
+		    <div id="main" style="float:left;">
+			    <table border="2">	    
+				    <tr>
+				    	<td>
+					    	<div id="animation1">
+					    		<div id="garra"></div>
+					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
+					    		<div id="tubo"></div>
+							    <div id="banda"></div>
+							    <div id="rightmiddle">	
+							    	<div id="foco"></div>		    	
+							    	<div id="maquina">
+								    	<table class="buttomRight">
+										<tr>
+									    	<td><p>E</p></td>
+									     	<td>mpresa mexicana de servicios de valor agregado a telefon&iacute;a m&oacute;vil para M&eacute;xico y America Latina desde el 2003</td>
+									    </tr>
+								    </table>
+							    	</div>			    				    	
+							    </div>
+							    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
+						    </div>	     	
+						 </td>
+					</tr>
+				    <tr>
+					    <td>
+				     		<div id="menu1">
+				     		     <!-- Slider 1 -->
+							     <div id="slider1">
+									<a class="buttons prev" href="#">left</a>
+									<div class="viewport">
+										<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+										</ul>
+									</div>
+									<a class="buttons next" href="#">right</a>
+								</div>
+							     <!-- End Slider 1 -->
+				     		</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="animation2">
+						     	<table>
+						     	<tr>
+						     		<td><p>D</p></td>
+						     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+						     	</tr>
+						     	</table>
+					     	</div>	
+				     	</td>
+			     	</tr>	     	
+			        <tr>
+				     	<td>     	
+				     		<div id="menu2">
+					     		 <!-- Slider 2 -->
+							     <div id="slider2">
+									<a class="buttons prev" href="#">left</a>
+									<div class="viewport">
+										<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+										</ul>
+									</div>
+									<a class="buttons next" href="#">right</a>
+								</div>
+							     <!-- End Slider 2 -->
+				     		</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="animation3">
+					     		<div id="maquina"></div>
+					     		<table>				     			
+							     	<tr>
+							     		<td><p>D</p></td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     	</tr>
+					     		</table>
+					     		<div id ="menu3">
+					     			 <!-- Slider 3 -->
+								     <div id="slider3">
+										<a class="buttons prev" href="#">left</a>
+										<div class="viewport">
+											<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											</ul>
+										</div>
+										<a class="buttons next" href="#">right</a>
+									</div>
+								     <!-- End Slider 3 -->
+					     		</div>							
+					     	</div> 
+				     	</td>
+			     	</tr>
+		        	<tr>
+				     	<td>
+					     	<div id="animation4">
+					     		<div id="maquina"></div>
+					     		<table>
+							     	<tr>
+							     		<td><p>g</p></td>
+							     		<td>b Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     	</tr>
+						     	</table>
+					     	</div>
+				     	</td>
+			     	</tr>
+			     	<tr>
+				     	<td>
+					     	<div id="menu4">
+						     	<!-- Slider 4 -->
+							     <div id="slider4">
+									<a class="buttons prev" href="#">left</a>
+									<div class="viewport">
+										<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+										</ul>
+									</div>
+									<a class="buttons next" href="#">right</a>
+								</div>
+							     <!-- End Slider 4 -->
+						    </div>
+					    </td>
+				    </tr>		    
+				    <tr>
+				     	<td>
+					     	<div id="animation5">
+					     		<div id="maquina"></div>
+					     		<table>
+							    	<tr>
+							     		<td><p>C</p></td>
+							     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
+							     	</tr>
+						     	</table>
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="menu5">
+						     	<!-- Slider 5 -->
+							     <div id="slider5">
+									<a class="buttons prev" href="#">left</a>
+									<div class="viewport">
+										<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+										</ul>
+									</div>
+									<a class="buttons next" href="#">right</a>
+								</div>
+							     <!-- End Slider 5 -->	
+					     	</div>
+				     	</td>
+			     	</tr>	 	
+			     	<tr>
+					     <td>
+					     	<div id="animation6">
+					     		<div id="maquina"></div>
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="menu6">
+						     	<!-- Slider 6 -->
+							     <div id="slider6">
+									<a class="buttons prev" href="#">left</a>
+									<div class="viewport">
+										<ul class="overview">
+											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
+											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+										</ul>
+									</div>
+									<a class="buttons next" href="#">right</a>
+								</div>
+							     <!-- End Slider 6 -->	
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+				     		<div id="animation7"></div>	
+				     	</td>
+			     	</tr>
+			     </table>
+		     </div>	     
+		     <div id="footer">
+		     </div>
 	     </div>
-	     <div id="animation7"><p></p></div>
-	     <div id="footer">
-
-	     </div>
-     </div>
-</body>
-
-</body >
-
-</body>
-
+	</body>
 </html>
