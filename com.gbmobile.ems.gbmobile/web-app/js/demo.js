@@ -1,8 +1,12 @@
 // Generate a random example spline and fancy visualization to help see what the plugin is doing
-DEMO = {
-	showWaypoints: true,
+GARRA = {
+	showWaypoints: false,
 	showTrail: false
-	};
+};
+CAJA = {
+	showWaypoints: false,
+	showTrail: false
+}
 	
 function widthPer(perWid) { 
 	if($(document).width() >= 500)
@@ -17,16 +21,12 @@ function heightPer(perHei) {
 		return perHei;
 }
 
-
-
-DEMO.run = function() {
+CAJA.run = function(POS_MAQUINA,POS_TUBO) {
 	var rel_posX = 20;
 	var rel_posY = 277;
 	var maxX = $(document).width() - 100;
 	var maxY = $(document).height() - 100;
 	
-	POS_MAQUINA = $("#banda").position().left+20;
-	POS_TUBO = $("#tubo").position().left+5;
 	
 	var dotsPerSeg = 50;
 	var i;
@@ -34,13 +34,10 @@ DEMO.run = function() {
 	var points = [];
 
 	// Make a random list of waypoints for the animation to follow
-	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55+rel_posX,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
 	var box_points = [[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(6)+rel_posY],[POS_MAQUINA-55+rel_posX,heightPer(-11)+rel_posY],[POS_TUBO+rel_posX,heightPer(-13)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY]];
 	// -- Important bit #1: Generate the spline animation object --
-	var spline = $.crSpline.buildSequence(points);
 	var box_spline = $.crSpline.buildSequence(box_points);
 	// Clean up visuals if we've run this once already
-	$("#garra").remove();
 	$("#caja").remove();
 
 	// -- Important bit #2: Actually animate our mover object. --
@@ -48,20 +45,46 @@ DEMO.run = function() {
 		//.spState(1);
 		.appendTo($(document.body))
 		.animate({ crSpline: box_spline }, 2000, function () {
-			// Re-run the demo with a new spline after we're done
+			// Re-run the GARRA with a new spline after we're done
 			window.setTimeout(function() {
-				DEMO.run();
+				CAJA.run(POS_MAQUINA,POS_TUBO);
 			}, 300);
 		});
+};
+
+GARRA.run = function(POS_MAQUINA,POS_TUBO) {
+	var rel_posX = 20;
+	var rel_posY = 277;
+	var maxX = $(document).width() - 100;
+	var maxY = $(document).height() - 100;
+	
+	
+	var dotsPerSeg = 50;
+	var i;
+
+	var points = [];
+
+	// Make a random list of waypoints for the animation to follow
+	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
+	// -- Important bit #1: Generate the spline animation object --
+	var spline = $.crSpline.buildSequence(points);
+	// Clean up visuals if we've run this once already
+	$("#garra").remove();
+
 	$('<div id="garra" />')
 		//.spState(1);
 		.appendTo($(document.body))
 		.animate({ crSpline: spline }, 2000, function () {
-			// Re-run the demo with a new spline after we're done
+			// Re-run the GARRA with a new spline after we're done
+			window.setTimeout(function() {
+				GARRA.run(POS_MAQUINA,POS_TUBO);
+			}, 300);
 		});
 };
 
 $(document).ready(function() {
-
-	DEMO.run();
+	POS_MAQUINA = $("#banda").position().left+100;
+	POS_TUBO = $("#tubo").position().left+93;
+	GARRA.run(POS_MAQUINA,POS_TUBO);
+	CAJA.run(POS_MAQUINA,POS_TUBO);
 });

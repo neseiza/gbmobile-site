@@ -4,102 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<<<<<<< HEAD
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style.css')}" />
-<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
-
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}"></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}"></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}"></script>
-
-<script type="text/javascript">
-	(function($) {
-            $(document).ready(function() {
-            	$('#maquina')
-
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 5,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        on_first_frame: function(obj) {
-                        },
-                        on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);                               
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
-                 
-                 
-                 $('#banda')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        on_first_frame: function(obj) {
-                        },
-                        on_last_frame: function(obj) {
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-                                // }
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
-                    
-                    /*
-					$('#garra')
-						    .sprite({fps: 9, no_of_frames: 1})
-						    .spRandom({top: 0, bottom: 2000, left: 0, right: 0})
-						    .isDraggable()
-						    .activeOnClick()
-						    .active();
-
-					$('#garra')
-					.sprite({fps: 10, no_of_frames: 1, speed: 20})
-					.lockTo('#banda', {
-						'left': 380,
-						'top': -60,
-						'bg_img_width': $(document).width()
-						});
-						
-						$('#garra').pan({fps: 10, speed: 5, dir: 'down', depth: 70}); 
-                    */
-                    $('#foco').pan({fps: 5, speed: 5, dir: 'down', depth: 70});
-
-            });
-            
-            $('body').flyToTap();
-            
-            
-            
-            
-    })(jQuery);
-=======
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style_n.css')}" />
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'website.css')}" />
 		
@@ -178,7 +82,6 @@
 		
 		<title>gbMobile</title>	
 	</head>
->>>>>>> ded089b2b2bdda132dae6b90b04327f0186cbfb3
 	
 	<body>
 		<div id="header">
