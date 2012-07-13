@@ -11,7 +11,9 @@
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'caja.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}"></script>
+
 
 <script type="text/javascript">
 	(function($) {
