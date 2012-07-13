@@ -33,7 +33,7 @@ DEMO.run = function() {
 	var i;
 
 	var points = [];
-	console.log('pos: ' + $("#maquina").position().left);
+
 	// Make a random list of waypoints for the animation to follow
 	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55+rel_posX,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
 	var box_points = [[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(6)+rel_posY)],[POS_MAQUINA-5,(heightPer(-11)+rel_posY)],[POS_TUBO+rel_posX,(heightPer(-13)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)]];
@@ -43,9 +43,6 @@ DEMO.run = function() {
 	// Clean up visuals if we've run this once already
 	$("#garra").remove();
 	$("#caja").remove();
-	
-	console.log('posicion inicial ' + ($("#maquina").position().left));
-
 
 	// -- Important bit #2: Actually animate our mover object. --
 	$('<div id="caja" />')

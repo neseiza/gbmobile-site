@@ -26,16 +26,18 @@ body{
 }
 
 #menu{
-	margin: 0;
-	padding-right: 10%;
+	position: absolute;
+	margin-left: 0px;
+	padding-left: 0px;
 	height: 65px;
 	vertical-align: middle;
-	width: auto;
+	width: 100%;
 	background-image:url(../images/menu.png);
 	text-align: left;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
+	z-index: 1;
 }
 
 #logo{
@@ -68,13 +70,8 @@ table{
 	font-size: 12px;
 	text-shadow: 0.1em 0.1em #000;
 	font-weight: 10;
+	width: 100%;
 }
-
-#page{
-  width:100%;
-}
-
-
 
 #header{
 	width:798px;
@@ -286,12 +283,20 @@ table{
 
 #garra {
 	background: transparent url(../images/garra_02.png) 0 0 no-repeat;
-	position: relative;
+	position: absolute;
     width: 100px;
     height: 327px;
     z-index: 2000;
     cursor: pointer;
     float: left;
+    z-index: 0;
+}
+#caja{
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	position: absolute;
+	width: 53px;
+	height: 50px;
+	float: left;
 }
 
 #foco {
@@ -356,10 +361,5 @@ table{
 P:first-letter{
 	font-size: 500%;
 	font-weight: bold;
-}
-
-#caja{
-	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	position: absolute;
 }
 
