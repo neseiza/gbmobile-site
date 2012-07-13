@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style.css')}" />
+<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}"></script>
@@ -25,24 +26,15 @@
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
                         on_first_frame: function(obj) {
-                            if (window.console) {
-                               console.log('first frame');
-                            }
                         },
                         on_last_frame: function(obj) {
                             // you could stop the sprite here with, e.g.
                             // obj.spStop();
-//                            if (window.console) {
-  //                              console.log('last frame');
-    //                        }
                         },
                         on_frame: {
                             2: function(obj) {
                                 // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-                                //if (window.console) {
-                                //    console.log('frame 2');
-                                //}
+                                // sprite here with, e.g. obj.spState(2);                               
                             }
                         }
                     })
@@ -59,24 +51,14 @@
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
                         on_first_frame: function(obj) {
-//                            if (window.console) {
-  //                              console.log('first frame');
-    //                        }
                         },
                         on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-      //                      if (window.console) {
-        //                        console.log('last frame');
-          //                  }
                         },
                         on_frame: {
                             2: function(obj) {
                                 // you could change the 'state' of the
                                 // sprite here with, e.g. obj.spState(2);
-            //                    if (window.console) {
-              //                      console.log('frame 2');
-//                                }
+                                // }
                             }
                         }
                     })
@@ -85,12 +67,12 @@
                     .active();
                     
                     /*
-$('#garra')
-	    .sprite({fps: 9, no_of_frames: 1})
-	    .spRandom({top: 0, bottom: 2000, left: 0, right: 0})
-	    .isDraggable()
-	    .activeOnClick()
-	    .active();
+					$('#garra')
+						    .sprite({fps: 9, no_of_frames: 1})
+						    .spRandom({top: 0, bottom: 2000, left: 0, right: 0})
+						    .isDraggable()
+						    .activeOnClick()
+						    .active();
 
 					$('#garra')
 					.sprite({fps: 10, no_of_frames: 1, speed: 20})
@@ -99,17 +81,19 @@ $('#garra')
 						'top': -60,
 						'bg_img_width': $(document).width()
 						});
+						
+						$('#garra').pan({fps: 10, speed: 5, dir: 'down', depth: 70}); 
                     */
                     $('#foco').pan({fps: 5, speed: 5, dir: 'down', depth: 70});
-/*                     $('#garra').pan({fps: 10, speed: 5, dir: 'down', depth: 70}); */
+
             });
             
             $('body').flyToTap();
             
             
+            
+            
     })(jQuery);
-    
-    
 	
 	
 </script>
