@@ -13,7 +13,6 @@
 		<script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}"></script>
 		
 		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}"></script>
-		
 		<script type="text/javascript">
 				$(document).ready(function(){
 					$('#slider1').tinycarousel();	

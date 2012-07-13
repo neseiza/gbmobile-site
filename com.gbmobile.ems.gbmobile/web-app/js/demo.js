@@ -27,8 +27,7 @@ DEMO.run = function() {
 	
 	POS_MAQUINA = $("#banda").position().left+20;
 	POS_TUBO = $("#tubo").position().left+5;
-
-	var numPoints = 5;
+	
 	var dotsPerSeg = 50;
 	var i;
 
@@ -36,7 +35,7 @@ DEMO.run = function() {
 
 	// Make a random list of waypoints for the animation to follow
 	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55+rel_posX,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
-	var box_points = [[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(6)+rel_posY)],[POS_MAQUINA-5,(heightPer(-11)+rel_posY)],[POS_TUBO+rel_posX,(heightPer(-13)+rel_posY)],[POS_MAQUINA+rel_posX,(heightPer(-11)+rel_posY)]];
+	var box_points = [[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(6)+rel_posY],[POS_MAQUINA-55+rel_posX,heightPer(-11)+rel_posY],[POS_TUBO+rel_posX,heightPer(-13)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY]];
 	// -- Important bit #1: Generate the spline animation object --
 	var spline = $.crSpline.buildSequence(points);
 	var box_spline = $.crSpline.buildSequence(box_points);
@@ -63,9 +62,6 @@ DEMO.run = function() {
 };
 
 $(document).ready(function() {
-
-	POS_MAQUINA = $("#banda").position().left+20;
-	POS_TUBO = $("#tubo").position().left+5;
 
 	DEMO.run();
 });
