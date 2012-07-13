@@ -1,0 +1,34 @@
+/* Tiny Carousel */
+#slider1, #slider2, #slider3, #slider4, 
+#slider5, #slider6
+{ height: 87%; overflow:hidden; padding: 23px 0px 17px; width: 132%;  margin: 0 -3%;}
+
+
+#slider1 .viewport , #slider2 .viewport, 
+#slider3 .viewport , #slider4 .viewport, 
+#slider5 .viewport , #slider6 .viewport 
+{ float: left; width: 680px; height: 261px; overflow: hidden; position: relative; }
+
+
+#slider1 .buttons, #slider2  .buttons, 
+#slider3 .buttons, #slider4  .buttons, 
+#slider5 .buttons, #slider6  .buttons 
+{ background:url("../images/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 99px 0px 0 0; background-position: 0 -64px; text-indent: -999em; float: left; width: 60px; height: 60px; overflow: hidden; position: relative; }
+
+
+#slider1 .next, #slider2 .next, 
+#slider3 .next, #slider4 .next, 
+#slider5 .next, #slider6 .next 
+{ background-position: 0 0; margin: 99px 0 0 0px;  }
+#slider1 .disable, #slider2 .disable, 
+#slider3 .disable, #slider4 .disable, 
+#slider5 .disable, #slider6 .disable 
+{ visibility: hidden; }
+#slider1 .overview, #slider2 .overview, 
+#slider3 .overview, #slider4 .overview, 
+#slider5 .overview, #slider6 .overview 
+{ list-style: none; position: absolute; padding: 0; margin: 0; width: 240px; left: 0 top: 0; }
+#slider1 .overview li, #slider2 .overview li,
+#slider3 .overview li, #slider4 .overview li,
+#slider5 .overview li, #slider6 .overview li
+{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
