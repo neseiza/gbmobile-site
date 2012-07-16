@@ -39,6 +39,8 @@
 
 
 <!-- <script type="text/javascript" src="scripts/demo.js"></script> -->
+
+	
 <script type="text/javascript">
 	
 	(function($) {
@@ -93,22 +95,19 @@
                     .activeOnClick()
                     .active();
                     
-                    
 
+                    
+                    $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
 
             });
             
-         
-            
-            
+            /* $('body').flyToTap(); */
+  
     })(jQuery);
     
-    
-	
-	
-</script>
-	
 
+</script>
 
 <title>gbMobile</title>
 
@@ -132,14 +131,18 @@
 		    <div id="line">
 		    </div>
 		    
-		    <div id="main" style="float:left;">
-			    <table>	    
+		    <div id="main" style="float:right;">
+			    <table border="0px">	    
 				    <tr>
-				    	<td>
+				    	<td >
 					    	<div id="animation1">
-					    		
+
 					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
-					    		<div id="tubo"></div>
+					    		<div id="tubo">
+						    		<img src="images/tubo_01.png" />
+						    		<div id="caja_tubo01"></div>
+						    		<img id="tubo02" src="images/tubo_02.png" />
+					    		</div>
 							    <div id="banda"></div>
 							    <div id="rightmiddle">	
 							    	<div id="foco"></div>		    	
@@ -153,7 +156,8 @@
 							    	</div>			    				    	
 							    </div>
 							    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
-						    </div>	     	
+						    </div>	
+     	
 						 </td>
 					</tr>
 				    <tr>
@@ -181,6 +185,8 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation2">
+					     	
+					     	<img src="images/animacion2_arriba.png" style="margin-left: 20%;"/>
 						     	<table>
 						     	<tr>
 						     		<td><p>D</p></td>
