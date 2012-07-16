@@ -93,6 +93,32 @@
                     .activeOnClick()
                     .active();
                     
+            	$('#bandaSimple')
+
+                    .sprite({
+                        fps: 2, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 0,
+                        on_first_frame: function(obj) {
+   
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                            // obj.spStop();
+
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
                     
 
 
@@ -156,6 +182,7 @@
 						    </div>	     	
 						 </td>
 					</tr>
+							    
 				    <tr>
 					    <td>
 				     		<div id="menu1">
@@ -191,7 +218,9 @@
 				     	</td>
 			     	</tr>	     	
 			        <tr>
-				     	<td>     	
+				     	<td>
+					    	<div id="bandaSimple"></div>
+					    	<div id="bandaSimple"></div>
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">
@@ -215,7 +244,6 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation3">
-					     		<div id="maquina"></div>
 					     		<table>				     			
 							     	<tr>
 							     		<td><p>D</p></td>
@@ -246,7 +274,6 @@
 		        	<tr>
 				     	<td>
 					     	<div id="animation4">
-					     		<div id="maquina"></div>
 					     		<table>
 							     	<tr>
 							     		<td><p>g</p></td>
@@ -281,7 +308,6 @@
 				    <tr>
 				     	<td>
 					     	<div id="animation5">
-					     		<div id="maquina"></div>
 					     		<table>
 							    	<tr>
 							     		<td><p>C</p></td>
@@ -316,7 +342,6 @@
 			     	<tr>
 					     <td>
 					     	<div id="animation6">
-					     		<div id="maquina"></div>
 					     	</div>
 				     	</td>
 			     	</tr>	     	

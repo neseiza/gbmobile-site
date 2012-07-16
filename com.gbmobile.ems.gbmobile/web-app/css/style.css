@@ -413,6 +413,14 @@ position: relative;
 	margin-top: 19%;
 	float: left;
 }
+
+#bandaSimple {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:296px;
+	height:32px;
+	float:left;
+}
+
 #rightmiddle { 
  float: left;
 }
