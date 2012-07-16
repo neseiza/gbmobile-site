@@ -1,10 +1,14 @@
-html, body{
-	text-align: center;
-}
+/* A Free Design by Bryant Smith (bryantsmith.com) */
 
+//este es el mio
+//otro
+
+html, body {
+text-align: center;
+}
 p {text-align: left;}
 
-body{
+body {
 	margin: 0;
 	padding: 0;
 	background-image: url(../images/background.png), -moz-linear-gradient(top, #245073 0%, #000000 100%);
@@ -19,17 +23,16 @@ body{
 	color: #FFFFFF;
 }
 
-#menu-item{
+#menu-item {
 	height: 30px;
 	padding-bottom: 20px;
 	
 }
 
-#menu{
-	position: absolute;
-	margin-left: 0px;
-	padding-left: 0px;
+#menu {
+	margin: 0;
 	height: 65px;
+	width: 100%;
 	vertical-align: middle;
 	width: 100%;
 	background-image:url(../images/menu.png);
@@ -37,158 +40,9 @@ body{
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
-	z-index: 1;
 }
 
-#logo{
-	padding-top: 10px;
-	alig:left;	
-}
-
-*{
-  margin: 0 auto 0 auto;
-  text-align:justify;  
-}
-
-html, body{
-	text-align: center;
-}
-
-p{
-	text-align: left;
-	font-family: "Sonsie One";
-	font-style: normal;
-	font-size: 12px;
-	text-shadow: 0.2em 0.2em #000;
-	font-weight: normal;
-}
-
-table{
-	text-align: left;
-	font-family: "Sonsie One";
-	font-style: normal;
-	font-size: 12px;
-	text-shadow: 0.1em 0.1em #000;
-	font-weight: 10;
-	width: 100%;
-}
-
-#header{
-	width:798px;
-	height:34px;
-	margin:0 auto 0 auto;
-	color:#34699F;
-	text-align:center;
-	font-style:italic;
-}
-
-#pagetop{
-	height:70px;
-}
-
-#pagetop h1{
-	display:block;
-	float:left;
-	line-height:90px;
-	color:#FFFFFF;
-	text-align:left;
-	font-size:30px;
-	font-weight:bold;
-	float:left;
-	margin-left:23px;
-}
-
-#line{
-	margin: 0;
-	padding: 0;
-	height: 24px;
-	vertical-align: middle;
-	width: auto;
-	background-image:url(../images/barra.png);
-	text-align: left;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #FFFFFF;
-}
-
-#pagetop ul{
-	padding-bottom: : 0px;
-	height:65px;
-	text-align:center;
-	vertical-align: middle;
-	font-family: "Kaushan script";
-	width: 800px;
-	text-shadow: 0.1em 0.1em #000;
-	text-decoration:none;
-}
-
-#pagetop ul li , #pagetop ul li a, #pagetop ul li a:visited{
-	display:block;
-	float:right;
-	margin: 0px;
-	text-align:center;
-	line-height:65px;
-	color:#FFFFFF;
-	padding-left:5px;
-	padding-right:10px;
-	font-size:20px;
-	//font-weight:bold;
-	text-decoration: none;
-	font-style: normal;
-}
-
-#pagetop ul li a:hover{
-	color:#34699F;
-}
-
-
-
-#main{
-	width:1500px;
-	margin-left: 5%;
-}
-
-#main .content{
-	width:650px;
-	text-align:justify;
-	color:#000000;
-	word-spacing:3px;
-}
-
-#main .content p{
-	margin-top:8px;
-	margin-bottom:8px;
-}
-
-#main .content h1{
-	font-size:19px;
-	margin-bottom:12px;
-}
-
-#animation1{
-	height: 512px;
-}
-
-#animation2{
-	height: 512px;
-}
-
-#animation3{
-}
-
-#animation4{
-}
-
-#animation5{
-}
-
-#animation6{
-}
-
-#animation7{
-}
-
-#menu1{
+#menu1 {
 	margin: 0 5%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
@@ -274,6 +128,203 @@ table{
 	color: #FFFFFF;
 }
 
+#logo{
+	//height:50px; 
+	padding-top: 10px;
+	alig:left;
+	
+}
+
+*
+{
+  margin: 0 auto 0 auto;
+  text-align:left;  
+}
+
+html, body {
+text-align: center;
+}
+
+
+p {
+text-align: left;
+font-family: "Sonsie One";
+font-style: normal;
+font-size: 12px;
+text-shadow: 0.2em 0.2em #000;
+font-weight: normal;
+}
+
+table{
+	text-align: left;
+font-family: "Sonsie One";
+font-style: normal;
+font-size: 12px;
+text-shadow: 0.1em 0.1em #000;
+font-weight: 10;
+width: 100%;
+padding-left: 12%;
+
+}
+
+#page
+{
+  width:100%;
+  //padding-left:20px;
+  //padding-right:20px;
+}
+
+
+
+#header
+{
+//background-image:url(header.png);
+background-repeat:no-repeat;
+width:798px;
+height:34px;
+margin:0 auto 0 auto;
+color:#34699F;
+text-align:center;
+font-style:italic;
+}
+
+#pagetop
+{
+height:70px;
+}
+
+#pagetop h1
+{
+display:block;
+float:left;
+line-height:90px;
+color:#FFFFFF;
+text-align:left;
+font-size:30px;
+font-weight:bold;
+
+float:left;
+margin-left:23px;
+}
+
+#line{
+	margin: 0;
+	padding: 0;
+	height: 24px;
+	vertical-align: middle;
+	width: 100%;
+	background-image:url(../images/barra.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#pagetop ul {
+	padding-bottom: : 0px;
+	//list-style-type:armenian;
+	
+	height:65px;
+	text-align:center;
+	vertical-align: middle;
+	font-family: "Kaushan script";
+	width: 800px;
+	//overflow:hidden;
+	text-shadow: 0.1em 0.1em #000;
+	text-decoration:none;
+	
+	
+}
+
+#pagetop ul li , #pagetop ul li a, #pagetop ul li a:visited{
+	display:block;
+	float:right;
+	margin: 0px;
+	text-align:center;
+	line-height:65px;
+	color:#FFFFFF;
+	padding-left:5px;
+	padding-right:10px;
+	font-size:20px;
+	//font-weight:bold;
+	text-decoration: none;
+	font-style: normal;
+}
+
+#pagetop ul li a:hover{
+color:#34699F;
+}
+
+
+
+#main 
+{
+width:100%;
+
+}
+
+
+
+#main .content
+{
+width:650px;
+text-align:justify;
+color:#000000;
+word-spacing:3px;
+}
+
+#main .content p
+{
+margin-top:8px;
+margin-bottom:8px;
+}
+
+#main .content h1
+{
+font-size:19px;
+margin-bottom:12px;
+}
+
+#animation1
+{
+height: 512px;
+}
+
+#animation2
+{
+height: 512px;
+}
+
+#animation3
+{
+
+height: 512px;
+}
+
+#animation4
+{
+
+height: 512px;
+}
+
+#animation5
+{
+
+height: 512px;
+}
+
+#animation6
+{
+
+height: 512px;
+}
+
+#animation7
+{
+
+height: 512px;
+}
+
 #maquina {
 	background: transparent url(../images/maquina_anima.png) 0 0 no-repeat;
 	width:467px;
@@ -283,20 +334,14 @@ table{
 
 #garra {
 	background: transparent url(../images/garra_02.png) 0 0 no-repeat;
-	position: absolute;
-    width: 100px;
-    height: 327px;
-    z-index: 2000;
-    cursor: pointer;
-    float: left;
-    z-index: 0;
-}
-#caja{
-	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	position: absolute;
-	width: 53px;
-	height: 50px;
-	float: left;
+	position: relative;
+	    width: 100px;
+	    height: 327px;
+	    z-index: 2000;
+	    margin: 10% 12%;
+	    cursor: pointer;
+	    float: left;
+
 }
 
 #foco {
@@ -310,56 +355,64 @@ table{
 	overflow: hidden;
 }
 
-#tubo{ 
-	background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
-	width:249px;
-	height: 208px;
-	margin-top: 11%;
-	float: left;
-	position: relative;
+#main_machine {
+	border: #000000;
+	background-color: #ffffff;
 }
 
-#banda{
+
+
+.buttomRight
+{
+text-align: justify;
+padding-top: 75%;
+}
+
+P:first-letter 
+{
+font-size: 500%;
+font-weight: bold;
+}
+
+
+#footer {
+display:block;
+width: 798px;
+height:50px;
+text-align:right;
+font-size:10px;
+line-height:48px;
+}
+
+#footer p{
+padding-right:75px;
+text-align:right;
+}
+
+#footer, #footer a, #footer a:visited{
+color:#65A9ED;
+}
+
+#footer a:hover{
+color:#000000;
+}
+
+#tubo { 
+background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
+width:249px;
+height: 208px;
+margin-top: 11%;
+float: left;
+position: relative;
+}
+
+#banda {
 	background: transparent url(../images/banda_01.png) 0 0 no-repeat;
 	width:144px;
 	height: 103px;
 	margin-top: 19%;
 	float: left;
 }
-
-#footer{
-	display:block;
-	width: 798px;
-	height:50px;
-	text-align:right;
-	font-size:10px;
-	line-height:48px;
-}
-
-#footer p{
-	padding-right:75px;
-	text-align:right;
-}
-
-#footer, #footer a, #footer a:visited{
-	color:#65A9ED;
-}
-
-#footer a:hover{
-	color:#000000;
-}
-
 #rightmiddle { 
-	float: left;
+ float: left;
 }
-
-.buttomRight{
-	text-align: justify;
-	padding-top: 75%;
-}
-
-P:first-letter{
-	font-size: 500%;
-	font-weight: bold;
-}
-

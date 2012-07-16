@@ -1,91 +1,123 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style_n.css')}" />
-		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'website.css')}" />
-		
-		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
-		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}"></script>
-		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}"></script>
-		<script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}"></script>
-		
-		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}"></script>
-		<script type="text/javascript">
-				$(document).ready(function(){
-					$('#slider1').tinycarousel();	
-					$('#slider2').tinycarousel();	
-					$('#slider3').tinycarousel();	
-					$('#slider4').tinycarousel();	
-					$('#slider5').tinycarousel();	
-					$('#slider6').tinycarousel();
-				});
-		</script>
-		<script type="text/javascript">
-			(function($) {
-		            $(document).ready(function() {
-		            	$('#maquina')
-		
-		                    .sprite({
-		                        fps: 5, 
-		                        no_of_frames: 5,
-		                        rewind: true,
-		                        // the following are optional: new in version 0.6...
-		                        start_at_frame: 5,
-		                        on_first_frame: function(obj) {
-		
-		                        },
-		                        on_last_frame: function(obj) {
-		
-		                        },
-		                        on_frame: {
-		                            2: function(obj) {
-		
-		                            }
-		                        }
-		                    })
-		                    .isDraggable()
-		                    .activeOnClick()
-		                    .active();
-		                 
-		                 
-		                 $('#banda')
-		                    .sprite({
-		                        fps: 5, 
-		                        no_of_frames: 2,
-		                        rewind: true,
-		                        // the following are optional: new in version 0.6...
-		                        start_at_frame: 5,
-		                        on_first_frame: function(obj) {
-		
-		                        },
-		                        on_last_frame: function(obj) {
-		 
-		                        },
-		                        on_frame: {
-		                            2: function(obj) {
-		
-		                            }
-		                        }
-		                    })
-		                    .isDraggable()
-		                    .activeOnClick()
-		                    .active();
-		                    $('#foco').pan({fps: 5, speed: 5, dir: 'down', depth: 70});
-		                    });
-		            
-		                    $('body').flyToTap();      
-		    })(jQuery);
-		</script>
-		
-		<title>gbMobile</title>	
-	</head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}" ></script>
+
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
+
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
+
+<!--
+<!-- begin Carrusel -->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'website.css')}" media="screen"></link>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#slider1').tinycarousel();	
+			$('#slider2').tinycarousel();	
+			$('#slider3').tinycarousel();	
+			$('#slider4').tinycarousel();	
+			$('#slider5').tinycarousel();	
+			$('#slider6').tinycarousel();	
+			
+
+		});
+	</script>
+
+<!-- end carrusel -->
+
+
+<!-- <script type="text/javascript" src="scripts/demo.js"></script> -->
+<script type="text/javascript">
 	
-	<body>
-		<div id="header">
-			<div id="menu" class="links"> 	
+	(function($) {
+            $(document).ready(function() {
+            	$('#maquina')
+
+                    .sprite({
+                        fps: 2, 
+                        no_of_frames: 5,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
+   
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                            // obj.spStop();
+
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+                 $('#banda')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
+
+                        },
+                        on_last_frame: function(obj) {
+    
+                        },
+                        on_frame: {
+                            2: function(obj) {
+
+                            }
+                        }
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+                    
+
+
+            });
+            
+         
+            
+            
+    })(jQuery);
+    
+    
+	
+	
+</script>
+	
+
+
+<title>gbMobile</title>
+
+</head>
+	<body>	
+	    <div id="page">
+	      	<div id="pagetop">			
+				<div id="menu" class="links"> 	
+				
 	            	<ul>
 		                <li><a id="menu-item" href="#">Web</a></li>
 		                <li><a id="menu-item" href="#">mCoupons</a></li>	                
@@ -94,15 +126,18 @@
 		           	   	<li><a id="menu-item" href="#">SMS</a></li>
 		               	<li><img id="logo" src="images/logogb.png" /></li>
 		             </ul>
-		     </div>
-		</div>
-		<div id="line"></div>
-		<div id="center">
-			<table>	    
+		               
+		        </div>
+		    </div>
+		    <div id="line">
+		    </div>
+		    
+		    <div id="main" style="float:left;">
+			    <table>	    
 				    <tr>
 				    	<td>
 					    	<div id="animation1">
-					    		<div id="garra"></div>
+					    		
 					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
 					    		<div id="tubo"></div>
 							    <div id="banda"></div>
@@ -129,11 +164,12 @@
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
 										<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											<li><img src="images/picture6.jpg" /></li>
+											<li><img src="images/picture5.jpg" /></li>
+											<li><img src="images/picture4.jpg" /></li>									
+											<li><img src="images/picture3.jpg" /></li>
+											<li><img src="images/picture2.jpg" /></li>
+											<li><img src="images/picture1.jpg" /></li>
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
@@ -162,11 +198,12 @@
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
 										<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											<li><img src="images/picture6.jpg" /></li>
+											<li><img src="images/picture5.jpg" /></li>
+											<li><img src="images/picture4.jpg" /></li>									
+											<li><img src="images/picture3.jpg" /></li>
+											<li><img src="images/picture2.jpg" /></li>
+											<li><img src="images/picture1.jpg" /></li>
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
@@ -191,11 +228,12 @@
 										<a class="buttons prev" href="#">left</a>
 										<div class="viewport">
 											<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+												<li><img src="images/picture6.jpg" /></li>
+												<li><img src="images/picture5.jpg" /></li>
+												<li><img src="images/picture4.jpg" /></li>									
+												<li><img src="images/picture3.jpg" /></li>
+												<li><img src="images/picture2.jpg" /></li>
+												<li><img src="images/picture1.jpg" /></li>
 											</ul>
 										</div>
 										<a class="buttons next" href="#">right</a>
@@ -226,11 +264,12 @@
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
 										<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											<li><img src="images/picture6.jpg" /></li>
+											<li><img src="images/picture5.jpg" /></li>
+											<li><img src="images/picture4.jpg" /></li>									
+											<li><img src="images/picture3.jpg" /></li>
+											<li><img src="images/picture2.jpg" /></li>
+											<li><img src="images/picture1.jpg" /></li>
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
@@ -260,11 +299,12 @@
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
 										<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											<li><img src="images/picture6.jpg" /></li>
+											<li><img src="images/picture5.jpg" /></li>
+											<li><img src="images/picture4.jpg" /></li>									
+											<li><img src="images/picture3.jpg" /></li>
+											<li><img src="images/picture2.jpg" /></li>
+											<li><img src="images/picture1.jpg" /></li>
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
@@ -288,11 +328,12 @@
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
 										<ul class="overview">
-											<li><img src="${resource(dir: 'images', file: 'picture6.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture5.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture4.jpg')}" /></li>																		<li><img src="${resource(dir: 'images', file: 'picture3.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture2.jpg')}" /></li>
-											<li><img src="${resource(dir: 'images', file: 'picture1.jpg')}" /></li>
+											<li><img src="images/picture6.jpg" /></li>
+											<li><img src="images/picture5.jpg" /></li>
+											<li><img src="images/picture4.jpg" /></li>									
+											<li><img src="images/picture3.jpg" /></li>
+											<li><img src="images/picture2.jpg" /></li>
+											<li><img src="images/picture1.jpg" /></li>
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
@@ -307,9 +348,9 @@
 				     	</td>
 			     	</tr>
 			     </table>
-		</div>
-		<div id="footer">
-		footer
-			</div>
+		     </div>	     
+		     <div id="footer">
+		     </div>
+	     </div>
 	</body>
 </html>
