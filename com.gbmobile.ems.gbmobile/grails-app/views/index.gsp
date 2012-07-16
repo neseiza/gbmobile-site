@@ -39,6 +39,8 @@
 
 
 <!-- <script type="text/javascript" src="scripts/demo.js"></script> -->
+
+	
 <script type="text/javascript">
 	
 	(function($) {
@@ -100,7 +102,7 @@
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 0,
+                        start_at_frame: 1,
                         on_first_frame: function(obj) {
    
                         },
@@ -120,21 +122,45 @@
                     .activeOnClick()
                     .active();
                     
+                $('#bandaSimple1')
 
+                    .sprite({
+                        fps: 2, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 1,
+                        on_first_frame: function(obj) {
+   
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                            // obj.spStop();
+
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();    
+
+                    
+                    $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
 
             });
             
-         
-            
-            
+            /* $('body').flyToTap(); */
+  
     })(jQuery);
     
-    
-	
-	
-</script>
-	
 
+</script>
 
 <title>gbMobile</title>
 
@@ -158,14 +184,17 @@
 		    <div id="line">
 		    </div>
 		    
-		    <div id="main" style="float:left;">
-			    <table>	    
+		    <div id="main" style="float:right;">
+			    <table border="2px">	    
 				    <tr>
-				    	<td>
+				    	<td >
 					    	<div id="animation1">
-					    		
+
 					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
-					    		<div id="tubo"></div>
+					    		<div id="tubo">
+						    		<img src="images/tubo_01.png" />
+						    		<div id="caja_tubo01"></div>
+					    		</div>
 							    <div id="banda"></div>
 							    <div id="rightmiddle">	
 							    	<div id="foco"></div>		    	
@@ -179,14 +208,16 @@
 							    	</div>			    				    	
 							    </div>
 							    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
-						    </div>	     	
+						    </div>	
+     	
 						 </td>
 					</tr>
 							    
 				    <tr>
-					    <td>
+					    <td class="op">
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
+						    		<div id="tubo02"></div>
 							     <div id="slider1">
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
@@ -200,6 +231,9 @@
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
+									<div id="maquinaAbajo"></div>
+									<div id="tubo_abajo"></div>
+									<div id="maquinaAbajo"></div>
 								</div>
 							     <!-- End Slider 1 -->
 				     		</div>
@@ -208,6 +242,10 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation2">
+					     	
+								<!--<div id="maquinaAbajo"></div>
+								<div id="maquinaAbajo"></div>
+								<img src="images/animacion2_arriba.png" style="margin-left: 20%;"/-->
 						     	<table>
 						     	<tr>
 						     		<td><p>D</p></td>
@@ -219,8 +257,10 @@
 			     	</tr>	     	
 			        <tr>
 				     	<td>
-					    	<div id="bandaSimple"></div>
-					    	<div id="bandaSimple"></div>
+				     		
+					    		<div id="bandaSimple"></div>
+					    		<div id="bandaSimple1"></div>
+					    	
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">
@@ -237,6 +277,9 @@
 									</div>
 									<a class="buttons next" href="#">right</a>
 								</div>
+									<!--<img id="p1" src="images/maquina_abajo.png" style="float:left"/>-->
+									<!--<img id="p2" src="images/maquina_abajo.png" style="float:left"/>-->
+									
 							     <!-- End Slider 2 -->
 				     		</div>
 				     	</td>
