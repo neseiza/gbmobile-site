@@ -29,12 +29,6 @@ body {
 	
 }
 
-td.op{
-	height: 600px;
-	display: inline-block;
-	position: relative;
-}
-
 
 #menu {
 	margin: 0;
@@ -52,7 +46,7 @@ td.op{
 
 #menu1 {
 	margin: 0 20%;
-	margin-top: 5%;
+	margin-top: -1%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
 	height: 300px;
@@ -68,6 +62,7 @@ td.op{
 #menu2 {
 	clear: both;
 	margin: 0 20%;
+	margin-top: -1%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
 	height: 300px;
@@ -166,16 +161,19 @@ font-weight: normal;
 }
 
 table{
-	text-align: left;
+	text-align: center;
 font-family: "Sonsie One";
 font-style: normal;
 font-size: 12px;
 text-shadow: 0.1em 0.1em #000;
 font-weight: 10;
 margin: 0% 0%; 
-
 }
 
+table.center {
+    margin-left:23%;
+}
+  
 #page
 {
   width:100%;
@@ -187,7 +185,7 @@ margin: 0% 0%;
 
 #header
 {
-//background-image:url(header.png);
+background-image:url(header.png);
 background-repeat:no-repeat;
 width:798px;
 height:34px;
@@ -302,7 +300,7 @@ margin: 0% 10%
 
 #animation2
 {
-height: 512px;
+
 }
 
 #animation3
@@ -376,6 +374,18 @@ height: 512px;
 	overflow: hidden;
 }
 
+#caja_tubo02{
+	background: transparent url(../images/caja_animacion3.png) 0 0 repeat;
+	width:386px;
+	height: 50px;
+	float: left;
+	padding-top: 17%;
+	padding-right: 7%;
+	position: relative;
+	overflow: hidden;
+	margin-top: -3.5%;
+}
+
 #tubo { 
 	//background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
 	width:249px;
@@ -396,11 +406,24 @@ height: 512px;
 	overflow: hidden;*/
 }
 
-#tubo02 {
-	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
-	width: 137px;
+#tubo02{
+	
+	width:135px;
 	height: 75px;
+	float: right;
+	margin-top: 18%;
+	margin-right: -37%;
+	position: relative;
+	overflow: hidden;
+}
+
+#tubo03{
+	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
+	width:135px;
+	height: 35px;
 	float: left;
+	margin-left: 22%;
+	overflow: hidden;
 }
 
 #banda {
@@ -416,7 +439,6 @@ height: 512px;
 	width:144px;
 	height:32px;
 	float:left;
-	margin-top: 8%;
 }
 
 
@@ -425,7 +447,6 @@ height: 512px;
 	width:144px;
 	height:32px;
 	float: left;
-	margin-top: 8%;
 }
 
 #maquinaAbajo {
@@ -451,6 +472,7 @@ height: 512px;
 text-align: justify;
 padding-top: 75%;
 }
+
 
 P:first-letter 
 {
@@ -490,4 +512,5 @@ color:#000000;
 	overflow: hidden;
 	float: left;
 	margin-left: 22%;
+	
 }
