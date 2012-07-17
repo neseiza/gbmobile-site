@@ -1,6 +1,7 @@
-#Thu Jul 12 20:06:58 CDT 2012
-eclipse.preferences.version=1
-tipsAndTricks=true
-platformState=1342132624326
-quickStart=false
+IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1
 PROBLEMS_FILTERS_MIGRATE=true
+eclipse.preferences.version=1
+platformState=1341606993461
+quickStart=false
+tipsAndTricks=true
