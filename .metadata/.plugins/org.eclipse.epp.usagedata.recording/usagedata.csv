@@ -1,4 +1,31 @@
 what,kind,bundleId,bundleVersion,description,time
+<<<<<<< HEAD
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.201.v201201101553,"org.eclipse.wst.common.project.facet.core",1342536374128
+started,bundle,org.eclipse.wst.validation,1.2.303.v201202090300,"org.eclipse.wst.validation",1342536374137
+started,bundle,org.eclipse.wst.web,1.1.501.v201201190400,"org.eclipse.wst.web",1342536374141
+started,bundle,org.eclipse.wst.xml.core,1.1.602.v201201091944,"org.eclipse.wst.xml.core",1342536374149
+started,bundle,org.eclipse.egit.core,1.3.0.201202151440-r,"org.eclipse.egit.core",1342536374160
+started,bundle,org.eclipse.egit.ui,1.3.0.201202151440-r,"org.eclipse.egit.ui",1342536374171
+started,bundle,org.eclipse.jgit,1.3.0.201202151440-r,"org.eclipse.jgit",1342536374172
+os,sysinfo,,,"macosx",1342536374176
+arch,sysinfo,,,"x86_64",1342536374176
+ws,sysinfo,,,"cocoa",1342536374176
+locale,sysinfo,,,"es_ES",1342536374176
+processors,sysinfo,,,"4",1342536374176
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1342536374177
+java.runtime.version,sysinfo,,,"1.6.0_33-b03-424-11M3720",1342536374177
+java.specification.name,sysinfo,,,"Java Platform API Specification",1342536374177
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1342536374177
+java.specification.version,sysinfo,,,"1.6",1342536374177
+java.vendor,sysinfo,,,"Apple Inc.",1342536374177
+java.version,sysinfo,,,"1.6.0_33",1342536374177
+java.vm.info,sysinfo,,,"mixed mode",1342536374177
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1342536374177
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1342536374177
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1342536374177
+java.vm.specification.version,sysinfo,,,"1.0",1342536374177
+java.vm.vendor,sysinfo,,,"Apple Inc.",1342536374177
+=======
 started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110505-0800,"org.eclipse.ltk.ui.refactoring",1342455635401
 opened,editor,org.eclipse.wst.jsdt.ui,1.1.100.v201105041953,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1342455635562
 activated,editor,org.eclipse.wst.jsdt.ui,1.1.100.v201105041953,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1342455635901
@@ -66,3 +93,4 @@ closed,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1342483840541
 stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1342483847293
 stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1342483847334
 stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.407.v201104071820,"org.eclipse.jst.ws.axis.consumption.core",1342483847377
+>>>>>>> adcc9b25aaf1f514d8cfc218fdd783907101cf03

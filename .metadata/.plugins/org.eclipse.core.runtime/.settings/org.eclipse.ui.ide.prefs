@@ -1,6 +1,14 @@
+<<<<<<< HEAD
+IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+PROBLEMS_FILTERS_MIGRATE=true
+eclipse.preferences.version=1
+platformState=1341606993461
+=======
 #Fri Jul 13 19:19:15 CDT 2012
 eclipse.preferences.version=1
 tipsAndTricks=true
 platformState=1341523961065
+>>>>>>> adcc9b25aaf1f514d8cfc218fdd783907101cf03
 quickStart=false
-PROBLEMS_FILTERS_MIGRATE=true
+tipsAndTricks=true

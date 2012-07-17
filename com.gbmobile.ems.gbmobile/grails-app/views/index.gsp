@@ -57,6 +57,7 @@ var cont=0;
                         on_first_frame: function(obj) {
                         },
                         on_last_frame: function(obj) {
+<<<<<<< HEAD
                             // you could stop the sprite here with, e.g.
                             // obj.spStop();  
                         },
@@ -66,6 +67,16 @@ var cont=0;
                                 // sprite here with, e.g. obj.spState(2);'#caja_tubo02').spChangeDir('left');
                         	
                         }}
+=======
+                        	//obj.spStop();
+                        },
+                        on_frame: {
+                            1: function(obj) {
+                            		console.log('aqui se detendría');	                      
+                            }
+                            5: 
+                        }
+>>>>>>> f5cacdcd4d600f85f3593e4a5677b786048b15f2
                     })
                     .isDraggable()
                     .activeOnClick()
