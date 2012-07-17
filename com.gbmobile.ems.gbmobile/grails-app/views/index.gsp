@@ -93,6 +93,59 @@
                     .activeOnClick()
                     .active();
                     
+            	$('#bandaSimple')
+
+                    .sprite({
+                        fps: 2, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 1,
+                        on_first_frame: function(obj) {
+   
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                            // obj.spStop();
+
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+                $('#bandaSimple1')
+
+                    .sprite({
+                        fps: 2, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 1,
+                        on_first_frame: function(obj) {
+   
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                            // obj.spStop();
+
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();    
 
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
@@ -139,7 +192,6 @@
 					    		<div id="tubo">
 						    		<img src="images/tubo_01.png" />
 						    		<div id="caja_tubo01"></div>
-						    		<img id="tubo02" src="images/tubo_02.png" />
 					    		</div>
 							    <div id="banda"></div>
 							    <div id="rightmiddle">	
@@ -158,8 +210,14 @@
      	
 						 </td>
 					</tr>
+							    
 				    <tr>
-					    <td>
+					    <td class="op">
+				     		<div id="tubo-z">
+						    	<div id="tubo02"></div>
+					    		<div id="bandaSimple"></div>
+					    		<div id="bandaSimple1"></div>
+				     		</div>
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">
@@ -175,6 +233,9 @@
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
+									<div id="maquinaAbajo"></div>
+									<div id="tubo_abajo"></div>
+									<div id="maquinaAbajo"></div>
 								</div>
 							     <!-- End Slider 1 -->
 				     		</div>
@@ -184,7 +245,9 @@
 				     	<td>
 					     	<div id="animation2">
 					     	
-					     	<img src="images/animacion2_arriba.png" style="margin-left: 20%;"/>
+								<!--<div id="maquinaAbajo"></div>
+								<div id="maquinaAbajo"></div>
+								<img src="images/animacion2_arriba.png" style="margin-left: 20%;"/-->
 						     	<table>
 						     	<tr>
 						     		<td><p>D</p></td>
@@ -195,7 +258,9 @@
 				     	</td>
 			     	</tr>	     	
 			        <tr>
-				     	<td>     	
+				     	<td>
+				     		
+					    	
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">
@@ -212,6 +277,9 @@
 									</div>
 									<a class="buttons next" href="#">right</a>
 								</div>
+									<!--<img id="p1" src="images/maquina_abajo.png" style="float:left"/>-->
+									<!--<img id="p2" src="images/maquina_abajo.png" style="float:left"/>-->
+									
 							     <!-- End Slider 2 -->
 				     		</div>
 				     	</td>
@@ -219,7 +287,6 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation3">
-					     		<div id="maquina"></div>
 					     		<table>				     			
 							     	<tr>
 							     		<td><p>D</p></td>
@@ -250,7 +317,6 @@
 		        	<tr>
 				     	<td>
 					     	<div id="animation4">
-					     		<div id="maquina"></div>
 					     		<table>
 							     	<tr>
 							     		<td><p>g</p></td>
@@ -285,7 +351,6 @@
 				    <tr>
 				     	<td>
 					     	<div id="animation5">
-					     		<div id="maquina"></div>
 					     		<table>
 							    	<tr>
 							     		<td><p>C</p></td>
@@ -320,7 +385,6 @@
 			     	<tr>
 					     <td>
 					     	<div id="animation6">
-					     		<div id="maquina"></div>
 					     	</div>
 				     	</td>
 			     	</tr>	     	

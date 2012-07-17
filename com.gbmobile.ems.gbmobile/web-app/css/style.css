@@ -30,6 +30,11 @@ body {
 	
 }
 
+td.op{
+	height: 600px;
+	display: inline-block;
+	position: relative;
+}
 
 
 #menu {
@@ -48,6 +53,7 @@ body {
 
 #menu1 {
 	margin: 0 20%;
+	margin-top: 5%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
 	height: 300px;
@@ -61,6 +67,7 @@ body {
 }
 
 #menu2 {
+	clear: both;
 	margin: 0 20%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
@@ -371,15 +378,67 @@ height: 512px;
 	overflow: hidden;
 }
 
-#tubo02{
-	
-	width:135px;
-	height: 75px;
-	float: right;
-	margin-top: 18%;
+#tubo { 
+	//background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
+	width:249px;
+	height: 70%;
+	margin-top: 11%;
+	float: left;
+	position: relative;
+}
+
+#tubo_abajo{
+	background: transparent url(../images/tubo_abajo.png) 0 0 no-repeat;
+	width:115px;
+	height: 112px;
+	float: left;
+	/*margin-top: 18%;
 	margin-right: -37%;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden;*/
+}
+
+#tubo02 {
+	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
+	width: 137px;
+	height: 75px;
+	float: left;
+}
+
+#banda {
+	background: transparent url(../images/banda_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 103px;
+	margin-top: 19%;
+	float: left;
+}
+
+#bandaSimple {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height:32px;
+	float:left;
+	margin-top: 8%;
+}
+
+
+#bandaSimple1 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height:32px;
+	float: left;
+	margin-top: 8%;
+}
+
+#maquinaAbajo {
+	background: transparent url(../images/maquina_abajo.png) 0 0 no-repeat;
+	width: 339px;
+	height: 56px;
+	float: left;
+}
+
+#maquinaAbajoMargin {
+	margin-top: 10%;
 }
 
 #main_machine {
@@ -424,22 +483,13 @@ color:#65A9ED;
 color:#000000;
 }
 
-#tubo { 
-//background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
-width:249px;
-height: 70%;
-margin-top: 11%;
-float: left;
-position: relative;
-}
-
-#banda {
-	background: transparent url(../images/banda_01.png) 0 0 no-repeat;
-	width:144px;
-	height: 103px;
-	margin-top: 19%;
-	float: left;
-}
 #rightmiddle { 
  float: left;
+}
+
+#tubo-z{
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	margin-left: 22%;
 }

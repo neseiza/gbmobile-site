@@ -1,7 +1,7 @@
 /* Tiny Carousel */
 #slider1, #slider2, #slider3, #slider4, 
 #slider5, #slider6
-{ height: 87%; overflow:hidden; padding: 23px 0px 17px; width: 132%;  margin: 0 -3%;}
+{ height: 87%; padding: 23px 0px 17px; width: 132%;  margin: 0 -3%;}
 
 
 #slider1 .viewport , #slider2 .viewport, 
