@@ -22,6 +22,20 @@ function heightPer(perHei) {
 		return perHei;
 }
 
+function espacio_x() {
+	if($.browser.mozilla == true)
+		return 25;
+	else
+		return 105;
+}
+
+function espacio_y() {
+	if($.browser.mozilla == true)
+		return 25;
+	else
+		return 93;
+}
+
 CAJA.run = function(POS_MAQUINA,POS_TUBO) {
 	var rel_posX = 20;
 	var rel_posY = 277;
@@ -35,7 +49,7 @@ CAJA.run = function(POS_MAQUINA,POS_TUBO) {
 	var points = [];
 
 	// Make a random list of waypoints for the animation to follow
-	var box_points = [[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(6)+rel_posY],[POS_MAQUINA-55+rel_posX,heightPer(-11)+rel_posY],[POS_TUBO+rel_posX,heightPer(-13)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY]];
+	var box_points = [[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(1)+rel_posY],[POS_MAQUINA-55+rel_posX,heightPer(-14)+rel_posY],[POS_TUBO+rel_posX,heightPer(-14)+rel_posY],[POS_TUBO+40+rel_posX,heightPer(-14)+rel_posY],[POS_MAQUINA+rel_posX,heightPer(-11)+rel_posY]];
 	// -- Important bit #1: Generate the spline animation object --
 	var box_spline = $.crSpline.buildSequence(box_points);
 	// Clean up visuals if we've run this once already
@@ -66,7 +80,7 @@ GARRA.run = function(POS_MAQUINA,POS_TUBO) {
 	var points = [];
 
 	// Make a random list of waypoints for the animation to follow
-	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(6)],[POS_MAQUINA-55,heightPer(-11)],[POS_TUBO,heightPer(-13)],[POS_MAQUINA,heightPer(-11)]];
+	var points = [[POS_MAQUINA,heightPer(-11)],[POS_MAQUINA,heightPer(1)],[POS_MAQUINA-55,heightPer(-14)],[POS_TUBO,heightPer(-14)],[POS_TUBO+40,heightPer(-14)],[POS_MAQUINA,heightPer(-11)]];
 	// -- Important bit #1: Generate the spline animation object --
 	var spline = $.crSpline.buildSequence(points);
 	// Clean up visuals if we've run this once already
@@ -84,8 +98,8 @@ GARRA.run = function(POS_MAQUINA,POS_TUBO) {
 };
 
 $(document).ready(function() {
-	POS_MAQUINA = $("#banda").position().left+100;
-	POS_TUBO = $("#tubo").position().left+93;
+	POS_MAQUINA = $("#banda").position().left + espacio_x();
+	POS_TUBO = $("#tubo").position().left + espacio_y();
 	GARRA.run(POS_MAQUINA,POS_TUBO);
 	CAJA.run(POS_MAQUINA,POS_TUBO);
 });

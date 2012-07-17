@@ -23,6 +23,7 @@ body {
 	color: #FFFFFF;
 }
 
+
 #menu-item {
 	height: 30px;
 	padding-bottom: 20px;
@@ -32,17 +33,17 @@ body {
 
 
 #menu {
-	margin: 0;
-	padding-right: 10%;
 	height: 65px;
 	width: 100%;
 	vertical-align: middle;
-	width: auto;
 	background-image:url(../images/menu.png);
+	background-repeat: repeat-x;
 	text-align: left;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
+	position: absolute;
+	z-index: 2;
 }
 
 #menu1 {
@@ -224,14 +225,12 @@ margin-left:23px;
 
 #pagetop ul {
 	padding-bottom: : 0px;
-	//list-style-type:armenian;
-	
+	margin-left: 20%;
 	height:65px;
 	text-align:center;
 	vertical-align: middle;
 	font-family: "Kaushan script";
 	width: 800px;
-	//overflow:hidden;
 	text-shadow: 0.1em 0.1em #000;
 	text-decoration:none;
 	
@@ -337,15 +336,18 @@ height: 512px;
 
 #garra {
 	background: transparent url(../images/garra_02.png) 0 0 no-repeat;
-	position: relative;
-	    width: 100px;
-	    height: 327px;
-	    z-index: 2000;
-	    margin: 10% 12%;
-	    cursor: pointer;
-	    float: left;
-
+	position: absolute;
+    width: 100px;
+    height: 327px;
+    z-index: 1;
 }
+#caja {
+	background: transparent url(../images/cajaS_cerrada.png) 0 0 no-repeat;
+	position: absolute;
+    width: 52px;
+    height: 46px;
+}
+
 
 #foco {
 	background: transparent url(../images/foco_03.png) 0 0 repeat-y;

@@ -52,21 +52,19 @@
                         no_of_frames: 5,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
+                        start_at_frame: 1,
                         on_first_frame: function(obj) {
    
                         },
                         on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-
+                        	//obj.spStop();
                         },
                         on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-
-                        }}
+                            1: function(obj) {
+                            		console.log('aqui se detendría');	                      
+                            }
+                            5: 
+                        }
                     })
                     .isDraggable()
                     .activeOnClick()
@@ -132,7 +130,7 @@
 		    </div>
 		    
 		    <div id="main" style="float:right;">
-			    <table border="0px">	    
+			    <table border="2px">	    
 				    <tr>
 				    	<td >
 					    	<div id="animation1">
