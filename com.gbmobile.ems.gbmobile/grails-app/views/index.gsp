@@ -45,6 +45,8 @@
 	
 	(function($) {
             $(document).ready(function() {
+            
+            var cont=0;
             	$('#maquina')
 
                     .sprite({
@@ -52,18 +54,36 @@
                         no_of_frames: 5,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
+                        start_at_frame: 0,
                         on_first_frame: function(obj) {
    
                         },
                         on_last_frame: function(obj) {
                         	//obj.spStop();
+                        	
+                        	
+                        	
+                        	
                         },
                         on_frame: {
+                        	0: function(obj) {
+                            		obj.spStop();                      
+                            },
                             1: function(obj) {
-                            		console.log('aqui se detendría');	                      
+                            		console.log('frame: ' + 1);	                      
+                            },
+                            2: function(obj) {
+                            		console.log('frame: ' + 2);	                      
+                            },
+                            3: function(obj) {
+                            		console.log('frame: ' + 3);	                      
+                            },
+                            4: function(obj) {
+                            		console.log('frame: ' + 4);	                      
+                            },
+                            5: function(obj) {
+                            		console.log('frame: ' + 5);	                      
                             }
-                            5: 
                         }
                     })
                     .isDraggable()
@@ -86,7 +106,15 @@
                         on_frame: {
                             2: function(obj) {
 
-                            }
+                            },
+                            
+                            1: function(obj) {
+                            	cont++;
+                            	if(cont==1){
+                            	
+	                        	$('#caja_animacion3').spChangeDir('left');
+	                        	}
+                             }
                         }
                     })
                     .isDraggable()
@@ -146,10 +174,108 @@
                     .isDraggable()
                     .activeOnClick()
                     .active();    
+                    
+                    $('#banda_04')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
 
+                        },
+                        on_last_frame: function(obj) {
+    
+                        },
+                        on_frame: {
+                            2: function(obj) {
+
+                            }
+                        }
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+                    $('#banda_05')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
+
+                        },
+                        on_last_frame: function(obj) {
+    
+                        },
+                        on_frame: {
+                            2: function(obj) {
+
+                            }
+                        }
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+
+                    $('#banda_06')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
+                        	
+
+                        },
+                        on_last_frame: function(obj) {
+                        	
+    
+                        },
+                        on_frame: {
+                            2: function(obj) {
+
+                            }
+                        }
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
+
+                    $('#banda_07')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5,
+                        on_first_frame: function(obj) {
+	                       
+                        },
+                        on_last_frame: function(obj) {
+	                          
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                              
+
+                        }}
+                    })
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+                    
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+                    $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
+                    .pan({fps: 10, speed: 7, dir: 'down'});
 
             });
             
@@ -287,12 +413,30 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation3">
-					     		<table>				     			
+					     		<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo1"/>
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
+					     		<div></div>
+					     		<div id="banda_04"></div>
+					     		<div id="banda_05"></div>
+					     		<div id="banda_06"></div>
+					     		<div id="banda_07"></div>
+					     		<div id="caja_animacion3"></div>
+					     		
+					     		
+					     		
+
+
+					     		<table id="tabla_animacion3">				     			
 							     	<tr>
 							     		<td><p>D</p></td>
-							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica 										EMS (Enterpise Messaging System)</td>
 							     	</tr>
 					     		</table>
+					     	</div>
+					     	</td>
+					     	</tr>
+					     	<tr>
+					     	<td>
 					     		<div id ="menu3">
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">

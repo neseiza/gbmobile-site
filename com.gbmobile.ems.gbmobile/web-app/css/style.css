@@ -188,7 +188,6 @@ margin: 0% 0%;
 
 #header
 {
-//background-image:url(header.png);
 background-repeat:no-repeat;
 width:798px;
 height:34px;
@@ -307,7 +306,8 @@ height: 512px;
 #animation3
 {
 
-height: 512px;
+height: 224px;
+
 }
 
 #animation4
@@ -412,6 +412,83 @@ height: 512px;
 	margin-top: 19%;
 	float: left;
 }
+
+#banda_04 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	float: left;
+	margin-left: -42%;
+}
+
+#banda_05 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -33%;
+	float: left;
+}
+
+#banda_06 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -24%;
+	float: left;
+}
+
+#banda_07 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -15%;
+	float: left;
+
+}
+#caja_animacion3 {
+	background: transparent url(../images/caja_animacion3.png) 0 0 no-repeat;
+	width:711px;
+	height: 91px;
+	margin-top: 7%;
+	margin-left: -55%;
+	float: left;
+
+}
+
+#maquina_abajo1 {
+	
+	width:332px;
+	height: 56px;
+	margin-top: -0.5%;
+	padding-left : 23%;
+	float: left;
+	
+}
+
+#tabla_animacion3 {
+	
+	width:540px;
+	height: 56px;
+	margin-top: -3.5%;
+	margin-left: 18%;
+	float: left;
+	//position: absolute;
+	
+}
+
+#tubo_03 {
+	
+	width:226px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 8%;
+	float: left;
+}
+
 
 #bandaSimple {
 	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
