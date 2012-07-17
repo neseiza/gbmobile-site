@@ -30,7 +30,7 @@ body {
 }
 
 td.op{
-	height: 500px;
+	height: 600px;
 	display: inline-block;
 	position: relative;
 }
@@ -52,6 +52,7 @@ td.op{
 
 #menu1 {
 	margin: 0 20%;
+	margin-top: 5%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
 	height: 300px;
@@ -399,6 +400,7 @@ height: 512px;
 	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
 	width: 137px;
 	height: 75px;
+	float: left;
 }
 
 #banda {
@@ -414,6 +416,7 @@ height: 512px;
 	width:144px;
 	height:32px;
 	float:left;
+	margin-top: 8%;
 }
 
 
@@ -422,6 +425,7 @@ height: 512px;
 	width:144px;
 	height:32px;
 	float: left;
+	margin-top: 8%;
 }
 
 #maquinaAbajo {
@@ -429,6 +433,10 @@ height: 512px;
 	width: 339px;
 	height: 56px;
 	float: left;
+}
+
+#maquinaAbajoMargin {
+	margin-top: 10%;
 }
 
 #main_machine {
@@ -475,4 +483,11 @@ color:#000000;
 
 #rightmiddle { 
  float: left;
+}
+
+#tubo-z{
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	margin-left: 22%;
 }

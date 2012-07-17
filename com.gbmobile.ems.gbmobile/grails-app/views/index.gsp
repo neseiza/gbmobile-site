@@ -215,9 +215,13 @@
 							    
 				    <tr>
 					    <td class="op">
+				     		<div id="tubo-z">
+						    	<div id="tubo02"></div>
+					    		<div id="bandaSimple"></div>
+					    		<div id="bandaSimple1"></div>
+				     		</div>
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
-						    		<div id="tubo02"></div>
 							     <div id="slider1">
 									<a class="buttons prev" href="#">left</a>
 									<div class="viewport">
@@ -258,8 +262,6 @@
 			        <tr>
 				     	<td>
 				     		
-					    		<div id="bandaSimple"></div>
-					    		<div id="bandaSimple1"></div>
 					    	
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
