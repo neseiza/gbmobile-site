@@ -42,13 +42,12 @@
 
 	
 <script type="text/javascript">
+var cont=0;
 	
 	(function($) {
             $(document).ready(function() {
-            
             var cont=0;
             	$('#maquina')
-
                     .sprite({
                         fps: 2, 
                         no_of_frames: 5,
@@ -56,14 +55,9 @@
                         // the following are optional: new in version 0.6...
                         start_at_frame: 0,
                         on_first_frame: function(obj) {
-   
                         },
                         on_last_frame: function(obj) {
-                        	//obj.spStop();
-                        	
-                        	
-                        	
-                        	
+                        	//obj.spStop();	
                         },
                         on_frame: {
                         	0: function(obj) {
@@ -101,10 +95,13 @@
 
                         },
                         on_last_frame: function(obj) {
+                         	cont ++;
+                         	if(cont==3)$('#caja_tubo02').spChangeDir('left');
     
                         },
                         on_frame: {
                             2: function(obj) {
+                           
 
                             },
                             
@@ -274,9 +271,32 @@
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+<<<<<<< HEAD
                     $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
                     .pan({fps: 10, speed: 7, dir: 'down'});
+=======
+                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70}); 
+                   
+                  
+                   // $('#caja_tubo02').spStop();      
+                    
+                  /*  $('#caja_tubo02')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
 
+                    .pan({fps: 10, speed: 7, dir: 'down',
+
+                     on_second_frame: function(obj){
+
+                      obj.spRelSpeed(10);
+
+                      obj.spChangeDir('left');
+
+>>>>>>> 9369592835b47024031fab9dcae0fee0c4e11cef
+
+
+                     }
+
+                    });*/
+                    
             });
             
             /* $('body').flyToTap(); */
@@ -311,13 +331,14 @@
 		    <div id="main" style="float:right;">
 			    <table border="2px">	    
 				    <tr>
-				    	<td >
+				    	<td>
 					    	<div id="animation1">
 
 					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
 					    		<div id="tubo">
 						    		<img src="images/tubo_01.png" />
 						    		<div id="caja_tubo01"></div>
+						    		<img id="tubo02" src="images/tubo_02.png" />
 					    		</div>
 							    <div id="banda"></div>
 							    <div id="rightmiddle">	
@@ -332,18 +353,11 @@
 							    	</div>			    				    	
 							    </div>
 							    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
-						    </div>	
-     	
+						    </div>		
 						 </td>
-					</tr>
-							    
-				    <tr>
-					    <td class="op">
-				     		<div id="tubo-z">
-						    	<div id="tubo02"></div>
-					    		<div id="bandaSimple"></div>
-					    		<div id="bandaSimple1"></div>
-				     		</div>
+					</tr>	    
+				   <tr>
+					    <td>
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">
@@ -359,9 +373,6 @@
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
-									<div id="maquinaAbajo"></div>
-									<div id="tubo_abajo"></div>
-									<div id="maquinaAbajo"></div>
 								</div>
 							     <!-- End Slider 1 -->
 				     		</div>
@@ -370,23 +381,25 @@
 			     	<tr>
 				     	<td>
 					     	<div id="animation2">
-					     	
-								<!--<div id="maquinaAbajo"></div>
-								<div id="maquinaAbajo"></div>
-								<img src="images/animacion2_arriba.png" style="margin-left: 20%;"/-->
-						     	<table>
-						     	<tr>
-						     		<td><p>D</p></td>
-						     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
-						     	</tr>
+					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
+						     	<table border="1px" bordercolor="white" class="center" width="48%">
+							     	<tr>
+							     		<td width="0%">
+								     		<div id="caja_tubo02"></div>
+							     		</td>
+							     		<td><p>D</p></td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     	</tr>
 						     	</table>
+						     	<div id="tubo03"></div>
+						     	<div id="bandaSimple"></div>
+					    		<div id="bandaSimple1"></div>
 					     	</div>	
 				     	</td>
 			     	</tr>	     	
+			        <tr>	     	
 			        <tr>
 				     	<td>
-				     		
-					    	
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">
@@ -402,10 +415,7 @@
 										</ul>
 									</div>
 									<a class="buttons next" href="#">right</a>
-								</div>
-									<!--<img id="p1" src="images/maquina_abajo.png" style="float:left"/>-->
-									<!--<img id="p2" src="images/maquina_abajo.png" style="float:left"/>-->
-									
+								</div>									
 							     <!-- End Slider 2 -->
 				     		</div>
 				     	</td>
