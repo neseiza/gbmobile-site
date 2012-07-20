@@ -36,7 +36,6 @@
 
 <!-- end carrusel -->
 
-
 <script src="${resource(dir: 'js', file: 'move.js')}"></script>
  <script>
       addEventListener('DOMContentLoaded', function(){
@@ -96,8 +95,6 @@
       
       
 </script>
-
-	
 <script type="text/javascript">
 var cont=0;
 	
@@ -114,6 +111,7 @@ var cont=0;
                         on_first_frame: function(obj) {
                         },
                         on_last_frame: function(obj) {
+<<<<<<< HEAD
                         		
                         }/*
 ,
@@ -136,6 +134,8 @@ var cont=0;
                             5: function(obj) {
                             		console.log('frame: ' + 5);	                      
                             }
+=======
+>>>>>>> 7e3707e24916d184c4041977e5baafa1b7a4fedf
                         }
 */
                     })
@@ -340,26 +340,8 @@ var cont=0;
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
-                   
-                  
-                   // $('#caja_tubo02').spStop();      
-                    
-                  /*  $('#caja_tubo02')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
-
-                    .pan({fps: 10, speed: 7, dir: 'down',
-
-                     on_second_frame: function(obj){
-
-                      obj.spRelSpeed(10);
-
-                      obj.spChangeDir('left');
-
-
-                     }
-
-                    });*/
-                    
-            });
+                    $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
+                    .pan({fps: 10, speed: 7, dir: 'down'});
             
   
     })(jQuery);
