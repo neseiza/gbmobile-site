@@ -111,33 +111,9 @@ var cont=0;
                         on_first_frame: function(obj) {
                         },
                         on_last_frame: function(obj) {
-<<<<<<< HEAD
-                        		
-                        }/*
-,
-                        on_frame: {
-                        	0: function(obj) {
-                            		console.log('frame: ' + 0);	                      
-                            },
-                            1: function(obj) {
-                            		console.log('frame: ' + 1);	                      
-                            },
-                            2: function(obj) {
-                            		console.log('frame: ' + 2);	                      
-                            },
-                            3: function(obj) {
-                            		console.log('frame: ' + 3);	                      
-                            },
-                            4: function(obj) {
-                            		obj.spStop();
-                            },
-                            5: function(obj) {
-                            		console.log('frame: ' + 5);	                      
-                            }
-=======
->>>>>>> 7e3707e24916d184c4041977e5baafa1b7a4fedf
-                        }
-*/
+		
+                         }
+
                     })
                     .isDraggable()
                     .activeOnClick()
