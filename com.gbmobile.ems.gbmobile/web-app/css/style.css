@@ -592,13 +592,12 @@ height: 512px;
 
 #caja_animacion4 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
+	background-position: 0 0;
 	width:53px;
 	height: 50px;
-	margin-top: 6.5%;
-	margin-left: -45%;
+	padding-left: 485px;
+	margin-top: -49px;
 	float: left;
-
 }
 
 
@@ -683,4 +682,14 @@ color:#000000;
 	float: left;
 	margin-left: 22%;
 	
+}
+
+#over-caja{
+	width: 577px;
+	height: 95px;
+	background: white;
+	overflow: hidden;
+	position: absolute;
+	margin-left: 336px;
+	margin-top: 101px;
 }

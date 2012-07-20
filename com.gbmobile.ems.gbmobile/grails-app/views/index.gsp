@@ -69,17 +69,29 @@
 
         .end();
 /*           End Animacion 3 */
-/*         Animacion 3 */        
+/*         Animacion 4 */        
+
         move('caja_animacion4')
-          .set('background-position','0 0')
           //.y(80)
-          .duration('2s')
+          .y(100)
+          .duration('.5s')
+          	.then()
+          		.x(410)
+          		.duration('15s')
+          		.then()
+          			.x(80)
+          			.rotate(180)
+          			.duration('3s')
+          		.pop()
+          	.pop()
+
+          /*.duration('2s')
           .ease('out')
           .then()
           	.y(48)
           	.duration('1s')
 	          .then()
-	          	.x(470)
+	          	.x(400)
 	          	.duration('8s')
 	          		.then()
 	          			.y(5)
@@ -87,7 +99,7 @@
 	          			.duration('1s')
 	          		.pop()	
 	          .pop()
-	      .pop()    
+	      .pop()*/    
 /*           End Animacion 3 */
         .end();
       }, false);
@@ -96,28 +108,17 @@
       
 </script>
 <script type="text/javascript">
-var cont=0;
 	
 	(function($) {
             $(document).ready(function() {
-            var cont=0;
             	$('#maquina')
                     .sprite({
                         fps: 2, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-                        },
-                        on_last_frame: function(obj) {
-		
-                         }
-
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                    });
                     
                  $('#banda')
                     .sprite({
@@ -125,19 +126,9 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-                        	
-
-                        },
-                        on_last_frame: function(obj) {
-                         	
-    
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                        
+                    });
                     
             	$('#bandaSimple')
 
@@ -146,25 +137,8 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-   
-                        },
-                        on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                        });
                     
                 $('#bandaSimple1')
 
@@ -173,25 +147,8 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-   
-                        },
-                        on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();    
+                        start_at_frame: 1
+                    });    
                     
                     $('#banda_04')
                     .sprite({
@@ -200,21 +157,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-
-                        },
-                        on_last_frame: function(obj) {
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
                     $('#banda_05')
                     .sprite({
@@ -223,21 +167,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-
-                        },
-                        on_last_frame: function(obj) {
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
 
                     $('#banda_06')
@@ -247,23 +178,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-                        	
-
-                        },
-                        on_last_frame: function(obj) {
-                        	
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
 
                     $('#banda1_animacion4')
@@ -296,21 +212,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-	                       
-                        },
-                        on_last_frame: function(obj) {
-	                          
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                              
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
@@ -500,8 +403,11 @@ var cont=0;
 					     		<div id="banda1_animacion4"></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
+					     		<div id="over-caja">
+					     			<div id="caja_animacion4"></div>
+					     		</div>
 					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>
-					     		<div id="caja_animacion4"></div>
+
 					     		<table id="tabla_animacion4">
 							     	<tr>
 							     		<td><p>G</p></td>
