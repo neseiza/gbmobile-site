@@ -11,7 +11,6 @@
 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'demo.js')}" ></script>
 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
 
@@ -37,9 +36,6 @@
 
 <!-- end carrusel -->
 
-
-<!-- <script type="text/javascript" src="scripts/demo.js"></script> -->
-
 	
 <script type="text/javascript">
 var cont=0;
@@ -50,7 +46,7 @@ var cont=0;
             	$('#maquina')
                     .sprite({
                         fps: 2, 
-                        no_of_frames: 5,
+                        no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 0,
@@ -58,26 +54,6 @@ var cont=0;
                         },
                         on_last_frame: function(obj) {
                         	//obj.spStop();	
-                        },
-                        on_frame: {
-                        	0: function(obj) {
-                            		obj.spStop();                      
-                            },
-                            1: function(obj) {
-                            		console.log('frame: ' + 1);	                      
-                            },
-                            2: function(obj) {
-                            		console.log('frame: ' + 2);	                      
-                            },
-                            3: function(obj) {
-                            		console.log('frame: ' + 3);	                      
-                            },
-                            4: function(obj) {
-                            		console.log('frame: ' + 4);	                      
-                            },
-                            5: function(obj) {
-                            		console.log('frame: ' + 5);	                      
-                            }
                         }
                     })
                     .isDraggable()
@@ -90,28 +66,33 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
+                        start_at_frame: 1,
                         on_first_frame: function(obj) {
+                        	cont ++;
+                        	console.log('frame 1 ' + cont);
+                        	if(cont == 35)
+                        		$('#caja_tubo02').spChangeDir('down')
 
                         },
                         on_last_frame: function(obj) {
                          	cont ++;
-                         	if(cont==3)$('#caja_tubo02').spChangeDir('left');
+                        	console.log('frame 2 ' + cont);                         	                        
+                        	if(cont==6){
+                        		console.log('Ahora me voy para la izquierda ... :)');
+                        		$('#caja_tubo02').spChangeDir('left')
+                        	}
+                        	if(cont==34){
+                        		console.log('Ahora me voy para abajo ... :)');
+                        		$('#caja_tubo02').spChangeDir('up')
+/*                        		$('#caja_tubo02').spChangeDir('down');*/
+                        	}
+                        	                            	//cont ++;
+                            	/*console.log(' ' + cont);
+                            	if(cont==10){
+                            		console.log('Ahora me voy para abajo ... :)');
+                            		$('#caja_tubo02').spChangeDir('down');
+                            	}*/
     
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                           
-
-                            },
-                            
-                            1: function(obj) {
-                            	cont++;
-                            	if(cont==1){
-                            	
-	                        	$('#caja_animacion3').spChangeDir('left');
-	                        	}
-                             }
                         }
                     })
                     .isDraggable()
@@ -271,35 +252,11 @@ var cont=0;
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
-<<<<<<< HEAD
+                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
                     $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
                     .pan({fps: 10, speed: 7, dir: 'down'});
-=======
-                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70}); 
-                   
-                  
-                   // $('#caja_tubo02').spStop();      
-                    
-                  /*  $('#caja_tubo02')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
-
-                    .pan({fps: 10, speed: 7, dir: 'down',
-
-                     on_second_frame: function(obj){
-
-                      obj.spRelSpeed(10);
-
-                      obj.spChangeDir('left');
-
->>>>>>> 9369592835b47024031fab9dcae0fee0c4e11cef
-
-
-                     }
-
-                    });*/
-                    
             });
             
-            /* $('body').flyToTap(); */
   
     })(jQuery);
     
@@ -384,7 +341,7 @@ var cont=0;
 					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
 						     	<table border="1px" bordercolor="white" class="center" width="48%">
 							     	<tr>
-							     		<td width="0%">
+							     		<td>
 								     		<div id="caja_tubo02"></div>
 							     		</td>
 							     		<td><p>D</p></td>
@@ -439,7 +396,7 @@ var cont=0;
 					     		<table id="tabla_animacion3">				     			
 							     	<tr>
 							     		<td><p>D</p></td>
-							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica 										EMS (Enterpise Messaging System)</td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
 							     	</tr>
 					     		</table>
 					     	</div>

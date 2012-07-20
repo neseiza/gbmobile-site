@@ -173,6 +173,7 @@ margin: 0% 0%;
 
 table.center {
     margin-left:23%;
+    margin-top: -2%;
 }
   
 #page
@@ -366,26 +367,24 @@ height: 512px;
 }
 
 #caja_tubo01{
-	background: transparent url(../images/cajaP_cerrada.png) 0 0 repeat-y;
+	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
 	width:53px;
 	height: 50px;
 	float: right;
-	//padding-top: 13%;
 	padding-right: 11%;
 	position: relative;
 	overflow: hidden;
 }
 
 #caja_tubo02{
-	background: transparent url(../images/caja_animacion3.png) 0 0 repeat;
-	width:386px;
-	height: 50px;
+	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
+	width:370px;
+	height: 32px;
 	float: left;
 	padding-top: 17%;
-	padding-right: 7%;
 	position: relative;
 	overflow: hidden;
-	margin-top: -3.5%;
+	margin-top: 4.5%;
 }
 
 #tubo { 
