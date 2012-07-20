@@ -36,6 +36,30 @@
 
 <!-- end carrusel -->
 
+<<<<<<< HEAD
+=======
+
+<script src="${resource(dir: 'js', file: 'move.js')}"></script>
+ <script>
+      addEventListener('DOMContentLoaded', function(){
+        move('caja_animacion3')
+          .x(500)
+          .y(200)
+          .ease('in-out')
+          .then()
+            .x(-500)
+            .then()
+              .y(-200)
+              .duration('5s')
+              .delay('.5s')
+              .rotate(180)
+              .pop()
+            .pop()
+          .end();
+      }, false);
+</script>
+
+>>>>>>> 3d90ab73d06d76c6e28b3cd4c75ba18b9adce42d
 	
 <script type="text/javascript">
 var cont=0;
@@ -54,6 +78,29 @@ var cont=0;
                         },
                         on_last_frame: function(obj) {
                         	//obj.spStop();	
+<<<<<<< HEAD
+=======
+                        },
+                        on_frame: {
+                        	/*0: function(obj) {
+                            		console.log('frame: ' + 0);	                      
+                            },
+                            1: function(obj) {
+                            		console.log('frame: ' + 1);	                      
+                            },
+                            2: function(obj) {
+                            		console.log('frame: ' + 2);	                      
+                            },
+                            3: function(obj) {
+                            		console.log('frame: ' + 3);	                      
+                            },
+                            4: function(obj) {
+                            		console.log('frame: ' + 4);	                      
+                            },
+                            5: function(obj) {
+                            		console.log('frame: ' + 5);	                      
+                            }*/
+>>>>>>> 3d90ab73d06d76c6e28b3cd4c75ba18b9adce42d
                         }
                     })
                     .isDraggable()
@@ -253,8 +300,30 @@ var cont=0;
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
+<<<<<<< HEAD
                     $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
                     .pan({fps: 10, speed: 7, dir: 'down'});
+=======
+                   
+                  
+                   // $('#caja_tubo02').spStop();      
+                    
+                  /*  $('#caja_tubo02')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
+
+                    .pan({fps: 10, speed: 7, dir: 'down',
+
+                     on_second_frame: function(obj){
+
+                      obj.spRelSpeed(10);
+
+                      obj.spChangeDir('left');
+
+
+                     }
+
+                    });*/
+                    
+>>>>>>> 3d90ab73d06d76c6e28b3cd4c75ba18b9adce42d
             });
             
   

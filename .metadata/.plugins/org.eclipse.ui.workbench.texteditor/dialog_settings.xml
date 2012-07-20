@@ -2,15 +2,9 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="243" key="DIALOG_WIDTH"/>
-<<<<<<< HEAD
 		<item value="219" key="DIALOG_Y_ORIGIN"/>
 		<item value="379" key="DIALOG_HEIGHT"/>
 		<item value="627" key="DIALOG_X_ORIGIN"/>
-=======
-		<item value="328" key="DIALOG_Y_ORIGIN"/>
-		<item value="379" key="DIALOG_HEIGHT"/>
-		<item value="616" key="DIALOG_X_ORIGIN"/>
->>>>>>> adcc9b25aaf1f514d8cfc218fdd783907101cf03
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -19,23 +13,12 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-<<<<<<< HEAD
-		<item value="../images" key="selection"/>
+		<item value="head" key="selection"/>
 		<list key="findhistory">
-			<item value="images"/>
-			<item value="garra"/>
+			<item value="HEAD"/>
+			<item value="head"/>
 		</list>
 		<list key="replacehistory">
-			<item value="../images"/>
-=======
-		<item value="menu" key="selection"/>
-		<list key="findhistory">
-			<item value="menu"/>
-			<item value="caja"/>
-			<item value="garra"/>
-		</list>
-		<list key="replacehistory">
->>>>>>> adcc9b25aaf1f514d8cfc218fdd783907101cf03
 		</list>
 	</section>
 </section>
