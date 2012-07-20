@@ -1,0 +1,594 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+//este es el mio
+//otro
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/background.png), -moz-linear-gradient(top, #245073 0%, #000000 100%);
+	background-image: url(../images/background.png),-ms-linear-gradient(top, #5CBEFF -100%, #000000 100%);
+	background-image: url(../images/background.png), -o-linear-gradient(top, #5CBEFF -100%, #000000 100%);
+	background-image: url(../images/background.png),-webkit-gradient(linear, left top, left bottom, color-stop(-1, #5CBEFF), color-stop(1, #000000));
+	background-image: url(../images/background.png),-webkit-linear-gradient(top, #5CBEFF -100%, #000000 100%);
+	background-image: url(../images/background.png), linear-gradient(to bottom, #5CBEFF -100%, #000000 100%);
+	text-align: left;
+	font-family: "Sonsie One";
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+
+#menu-item {
+	height: 30px;
+	padding-bottom: 20px;
+	
+}
+
+
+#menu {
+	height: 65px;
+	width: 100%;
+	vertical-align: middle;
+	background-image:url(../images/menu.png);
+	background-repeat: repeat-x;
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	position: absolute;
+	z-index: 2;
+}
+
+#menu1 {
+	margin: 0 20%;
+	margin-top: -1%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#menu2 {
+	clear: both;
+	margin: 0 20%;
+	margin-top: -1%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#menu3 {
+	margin: 0 20%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+
+#menu4 {
+	margin: 0 20%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#menu5 {
+	margin: 0 20%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+
+#menu6 {
+	margin: 0 20%;
+	padding-right: 10.6%;
+	padding-left: : 2%;
+	height: 300px;
+	vertical-align: middle;
+	width: 41%;
+	background-image: url(../images/carton_carrusel.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#logo{
+	//height:50px; 
+	padding-top: 10px;
+	alig:left;
+	
+}
+
+*
+{
+  margin: 0 auto 0 auto;
+  text-align:left;  
+}
+
+html, body {
+text-align: center;
+}
+
+
+p {
+text-align: left;
+font-family: "Sonsie One";
+font-style: normal;
+font-size: 12px;
+text-shadow: 0.2em 0.2em #000;
+font-weight: normal;
+}
+
+table{
+	text-align: center;
+font-family: "Sonsie One";
+font-style: normal;
+font-size: 12px;
+text-shadow: 0.1em 0.1em #000;
+font-weight: 10;
+margin: 0% 0%; 
+}
+
+table.center {
+    margin-left:23%;
+    margin-top: -2%;
+}
+  
+#page
+{
+  width:100%;
+  //padding-left:20px;
+  //padding-right:20px;
+}
+
+
+
+#header
+{
+background-repeat:no-repeat;
+width:798px;
+height:34px;
+margin:0 auto 0 auto;
+color:#34699F;
+text-align:center;
+font-style:italic;
+}
+
+#pagetop
+{
+height:70px;
+}
+
+#pagetop h1
+{
+display:block;
+float:left;
+line-height:90px;
+color:#FFFFFF;
+text-align:left;
+font-size:30px;
+font-weight:bold;
+
+float:left;
+margin-left:23px;
+}
+
+#line{
+	margin: 0;
+	padding: 0;
+	height: 24px;
+	vertical-align: middle;
+	width: 100%;
+	background-image:url(../images/barra.png);
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#pagetop ul {
+	padding-bottom: : 0px;
+	margin-left: 20%;
+	height:65px;
+	text-align:center;
+	vertical-align: middle;
+	font-family: "Kaushan script";
+	width: 800px;
+	text-shadow: 0.1em 0.1em #000;
+	text-decoration:none;
+	
+	
+}
+
+#pagetop ul li , #pagetop ul li a, #pagetop ul li a:visited{
+	display:block;
+	float:right;
+	margin: 0px;
+	text-align:center;
+	line-height:65px;
+	color:#FFFFFF;
+	padding-left:5px;
+	padding-right:10px;
+	font-size:20px;
+	//font-weight:bold;
+	text-decoration: none;
+	font-style: normal;
+}
+
+#pagetop ul li a:hover{
+color:#34699F;
+}
+
+
+
+#main 
+{
+width:1500px;
+//margin-left: 25%;
+}
+
+
+
+#main .content
+{
+width:650px;
+text-align:justify;
+color:#000000;
+word-spacing:3px;
+}
+
+#main .content p
+{
+margin-top:8px;
+margin-bottom:8px;
+}
+
+#main .content h1
+{
+font-size:19px;
+margin-bottom:12px;
+}
+
+
+#animation1
+{
+margin: 0% 10%
+}
+
+#animation2
+{
+
+}
+
+#animation3
+{
+
+height: 224px;
+
+}
+
+#animation4
+{
+
+height: 512px;
+}
+
+#animation5
+{
+
+height: 512px;
+}
+
+#animation6
+{
+
+height: 512px;
+}
+
+#animation7
+{
+
+height: 512px;
+}
+
+#maquina {
+	background: transparent url(../images/maquina_anima.png) 0 0 no-repeat;
+	width:467px;
+	height: 353px;
+	//margin-top: 11%;
+}
+
+#garra {
+	background: transparent url(../images/garra_02.png) 0 0 no-repeat;
+	position: absolute;
+    width: 100px;
+    height: 327px;
+    z-index: 1;
+}
+#caja {
+	background: transparent url(../images/cajaS_cerrada.png) 0 0 no-repeat;
+	position: absolute;
+    width: 52px;
+    height: 46px;
+}
+
+
+#foco {
+	background: transparent url(../images/foco_03.png) 0 0 repeat-y;
+	width:48px;
+	height: 50px;
+	float: right;
+	padding-top: 2%;
+	padding-right: 5%;
+	position: relative;
+	overflow: hidden;
+}
+
+#caja_tubo01{
+	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
+	width:53px;
+	height: 50px;
+	float: right;
+	padding-right: 11%;
+	position: relative;
+	overflow: hidden;
+}
+
+#caja_tubo02{
+	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
+	width:370px;
+	height: 32px;
+	float: left;
+	padding-top: 17%;
+	position: relative;
+	overflow: hidden;
+	margin-top: 4.5%;
+}
+
+#tubo { 
+	//background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
+	width:249px;
+	height: 70%;
+	margin-top: 11%;
+	float: left;
+	position: relative;
+}
+
+#tubo_abajo{
+	background: transparent url(../images/tubo_abajo.png) 0 0 no-repeat;
+	width:115px;
+	height: 112px;
+	float: left;
+	/*margin-top: 18%;
+	margin-right: -37%;
+	position: relative;
+	overflow: hidden;*/
+}
+
+#tubo02{
+	
+	width:135px;
+	height: 75px;
+	float: right;
+	margin-top: 18%;
+	margin-right: -37%;
+	position: relative;
+	overflow: hidden;
+}
+
+#tubo03{
+	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
+	width:135px;
+	height: 35px;
+	float: left;
+	margin-left: 22%;
+	overflow: hidden;
+}
+
+#banda {
+	background: transparent url(../images/banda_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 103px;
+	margin-top: 19%;
+	float: left;
+}
+
+#banda_04 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	float: left;
+	margin-left: -42%;
+}
+
+#banda_05 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -33%;
+	float: left;
+}
+
+#banda_06 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -24%;
+	float: left;
+}
+
+#banda_07 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -15%;
+	float: left;
+
+}
+#caja_animacion3 {
+	background: transparent url(../images/caja_animacion3.png) 0 0 no-repeat;
+	width:711px;
+	height: 91px;
+	margin-top: 7%;
+	margin-left: -55%;
+	float: left;
+
+}
+
+#maquina_abajo1 {
+	
+	width:332px;
+	height: 56px;
+	margin-top: -0.5%;
+	padding-left : 23%;
+	float: left;
+	
+}
+
+#tabla_animacion3 {
+	
+	width:540px;
+	height: 56px;
+	margin-top: -3.5%;
+	margin-left: 18%;
+	float: left;
+	//position: absolute;
+	
+}
+
+#tubo_03 {
+	
+	width:226px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 8%;
+	float: left;
+}
+
+
+#bandaSimple {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height:32px;
+	float:left;
+}
+
+
+#bandaSimple1 {
+	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
+	width:144px;
+	height:32px;
+	float: left;
+}
+
+#maquinaAbajo {
+	background: transparent url(../images/maquina_abajo.png) 0 0 no-repeat;
+	width: 339px;
+	height: 56px;
+	float: left;
+}
+
+#maquinaAbajoMargin {
+	margin-top: 10%;
+}
+
+#main_machine {
+	border: #000000;
+	background-color: #ffffff;
+}
+
+
+
+.buttomRight
+{
+text-align: justify;
+padding-top: 75%;
+}
+
+
+P:first-letter 
+{
+font-size: 500%;
+font-weight: bold;
+}
+
+
+#footer {
+display:block;
+width: 798px;
+height:50px;
+text-align:right;
+font-size:10px;
+line-height:48px;
+}
+
+#footer p{
+padding-right:75px;
+text-align:right;
+}
+
+#footer, #footer a, #footer a:visited{
+color:#65A9ED;
+}
+
+#footer a:hover{
+color:#000000;
+}
+
+#rightmiddle { 
+ float: left;
+}
+
+#tubo-z{
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	margin-left: 22%;
+	
+}
