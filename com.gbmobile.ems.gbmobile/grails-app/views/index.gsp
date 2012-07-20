@@ -40,21 +40,61 @@
 <script src="${resource(dir: 'js', file: 'move.js')}"></script>
  <script>
       addEventListener('DOMContentLoaded', function(){
+/*         Animacion 3 */
         move('caja_animacion3')
-          .x(500)
-          .y(200)
-          .ease('in-out')
+          .set('background-position','0 0')
+          //.y(80)
+          .duration('2s')
+          .ease('out')
           .then()
-            .x(-500)
-            .then()
-              .y(-200)
-              .duration('5s')
-              .delay('.5s')
-              .rotate(180)
-              .pop()
-            .pop()
-          .end();
+          	.y(48)
+          	.duration('1s')
+	          .then()
+	          	.x(-570)
+	          	.duration('8s')
+	          	.then()
+	          		.ease('in')
+	          		.y(80)
+	          		.x(-20)
+	          		.rotate(-90)
+	          		.duration('2s')
+	          		.then()
+	          			.x(5)
+	          			.y(-15)
+	          			.set('background-position', '-60px')
+	          			.duration('1s')
+	          		.pop()	
+	          	.pop()
+	          .pop()
+	      .pop()    
+
+        .end();
+/*           End Animacion 3 */
+/*         Animacion 3 */        
+        move('caja_animacion4')
+          .set('background-position','0 0')
+          //.y(80)
+          .duration('2s')
+          .ease('out')
+          .then()
+          	.y(48)
+          	.duration('1s')
+	          .then()
+	          	.x(470)
+	          	.duration('8s')
+	          		.then()
+	          			.y(5)
+	          			.set('background-position', '0 60px')
+	          			.duration('1s')
+	          		.pop()	
+	          .pop()
+	      .pop()    
+/*           End Animacion 3 */
+        .end();
       }, false);
+      
+      
+      
 </script>
 
 	
@@ -67,17 +107,18 @@ var cont=0;
             	$('#maquina')
                     .sprite({
                         fps: 2, 
-                        no_of_frames: 5,
+                        no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 0,
+                        start_at_frame: 1,
                         on_first_frame: function(obj) {
                         },
                         on_last_frame: function(obj) {
-                        	//obj.spStop();	
-                        },
+                        		
+                        }/*
+,
                         on_frame: {
-                        	/*0: function(obj) {
+                        	0: function(obj) {
                             		console.log('frame: ' + 0);	                      
                             },
                             1: function(obj) {
@@ -90,12 +131,13 @@ var cont=0;
                             		console.log('frame: ' + 3);	                      
                             },
                             4: function(obj) {
-                            		console.log('frame: ' + 4);	                      
+                            		obj.spStop();
                             },
                             5: function(obj) {
                             		console.log('frame: ' + 5);	                      
-                            }*/
+                            }
                         }
+*/
                     })
                     .isDraggable()
                     .activeOnClick()
@@ -109,30 +151,11 @@ var cont=0;
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1,
                         on_first_frame: function(obj) {
-                        	cont ++;
-                        	console.log('frame 1 ' + cont);
-                        	if(cont == 35)
-                        		$('#caja_tubo02').spChangeDir('down')
+                        	
 
                         },
                         on_last_frame: function(obj) {
-                         	cont ++;
-                        	console.log('frame 2 ' + cont);                         	                        
-                        	if(cont==6){
-                        		console.log('Ahora me voy para la izquierda ... :)');
-                        		$('#caja_tubo02').spChangeDir('left')
-                        	}
-                        	if(cont==34){
-                        		console.log('Ahora me voy para abajo ... :)');
-                        		$('#caja_tubo02').spChangeDir('up')
-/*                        		$('#caja_tubo02').spChangeDir('down');*/
-                        	}
-                        	                            	//cont ++;
-                            	/*console.log(' ' + cont);
-                            	if(cont==10){
-                            		console.log('Ahora me voy para abajo ... :)');
-                            		$('#caja_tubo02').spChangeDir('down');
-                            	}*/
+                         	
     
                         }
                     })
@@ -267,6 +290,29 @@ var cont=0;
                     .active();
                     
 
+                    $('#banda1_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                    
+
+                    $('#banda2_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                    $('#banda3_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                        
+                        
                     $('#banda_07')
                     .sprite({
                         fps: 5, 
@@ -399,7 +445,7 @@ var cont=0;
 					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
 						     	<table border="1px" bordercolor="white" class="center" width="48%">
 							     	<tr>
-							     		<td>
+							     		<td with="54%" height="0%">
 								     		<div id="caja_tubo02"></div>
 							     		</td>
 							     		<td><p>D</p></td>
@@ -440,7 +486,7 @@ var cont=0;
 					     	<div id="animation3">
 					     		<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo1"/>
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
-					     		<div></div>
+
 					     		<div id="banda_04"></div>
 					     		<div id="banda_05"></div>
 					     		<div id="banda_06"></div>
@@ -463,6 +509,7 @@ var cont=0;
 					     	<tr>
 					     	<td>
 					     		<div id ="menu3">
+					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
 										<a class="buttons prev" href="#">left</a>
@@ -486,10 +533,21 @@ var cont=0;
 		        	<tr>
 				     	<td>
 					     	<div id="animation4">
-					     		<table>
+					     	
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
+					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
+
+
+
+					     		<div id="banda1_animacion4"></div>
+					     		<div id="banda2_animacion4"></div>
+					     		<div id="banda3_animacion4"></div>
+					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>
+					     		<div id="caja_animacion4"></div>
+					     		<table id="tabla_animacion4">
 							     	<tr>
-							     		<td><p>g</p></td>
-							     		<td>b Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     		<td><p>G</p></td>
+							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
 							     	</tr>
 						     	</table>
 					     	</div>
