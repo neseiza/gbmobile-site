@@ -317,13 +317,13 @@ height: 226px;
 #animation5
 {
 
-height: 512px;
+height: 225px;
 }
 
 #animation6
 {
 
-height: 512px;
+height: 226px;
 }
 
 #animation7
@@ -602,6 +602,204 @@ height: 512px;
 
 /* end animacion 4 */
 
+
+
+
+
+/* 	Animacion 5 */
+
+#tabla_animacion5 {
+	
+	width:482px;
+	height: 56px;
+	margin-top: -11.5%;
+	margin-left: 42%;
+	float: left;
+	//position: absolute;
+	
+}
+
+#caja_animacion5 {
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 -50px;
+	width:53px;
+	height: 50px;
+	margin-top: 6.6%;
+	margin-left: -40%;
+	float: left;
+}
+
+#banda1_animacion5 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -15.2%;
+	float: left;
+
+}
+
+#banda2_animacion5 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -4.8%;
+	float: left;
+
+}
+
+#banda3_animacion5 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -0.8%;
+	float: left;
+
+}
+
+#banda4_animacion5 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -0.8%;
+	float: left;
+
+}
+
+#tubo_05 {
+	
+	width:226px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 28%;
+	float: left;
+}
+
+#tubo_menu5 {
+	width:120px;
+	height: 153px;
+	margin-top: -38%;
+	margin-left: 123.3%;
+	float: left;
+
+}
+
+
+
+/* 	end Animacion 5 */
+	
+
+
+
+/* 	Animacion 6 */
+
+
+
+#caja1_animacion6 {
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 -50px;
+	width:53px;
+	height: 50px;
+	margin-top: 0%;
+	margin-left: 3.7%;
+	float: left;
+}
+
+#caja2_animacion6 {
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 -50px;
+	width:53px;
+	height: 50px;
+	margin-top: 0%;
+	margin-left: 78%;
+	float: left;
+}
+
+#banda1_animacion6 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -10.2%;
+	float: left;
+
+}
+
+#banda2_animacion6 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -20.8%;
+	float: left;
+
+}
+
+#banda3_animacion6 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -40%;
+	float: left;
+
+}
+
+#banda4_animacion6 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -50.8%;
+	float: left;
+
+}
+
+#tubo_corto_animacion6 {
+	
+	width:120px;
+	height: 33px;
+	margin-top: 12.9%;
+	margin-left: -28.4%;
+	float: left;
+}
+
+#tubo_06 {
+	
+	width:200px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 0%;
+	float: left;
+}
+
+#tubo_07 {
+	
+	width:200px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 22%;
+	float: left;
+}
+
+#maquina_abajo3 {
+	
+	width: 321px;
+	height: 56px;
+	float: left;
+	margin-top: -0.5%;
+}
+
+
+
+
+/* 	end Animacion 6 */
+	
+
+
 #bandaSimple {
 	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
 	width:144px;
@@ -684,7 +882,7 @@ color:#000000;
 }
 
 #over-caja{
-	width: 577px;
+	width: 715px;
 	height: 95px;
 	overflow: hidden;
 	position: absolute;
