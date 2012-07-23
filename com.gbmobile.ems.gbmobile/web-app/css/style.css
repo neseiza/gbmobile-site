@@ -76,7 +76,7 @@ body {
 }
 
 #menu3 {
-	margin: 0 20%;
+	margin: -1% 20%;
 	padding-right: 10.6%;
 	padding-left: : 2%;
 	height: 300px;
@@ -153,6 +153,8 @@ text-align: center;
 
 p {
 text-align: left;
+vertical-align: top;
+vertical-align: text-top;
 font-family: "Sonsie One";
 font-style: normal;
 font-size: 12px;
@@ -161,13 +163,13 @@ font-weight: normal;
 }
 
 table{
-	text-align: center;
-font-family: "Sonsie One";
-font-style: normal;
-font-size: 12px;
-text-shadow: 0.1em 0.1em #000;
-font-weight: 10;
-margin: 0% 0%; 
+	text-align: justify;
+	font-family: "Sonsie One";
+	font-style: normal;
+	font-size: 12px;
+	text-shadow: 0.1em 0.1em #000;
+	font-weight: 10;
+	margin: 0% 0%; 
 }
 
 table.center {
@@ -304,14 +306,12 @@ margin: 0% 10%
 #animation3
 {
 
-height: 224px;
 
 }
 
 #animation4
 {
-
-height: 226px;
+	padding-top: 1%;
 }
 
 #animation5
@@ -381,6 +381,7 @@ height: 512px;
 	height: 0px;
 	margin-top: -22%;
 	margin-right: 5%;
+	float: right;
 }
 
 #tubo { 
@@ -437,7 +438,7 @@ height: 512px;
 	height: 32px;
 	margin-top: 13%;
 	float: left;
-	margin-left: -49%;
+	margin-left: -46%;
 }
 
 #banda_05 {
@@ -445,7 +446,7 @@ height: 512px;
 	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -38.3%;
+	margin-left: -35.3%;
 	float: left;
 }
 
@@ -454,7 +455,7 @@ height: 512px;
 	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -27.6%;
+	margin-left: -24.6%;
 	float: left;
 }
 
@@ -463,7 +464,7 @@ height: 512px;
 	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -17%;
+	margin-left: -14%;
 	float: left;
 
 }
@@ -472,22 +473,31 @@ height: 512px;
 	background: transparent url(../images/tubo_menu3.png) 0 0 no-repeat;
 	width:120px;
 	height: 153px;
-	margin-top: 7%;
-	margin-left: -19.7%;
 	float: left;
+	margin-top: 7%;
+	margin-right: -25%;
+	margin-left: -19%;
+	
 
 }
+/*
+#tubo_menu3 {
+	float: left;
+	margin-left: -22%;
+	margin-top: 8%;
+	z-index: -1;	
+}*/
 
 #caja_animacion3 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 6.6%;
+	margin-top: 4.5%;
 	margin-left: -13%;
 	float: left;
 
 }
+
 #maquina_abajo1 {
 	
 	width:332px;
@@ -499,35 +509,29 @@ height: 512px;
 }
 
 #tabla_animacion3 {
-	
-	width:540px;
-	height: 56px;
-	margin-top: -3.5%;
-	margin-left: 18%;
-	float: left;
-	//position: absolute;
+	float: left;	
+	width:30%;
+	margin-top: 3.5%;
+	margin-left: -25%;
 	
 }
+
 #tubo_03 {
 	
 	width:226px;
 	height: 108px;
 	margin-top: -0.5%;
-	margin-left: 8%;
 	float: left;
+	z-index: -1;
 }
 
 /* Animacion 4 */
 
 #tabla_animacion4 {
-	
-	width:616px;
-	height: 56px;
-	margin-top: 1.5%;
-	margin-left: -4%;
 	float: left;
-	//position: absolute;
-	
+	width:30%;
+	margin-top: 3.5%;
+		
 }
 
 #tubo_04 {
@@ -570,12 +574,13 @@ height: 512px;
 }
 
 #maquina_abajo2 {
-	background: transparent url(../images/maquina_abajo.png) 0 0 no-repeat;
+	//background: transparent url(../images/maquina_abajo.png) 0 0 no-repeat;
 	width: 339px;
 	height: 56px;
 	float: left;
-	margin-left: 9%;
+	margin-left: -20%;
 	margin-top: -0.5%;
+	z-index: -1;
 }
 
 #tubo_corto_animacion4 {

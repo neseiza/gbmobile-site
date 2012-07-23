@@ -30,9 +30,12 @@
 		</script>	
 	<!-- end carrusel -->
 
+
+
  <script>
       addEventListener('DOMContentLoaded', function(){
       
+      	/* Animation 2 */
       	 move('caja_tubo02')          
           .rotate(180)  
           .y(-50)
@@ -47,35 +50,35 @@
 	          		.then()
 	          			.rotate(-90)
 	          			.y(50)
-	          			//.duration('1s')
+	          			.duration('1s')
 	          			.then()
 	          				.x(30)
 	          				.y(12)
 	          				.set('width','0')
 	          				.duration('1s')
-	          			.pop()
+	          			//.pop()
 	          		.pop()
 	          	.pop()
 	          .pop()
 	         .pop()
-	       .end();     
-			      
-       /*         Animacion 3 */
+	       .end();  
+	       /* End Animation 2 */
+	       
+	    /* Animacion 3 */
         move('caja_animacion3')
           .set('background-position','0 0')
-          //.y(80)
           .duration('2s')
           .ease('out')
           .then()
-          	.y(48)
+          	.y(78)
           	.duration('1s')
 	          .then()
-	          	.x(-570)
+	          	.x(-550)
 	          	.duration('8s')
 	          	.then()
 	          		.ease('in')
 	          		.y(80)
-	          		.x(-20)
+	          		.x(-10)
 	          		.rotate(-90)
 	          		.duration('2s')
 	          		.then()
@@ -87,17 +90,17 @@
 	          	.pop()
 	          .pop()
 	      .pop()    
-
         .end();
-/*           End Animacion 3 */
-/*         Animacion 4 */        
+        /* End Animacion 3 */
+
+        /* Animacion 4 */        
 
         move('caja_animacion4')
           //.y(80)
           .y(100)
           .duration('2s')
           	.then()
-          		.x(425)
+          		.x(450)
           		.duration('5s')
           		.then()
           			.x(100)
@@ -105,53 +108,39 @@
           			.rotate(90)
           			.duration('1s')
           		.pop()
-          	.pop()
-
-          /*.duration('2s')
-          .ease('out')
-          .then()
-          	.y(48)
-          	.duration('1s')
-	          .then()
-	          	.x(400)
-	          	.duration('8s')
-	          		.then()
-	          			.y(5)
-	          			.set('background-position', '0 60px')
-	          			.duration('1s')
-	          		.pop()	
-	          .pop()
-	      .pop()*/    
-/*           End Animacion 3 */
+          	.pop() 	      
         .end();
-        
-      }, false);
+        /* End Animacion 4 */        
+        }, false);
       
       
       
 </script>
+
+	
 <script type="text/javascript">
+var cont=0;
 	
 	(function($) {
             $(document).ready(function() {
-	            $('#maquina')
+            var cont=0;
+            	$('#maquina')
                     .sprite({
                         fps: 2, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                    });
+                    })
                     
-                  $('#banda')
+                 $('#banda')
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                        
-                    });
+                    })
                     
             	$('#bandaSimple')
 
@@ -161,7 +150,7 @@
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                        });
+                    })
                     
                 $('#bandaSimple1')
 
@@ -171,7 +160,7 @@
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                    });    
+                    })   
                     
                     $('#banda_04')
                     .sprite({
@@ -179,9 +168,8 @@
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
+                        start_at_frame: 5
+                    })
                     
                     $('#banda_05')
                     .sprite({
@@ -189,10 +177,8 @@
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
-                    
+                        start_at_frame: 5
+                    })
 
                     $('#banda_06')
                     .sprite({
@@ -200,50 +186,50 @@
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
+                        start_at_frame: 5
+                    })
                     
-
-                    $('#banda1_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                    
-
-                    $('#banda2_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-
-
-                    $('#banda3_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-
-
-                        
-                        
                     $('#banda_07')
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });  
+                        start_at_frame: 5
+                    })
                     
+                    $('#banda1_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5
+                    })
+                    
+                    $('#banda2_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5
+                    })
+                    
+                    $('#banda3_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5
+                    })
+
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
-                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70}); 
-                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
-                    $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
-                    .pan({fps: 10, speed: 7, dir: 'down'});
+                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+                    
+            });
             
   
     })(jQuery);
@@ -329,7 +315,8 @@
 					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
 						     	<table border="0px" bordercolor="white" class="center" width="48%">
 							     	<tr>
-							     		<td width="370px"> id="caja_tubo02"></div>
+							     		<td width="370px">
+								     		<div id="caja_tubo02"></div>
 							     		</td>
 							     		<td><p>D</p></td>
 							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
@@ -366,8 +353,14 @@
 			     	</tr>	     	
 			     	<tr>
 				     	<td>
-					     	<div id="animation3">
+					     	<div id="animation3">					     		
 					     		<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo1"/>
+					     		<table id="tabla_animacion3" align="left">				     			
+							     	<tr>
+							     		<td><p>D</p></td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     	</tr>
+					     		</table>
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
 
 					     		<div id="banda_04"></div>
@@ -375,18 +368,14 @@
 					     		<div id="banda_06"></div>
 					     		<div id="banda_07"></div>
 					     		<div id="caja_animacion3"></div>
-					     		<table id="tabla_animacion3">				     			
-							     	<tr>
-							     		<td><p>D</p></td>
-							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
-							     	</tr>
-					     		</table>
+					     		
 					     	</div>
 					     	</td>
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<div id ="menu3">
+					     		<!-- <img src="${resource(dir: 'images', file: 'tubo_menu3.png')}" id="tubo_menu3"/> -->
+					     		<div id ="menu3">					     			 
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
@@ -413,24 +402,20 @@
 					     	<div id="animation4">
 					     	
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
+					     		<table id="tabla_animacion4">
+							     	<tr>
+							     		<td><p>g</p></td>
+							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     	</tr>
+						     	</table>
 					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
-
-
-
 					     		<div id="banda1_animacion4"></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
 					     		<div id="over-caja">
 					     			<div id="caja_animacion4"></div>
 					     		</div>
-					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>
-
-					     		<table id="tabla_animacion4">
-							     	<tr>
-							     		<td><p>G</p></td>
-							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
-							     	</tr>
-						     	</table>
+					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
 					     	</div>
 				     	</td>
 			     	</tr>

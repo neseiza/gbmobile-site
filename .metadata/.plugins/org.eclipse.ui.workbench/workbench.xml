@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <workbench progressCount="57" version="2.0">
-=======
-<workbench progressCount="55" version="2.0">
->>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 <workbenchAdvisor/>
-<window height="768" width="1024" x="42" y="79">
+<window height="1006" width="1861" x="402" y="164">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,10 +13,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="70" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
-<<<<<<< HEAD
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
-=======
->>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -28,35 +21,32 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.compare.CompareEditor" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Java EE">
+<page aggregateWorkingSetId="Aggregate for window 1343058486161" focus="true" label="Workspace - Java EE">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
-<<<<<<< HEAD
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" partName="index.gsp" path="/Users/mauricio/gbmobile-site/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" title="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" partName="index.gsp" path="/Users/mauricio/gbmobile-site/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" title="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4782"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="style.css" partName="style.css" path="/Users/mauricio/gbmobile-site/com.gbmobile.ems.gbmobile/web-app/css/style.css" title="style.css" tooltip="com.gbmobile.ems.gbmobile/web-app/css/style.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/web-app/css/style.css"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="demo.js" partName="demo.js" path="/Users/GBAdmin/gbmobile-site/com.gbmobile.ems.gbmobile/web-app/js/demo.js" title="demo.js" tooltip="com.gbmobile.ems.gbmobile/web-app/js/demo.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/web-app/js/demo.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="663" selectionTopPixel="189"/>
-</editor>
-=======
->>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 </editors>
 <views>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
@@ -73,13 +63,27 @@
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
+<viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sort1 sortDirection="1" sortKey="RANK"/>
+<sort2 sortDirection="1" sortKey="DATE_CREATED"/>
+<sort3 sortDirection="1" sortKey="NONE"/>
+<sort4 sortDirection="1" sortKey="NONE"/>
+<sort5 sortDirection="1" sortKey="NONE"/>
+<sort6 sortDirection="1" sortKey="NONE"/>
+<sort7 sortDirection="1" sortKey="NONE"/>
+</sorter>
+</sorter>
+<filteredTreeFindHistory/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.team.ui.GenericHistoryView" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -142,6 +146,7 @@
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.team.ui.GenericHistoryView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
@@ -167,12 +172,13 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.6998536" ratioLeft="478" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.team.ui.GenericHistoryView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
@@ -185,6 +191,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -201,166 +208,9 @@
 </mainWindow>
 </layout>
 </perspective>
-<<<<<<< HEAD
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor descriptor="org.eclipse.egit.ui.GitRepositoryExploring" id="&lt;Git_Repository_Exploring&gt;" label="&lt;Git Repository Exploring&gt;"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
-<show_view_action id="org.eclipse.team.ui.GenericHistoryView"/>
-<show_view_action id="org.eclipse.team.sync.views.SynchronizeView"/>
-<show_view_action id="org.eclipse.egit.ui.StagingView"/>
-<show_view_action id="org.eclipse.egit.ui.ReflogView"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.team.ui.GenericHistoryView"/>
-<view id="org.eclipse.team.sync.views.SynchronizeView"/>
-<fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@3768442e">
-<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">
-<page content="org.eclipse.egit.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.7494963" ratioLeft="1116" ratioRight="373" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3768442e">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.33647376" ratioLeft="500" ratioRight="986" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3768442e"/>
-<info folder="true" part="bottom" ratio="0.49941656" ratioLeft="428" ratioRight="429" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
-<page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
-<page content="org.eclipse.egit.ui.StagingView" label="LabelNotFound"/>
-<page content="org.eclipse.egit.ui.ReflogView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.jdt.ui.PackageExplorer" ratio="0.6989498" ratioLeft="599" ratioRight="258" relationship="4" relative="org.eclipse.ui.internal.ViewStack@3768442e"/>
-</mainWindow>
-</layout>
-</perspective>
-</perspectives>
-<workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/com.gbmobile.ems.gbmobile/web-app/css/style.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/com.gbmobile.ems.gbmobile/web-app/css/style_n.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/com.gbmobile.ems.gbmobile/web-app/js/demo.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/com.gbmobile.ems.gbmobile/web-app/css/style.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/com.gbmobile.ems.gbmobile/web-app/css/style.css"/>
-</editors>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="822" y="0"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="261" y="53"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position/>
-</item>
-<item historyLabel="style_n.css" index="2">
-<position info="not_deleted" x="101" y="24"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position/>
-</item>
-<item historyLabel="demo.js" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="demo.js" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position info="not_deleted" x="6889" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="4215" y="0"/>
-</item>
-<item historyLabel="demo.js" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="demo.js" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="demo.js" index="3">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="style.css" index="1">
-<position info="not_deleted" x="6889" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="4215" y="0"/>
-</item>
-<item historyLabel="style.css" index="4">
-<position info="not_deleted" x="6889" y="0"/>
-</item>
-<item historyLabel="style.css" index="4">
-<position info="not_deleted" x="8262" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="2180" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-<item historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="style.css" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="index.gsp" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
-=======
 </perspectives>
 <workingSets/>
 <navigationHistory/>
->>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -377,5 +227,9 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp">
+<persistable path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
+</file>
+</mruList>
 </workbench>
