@@ -490,9 +490,10 @@ height: 512px;
 
 #caja_animacion3 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 4.5%;
+	margin-top: 6.5%;
 	margin-left: -13%;
 	float: left;
 
