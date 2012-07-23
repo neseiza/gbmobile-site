@@ -37,36 +37,30 @@
       
       
       /* Animation 2 */
-      	 move('caja_tubo02')          
-          .rotate(180)  
-          .y(-50)
+       move('caja_tubo02')
+		.set('background-position','0 0')   
+		  //.y(10)       
+          .duration('1.5s')
+          .ease('out')
           .then()
-          	.set('height','50px')
-      		.then()
-	          	.y(-36)
-	          	.duration('1s')
-	          	.then()
-	          		.x(220)
-	          		.duration('4s')
-	          		.then()
-	          			.rotate(-90)
-	          			.y(50)
-	          			.duration('1s')
-	          			.then()
-	          				.x(30)
-	          				.y(12)
-	          				.set('width','0')
-	          				.duration('1s')
-	          			//.pop()
-	          		.pop()
-	          	.pop()
-	          .pop()
-	         .pop()
-	       .end();  
-	       /* End Animation 2 */
+          	.y(40)
+          	.duration('1s')
+          	.then()
+          		.x(-220)
+          		.duration('5s')
+          		.then()
+          			.x(-80)
+          			.y(60)
+          			.rotate(-90)
+          			.duration('1.5s')
+          		.pop()
+          	.pop()
+		  .pop()          
+	   .end(); 	        
+	    /* End Animation 2 */
 
-
-	       
+	    
+	             
 	    /* Animacion 3 */
         move('caja_animacion3')
           .set('background-position','0 0')
@@ -112,23 +106,6 @@
           			.duration('1s')
           		.pop()
           	.pop()
-
-          /*.duration('2s')
-          .ease('out')
-          .then()
-          	.y(48)
-          	.duration('1s')
-	          .then()
-	          	.x(400)
-	          	.duration('8s')
-	          		.then()
-	          			.y(5)
-	          			.set('background-position', '0 60px')
-	          			.duration('1s')
-	          		.pop()	
-	          .pop()
-	      .pop()*/    
-
         .end();
 /*           End Animacion 4 */         
         
@@ -394,7 +371,7 @@ var cont=0;
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
 
-                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
+                    //$('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
                     
 
                     
@@ -482,7 +459,7 @@ var cont=0;
 			     	<tr>
 				     	<td>
 					     	<div id="animation2">
-					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
+						     	<img src="${resource(dir: 'images', file: 'animacion2_arriba.png')}" id="img" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>     		
 						     	<table border="0px" bordercolor="white" class="center" width="48%">
 							     	<tr>
 							     		<td width="370px">
@@ -492,7 +469,7 @@ var cont=0;
 							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
 							     	</tr>
 						     	</table>
-						     	<div id="tubo03"></div>
+						     	<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo03"/>
 						     	<div id="bandaSimple"></div>
 					    		<div id="bandaSimple1"></div>
 					     	</div>	

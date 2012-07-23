@@ -377,11 +377,12 @@ height: 512px;
 
 #caja_tubo02{
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	width:50px;
-	height: 0px;
-	margin-top: -22%;
-	margin-right: 5%;
-	float: right;
+	background-position: 0 -50px;
+	width:53px;
+	height: 50px;
+	margin-top: -5%;
+	margin-left: 82%;
+	float: left;
 }
 
 #tubo { 
@@ -416,9 +417,8 @@ height: 512px;
 }
 
 #tubo03{
-	background: transparent url(../images/tubo_02.png) 0 0 no-repeat;
-	width:135px;
-	height: 35px;
+	width:120px;
+	height: 33px;
 	float: left;
 	margin-left: 22%;
 	overflow: hidden;
