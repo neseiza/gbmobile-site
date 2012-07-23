@@ -5,57 +5,83 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-
-
-
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
-
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
+<script src="${resource(dir: 'js', file: 'move.js')}"></script>
 
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
-<!--
-<!-- begin Carrusel -->
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
-<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'website.css')}" media="screen"></link>
+	<!-- begin Carrusel -->
+	<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
+	<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'website.css')}" media="screen"></link>
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#slider1').tinycarousel();	
+				$('#slider2').tinycarousel();	
+				$('#slider3').tinycarousel();	
+				$('#slider4').tinycarousel();	
+				$('#slider5').tinycarousel();	
+				$('#slider6').tinycarousel();	
+				
+	
+			});
+		</script>	
+	<!-- end carrusel -->
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#slider1').tinycarousel();	
-			$('#slider2').tinycarousel();	
-			$('#slider3').tinycarousel();	
-			$('#slider4').tinycarousel();	
-			$('#slider5').tinycarousel();	
-			$('#slider6').tinycarousel();	
-			
 
-		});
-	</script>
 
-<!-- end carrusel -->
-
-<script src="${resource(dir: 'js', file: 'move.js')}"></script>
  <script>
       addEventListener('DOMContentLoaded', function(){
-/*         Animacion 3 */
-        
-move('caja_animacion3')
+      
+      
+      /* Animation 2 */
+      	 move('caja_tubo02')          
+          .rotate(180)  
+          .y(-50)
+          .then()
+          	.set('height','50px')
+      		.then()
+	          	.y(-36)
+	          	.duration('1s')
+	          	.then()
+	          		.x(220)
+	          		.duration('4s')
+	          		.then()
+	          			.rotate(-90)
+	          			.y(50)
+	          			.duration('1s')
+	          			.then()
+	          				.x(30)
+	          				.y(12)
+	          				.set('width','0')
+	          				.duration('1s')
+	          			//.pop()
+	          		.pop()
+	          	.pop()
+	          .pop()
+	         .pop()
+	       .end();  
+	       /* End Animation 2 */
+
+
+	       
+	    /* Animacion 3 */
+        move('caja_animacion3')
           .set('background-position','0 0')
-          //.y(80)
           .duration('2s')
           .ease('out')
           .then()
-          	.y(48)
+          	.y(78)
           	.duration('1s')
 	          .then()
-	          	.x(-570)
+	          	.x(-550)
 	          	.duration('8s')
 	          	.then()
 	          		.ease('in')
 	          		.y(80)
-	          		.x(-20)
+	          		.x(-10)
 	          		.rotate(-90)
 	          		.duration('2s')
 	          		.then()
@@ -68,24 +94,22 @@ move('caja_animacion3')
 	          .pop()
 	      .pop()    
         .end();
+        /* End Animacion 3 */
 
-/*           End Animacion 3 */ 
-
-
-/*         Animacion 4 */        
+        /* Animacion 4 */        
 
         move('caja_animacion4')
           //.y(80)
-          .y(95)
+          .y(100)
           .duration('2s')
           	.then()
-          		.x(429)
+          		.x(450)
           		.duration('5s')
           		.then()
           			.x(100)
           			.y(60)
           			.rotate(90)
-          			.duration('1.5s')
+          			.duration('1s')
           		.pop()
           	.pop()
 
@@ -199,16 +223,17 @@ move('caja_animacion3')
       }, false);
 
 
-
-      
-      
       
       
 </script>
+
+	
 <script type="text/javascript">
+var cont=0;
 	
 	(function($) {
             $(document).ready(function() {
+            var cont=0;
             	$('#maquina')
                     .sprite({
                         fps: 2, 
@@ -216,7 +241,7 @@ move('caja_animacion3')
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                    });
+                    })
                     
                  $('#banda')
                     .sprite({
@@ -225,8 +250,7 @@ move('caja_animacion3')
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                        
-                    });
+                    })
                     
             	$('#bandaSimple')
 
@@ -236,7 +260,7 @@ move('caja_animacion3')
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                        });
+                    })
                     
                 $('#bandaSimple1')
 
@@ -246,7 +270,7 @@ move('caja_animacion3')
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 1
-                    });    
+                    })   
                     
                     $('#banda_04')
                     .sprite({
@@ -254,9 +278,8 @@ move('caja_animacion3')
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
+                        start_at_frame: 5
+                    })
                     
                     $('#banda_05')
                     .sprite({
@@ -264,10 +287,8 @@ move('caja_animacion3')
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
-                    
+                        start_at_frame: 5
+                    })
 
                     $('#banda_06')
                     .sprite({
@@ -275,26 +296,28 @@ move('caja_animacion3')
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
+                        start_at_frame: 5
+                    })
                     
-
+                    $('#banda_07')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5
+                    })
+                    
                     $('#banda1_animacion4')
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
-                        rewind: true});
+                        rewind: true,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 5
+                    })
                     
-
                     $('#banda2_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-
-
-                    $('#banda3_animacion4')
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
@@ -356,22 +379,27 @@ move('caja_animacion3')
                         rewind: true});
                         
                         
-                        
-                    $('#banda_07')
+                    
+                    $('#banda3_animacion4')
+
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 5,
-                        
-                    });
-                    
+                        start_at_frame: 5
+                    })
+
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+
                     $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
                     
+
+                    
+         
+
             
   });
 })(jQuery);
@@ -455,9 +483,9 @@ move('caja_animacion3')
 				     	<td>
 					     	<div id="animation2">
 					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
-						     	<table border="1px" bordercolor="white" class="center" width="48%">
+						     	<table border="0px" bordercolor="white" class="center" width="48%">
 							     	<tr>
-							     		<td with="54%" height="0%">
+							     		<td width="370px">
 								     		<div id="caja_tubo02"></div>
 							     		</td>
 							     		<td><p>D</p></td>
@@ -495,8 +523,14 @@ move('caja_animacion3')
 			     	</tr>	     	
 			     	<tr>
 				     	<td>
-					     	<div id="animation3">
+					     	<div id="animation3">					     		
 					     		<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo1"/>
+					     		<table id="tabla_animacion3" align="left">				     			
+							     	<tr>
+							     		<td><p>D</p></td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     	</tr>
+					     		</table>
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
 
 					     		<div id="banda_04"></div>
@@ -505,22 +539,13 @@ move('caja_animacion3')
 					     		<div id="banda_07"></div>
 					     		<div id="caja_animacion3"></div>
 					     		
-					     		
-					     		
-
-
-					     		<table id="tabla_animacion3">				     			
-							     	<tr>
-							     		<td><p>D</p></td>
-							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
-							     	</tr>
-					     		</table>
 					     	</div>
 					     	</td>
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<div id ="menu3">
+					     		<!-- <img src="${resource(dir: 'images', file: 'tubo_menu3.png')}" id="tubo_menu3"/> -->
+					     		<div id ="menu3">					     			 
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
@@ -547,24 +572,20 @@ move('caja_animacion3')
 					     	<div id="animation4">
 					     	
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
+					     		<table id="tabla_animacion4">
+							     	<tr>
+							     		<td><p>g</p></td>
+							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     	</tr>
+						     	</table>
 					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
-
-
-
 					     		<div id="banda1_animacion4"></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
 					     		<div id="over-caja">
 					     			<div id="caja_animacion4"></div>
 					     		</div>
-					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>
-
-					     		<table id="tabla_animacion4">
-							     	<tr>
-							     		<td><p>G</p></td>
-							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
-							     	</tr>
-						     	</table>
+					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
 					     	</div>
 				     	</td>
 			     	</tr>
