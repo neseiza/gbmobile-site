@@ -56,12 +56,13 @@
 	          				.y(12)
 	          				.set('width','0')
 	          				.duration('1s')
-	          			//.pop()
+	          			.pop()
 	          		.pop()
 	          	.pop()
 	          .pop()
 	         .pop()
-	       .end();  
+	       .end(); 
+	        
 	       /* End Animation 2 */
 	       
 	    /* Animacion 3 */
