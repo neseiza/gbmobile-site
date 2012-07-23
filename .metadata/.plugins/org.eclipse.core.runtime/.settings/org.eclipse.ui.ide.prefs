@@ -1,11 +1,12 @@
-=\=\=\=\=\=\=
-<<<<<<<=HEAD
+#Fri Jul 20 13:48:54 CDT 2012
 >>>>>>>=adcc9b25aaf1f514d8cfc218fdd783907101cf03
-EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 IMPORT_FILES_AND_FOLDERS_RELATIVE=true
-IMPORT_FILES_AND_FOLDERS_TYPE=23,1
 PROBLEMS_FILTERS_MIGRATE=true
-eclipse.preferences.version=1
-platformState=1341606993461
+<<<<<<<=HEAD
 quickStart=false
 tipsAndTricks=true
+eclipse.preferences.version=1
+platformState=1342711094261
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+=\=\=\=\=\=\=

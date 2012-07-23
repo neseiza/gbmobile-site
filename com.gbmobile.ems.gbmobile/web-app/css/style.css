@@ -1,7 +1,6 @@
 /* A Free Design by Bryant Smith (bryantsmith.com) */
 
-//este es el mio
-//otro
+
 
 html, body {
 text-align: center;
@@ -377,14 +376,12 @@ height: 512px;
 }
 
 #caja_tubo02{
-	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
-	width:370px;
-	height: 32px;
-	float: left;
-	padding-top: 17%;
-	position: relative;
-	overflow: hidden;
-	margin-top: 4.5%;
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	width:50px;
+	height: 0px;
+	margin-top: -22%;
+	margin-right: 5%;
+	float: right;
 }
 
 #tubo { 
@@ -436,51 +433,62 @@ height: 512px;
 }
 
 #banda_04 {
-	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
-	width:144px;
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
 	height: 32px;
 	margin-top: 13%;
 	float: left;
-	margin-left: -42%;
+	margin-left: -49%;
 }
 
 #banda_05 {
-	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
-	width:144px;
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -33%;
+	margin-left: -38.3%;
 	float: left;
 }
 
 #banda_06 {
-	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
-	width:144px;
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -24%;
+	margin-left: -27.6%;
 	float: left;
 }
 
 #banda_07 {
-	background: transparent url(../images/banda_simple_01.png) 0 0 no-repeat;
-	width:144px;
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
 	height: 32px;
 	margin-top: 13%;
-	margin-left: -15%;
+	margin-left: -17%;
 	float: left;
 
 }
-#caja_animacion3 {
-	background: transparent url(../images/caja_animacion3.png) 0 0 no-repeat;
-	width:711px;
-	height: 91px;
+
+#tubo_menu3 {
+	background: transparent url(../images/tubo_menu3.png) 0 0 no-repeat;
+	width:120px;
+	height: 153px;
 	margin-top: 7%;
-	margin-left: -55%;
+	margin-left: -19.7%;
 	float: left;
 
 }
 
+#caja_animacion3 {
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 -50px;
+	width:53px;
+	height: 50px;
+	margin-top: 6.6%;
+	margin-left: -13%;
+	float: left;
+
+}
 #maquina_abajo1 {
 	
 	width:332px;
@@ -501,7 +509,6 @@ height: 512px;
 	//position: absolute;
 	
 }
-
 #tubo_03 {
 	
 	width:226px;
@@ -510,6 +517,88 @@ height: 512px;
 	margin-left: 8%;
 	float: left;
 }
+
+/* Animacion 4 */
+
+#tabla_animacion4 {
+	
+	width:616px;
+	height: 56px;
+	margin-top: 1.5%;
+	margin-left: -4%;
+	float: left;
+	//position: absolute;
+	
+}
+
+#tubo_04 {
+	
+	width:226px;
+	height: 108px;
+	margin-top: -0.5%;
+	margin-left: 22%;
+	float: left;
+}
+
+#banda1_animacion4 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -48%;
+	float: left;
+
+}
+
+#banda2_animacion4 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -37.3%;
+	float: left;
+
+}
+
+#banda3_animacion4 {
+	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
+	width:168px;
+	height: 32px;
+	margin-top: 13%;
+	margin-left: -26.8%;
+	float: left;
+
+}
+
+#maquina_abajo2 {
+	background: transparent url(../images/maquina_abajo.png) 0 0 no-repeat;
+	width: 339px;
+	height: 56px;
+	float: left;
+	margin-left: 9%;
+	margin-top: -0.5%;
+}
+
+#tubo_corto_animacion4 {
+	
+	width:120px;
+	height: 33px;
+	margin-top: 12.9%;
+	margin-left: -15.4%;
+	float: left;
+}
+
+#caja_animacion4 {
+	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
+	background-position: 0 0;
+	width:53px;
+	height: 50px;
+	margin-top: -49px;
+	float: left;
+}
+
+
+/* end animacion 4 */
 
 
 #bandaSimple {
