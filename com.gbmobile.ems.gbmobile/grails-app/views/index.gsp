@@ -30,8 +30,6 @@
 		</script>	
 	<!-- end carrusel -->
 
-
-
  <script>
       addEventListener('DOMContentLoaded', function(){
       
@@ -125,79 +123,35 @@
 	          .pop()
 	      .pop()*/    
 /*           End Animacion 3 */
-        .end();        
-               
+        .end();
+        
       }, false);
       
       
       
 </script>
-
-	
 <script type="text/javascript">
-var cont=0;
 	
 	(function($) {
             $(document).ready(function() {
-            var cont=0;
-            	$('#maquina')
+	            $('#maquina')
                     .sprite({
                         fps: 2, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-                        },
-                        on_last_frame: function(obj) {
-                        		
-                        }/*
-,
-                        on_frame: {
-                        	0: function(obj) {
-                            		console.log('frame: ' + 0);	                      
-                            },
-                            1: function(obj) {
-                            		console.log('frame: ' + 1);	                      
-                            },
-                            2: function(obj) {
-                            		console.log('frame: ' + 2);	                      
-                            },
-                            3: function(obj) {
-                            		console.log('frame: ' + 3);	                      
-                            },
-                            4: function(obj) {
-                            		obj.spStop();
-                            },
-                            5: function(obj) {
-                            		console.log('frame: ' + 5);	                      
-                            }
-                        }
-*/
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                    });
                     
-                 $('#banda')
+                  $('#banda')
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-                        	
-
-                        },
-                        on_last_frame: function(obj) {
-                         	
-    
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                        
+                    });
                     
             	$('#bandaSimple')
 
@@ -206,25 +160,8 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-   
-                        },
-                        on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        start_at_frame: 1
+                        });
                     
                 $('#bandaSimple1')
 
@@ -233,25 +170,8 @@ var cont=0;
                         no_of_frames: 2,
                         rewind: true,
                         // the following are optional: new in version 0.6...
-                        start_at_frame: 1,
-                        on_first_frame: function(obj) {
-   
-                        },
-                        on_last_frame: function(obj) {
-                            // you could stop the sprite here with, e.g.
-                            // obj.spStop();
-
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                                // you could change the 'state' of the
-                                // sprite here with, e.g. obj.spState(2);
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();    
+                        start_at_frame: 1
+                    });    
                     
                     $('#banda_04')
                     .sprite({
@@ -260,21 +180,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-
-                        },
-                        on_last_frame: function(obj) {
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
                     $('#banda_05')
                     .sprite({
@@ -283,21 +190,8 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-
-                        },
-                        on_last_frame: function(obj) {
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
 
                     $('#banda_06')
@@ -307,25 +201,33 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-                        	
-
-                        },
-                        on_last_frame: function(obj) {
-                        	
-    
-                        },
-                        on_frame: {
-                            2: function(obj) {
-
-                            }
-                        }
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });
                     
 
+                    $('#banda1_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                    
+
+                    $('#banda2_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                    $('#banda3_animacion4')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                        
+                        
                     $('#banda_07')
                     .sprite({
                         fps: 5, 
@@ -333,27 +235,15 @@ var cont=0;
                         rewind: true,
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5,
-                        on_first_frame: function(obj) {
-	                       
-                        },
-                        on_last_frame: function(obj) {
-	                          
-                        },
-                        on_frame: {
-                            2: function(obj) {
-                              
-
-                        }}
-                    })
-                    .isDraggable()
-                    .activeOnClick()
-                    .active();
+                        
+                    });  
                     
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
-                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
-                    
-            });
+                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70}); 
+                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
+                    $('#caja_animacion3')//.pan({fps: 10, speed: 1, dir: 'down', depth: 100}).delay(20)
+                    .pan({fps: 10, speed: 7, dir: 'down'});
             
   
     })(jQuery);
@@ -439,8 +329,7 @@ var cont=0;
 					     		<img id="img" src="images/animacion2_arriba.png" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>					     		
 						     	<table border="0px" bordercolor="white" class="center" width="48%">
 							     	<tr>
-							     		<td width="370px">
-								     		<div id="caja_tubo02"></div>
+							     		<td width="370px"> id="caja_tubo02"></div>
 							     		</td>
 							     		<td><p>D</p></td>
 							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
@@ -498,7 +387,7 @@ var cont=0;
 					     	<tr>
 					     	<td>
 					     		<div id ="menu3">
-					     			<img id="tubo_menu3" src="${resource(dir: 'images', file: 'tubo_menu3.png')}"/>
+					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
 										<a class="buttons prev" href="#">left</a>
@@ -522,10 +411,24 @@ var cont=0;
 		        	<tr>
 				     	<td>
 					     	<div id="animation4">
-					     		<table>
+					     	
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
+					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
+
+
+
+					     		<div id="banda1_animacion4"></div>
+					     		<div id="banda2_animacion4"></div>
+					     		<div id="banda3_animacion4"></div>
+					     		<div id="over-caja">
+					     			<div id="caja_animacion4"></div>
+					     		</div>
+					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>
+
+					     		<table id="tabla_animacion4">
 							     	<tr>
-							     		<td><p>g</p></td>
-							     		<td>b Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     		<td><p>G</p></td>
+							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
 							     	</tr>
 						     	</table>
 					     	</div>

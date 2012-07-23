@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Fri Jul 20 13:48:54 CDT 2012
+=======
+#Fri Jul 20 10:26:24 CDT 2012
+>>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 >>>>>>>=adcc9b25aaf1f514d8cfc218fdd783907101cf03
 IMPORT_FILES_AND_FOLDERS_RELATIVE=true
 PROBLEMS_FILTERS_MIGRATE=true
@@ -6,7 +10,11 @@ PROBLEMS_FILTERS_MIGRATE=true
 quickStart=false
 tipsAndTricks=true
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1342711094261
+=======
+platformState=1341523961065
+>>>>>>> 768513fb10ac0da27b156347dc7bb8f87e77b5ec
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 IMPORT_FILES_AND_FOLDERS_TYPE=23,1
 =\=\=\=\=\=\=

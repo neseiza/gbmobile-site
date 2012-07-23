@@ -6412,6 +6412,90 @@ HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@84b2f7f),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@788d241b,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2d0d20ce)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2e1474fc)),sourcePriority=1064961)
 >>>>>>> adcc9b25aaf1f514d8cfc218fdd783907101cf03
+<<<<<<< HEAD
+!SESSION 2012-07-19 10:07:32.534 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_33
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/mauricio/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/mauricio/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 4 2 2012-07-19 10:07:46.557
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.ui.WorkbenchException: The markup in the document preceding the root element must be well-formed.
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:143)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+Caused by: org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	... 6 more
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-07-19 10:07:46.558
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-07-19 10:07:46.558
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-19 10:07:48.096
+=======
 !SESSION 2012-07-17 13:15:11.958 -----------------------------------------------
 eclipse.buildId=M20120208-0800
 java.version=1.6.0_33
@@ -8673,6 +8757,90 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Use
 Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/GBAdmin/.eclipse_keyring -showlocation
 
 !ENTRY org.eclipse.core.net 1 0 2012-07-18 09:35:46.297
+>>>>>>> 3d90ab73d06d76c6e28b3cd4c75ba18b9adce42d
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-20 10:25:23.731 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_33
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/mauricio/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/mauricio/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 4 2 2012-07-20 10:25:33.155
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.ui.WorkbenchException: The markup in the document preceding the root element must be well-formed.
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:143)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+Caused by: org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	... 6 more
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-07-20 10:25:33.156
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+!SUBENTRY 1 org.eclipse.ui 4 0 2012-07-20 10:25:33.156
+!MESSAGE The markup in the document preceding the root element must be well-formed.
+!STACK 0
+org.xml.sax.SAXParseException: The markup in the document preceding the root element must be well-formed.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1427)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
+	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:65)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2088)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2083)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-20 10:25:36.187
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
 !SESSION 2012-07-20 13:47:00.739 -----------------------------------------------
 eclipse.buildId=I20110613-1736
