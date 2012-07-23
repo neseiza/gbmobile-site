@@ -35,7 +35,8 @@
  <script>
       addEventListener('DOMContentLoaded', function(){
       
-      	/* Animation 2 */
+      
+      /* Animation 2 */
       	 move('caja_tubo02')          
           .rotate(180)  
           .y(-50)
@@ -64,6 +65,8 @@
 	       .end(); 
 	        
 	       /* End Animation 2 */
+
+
 	       
 	    /* Animacion 3 */
         move('caja_animacion3')
@@ -109,11 +112,118 @@
           			.rotate(90)
           			.duration('1s')
           		.pop()
-          	.pop() 	      
+          	.pop()
+
+          /*.duration('2s')
+          .ease('out')
+          .then()
+          	.y(48)
+          	.duration('1s')
+	          .then()
+	          	.x(400)
+	          	.duration('8s')
+	          		.then()
+	          			.y(5)
+	          			.set('background-position', '0 60px')
+	          			.duration('1s')
+	          		.pop()	
+	          .pop()
+	      .pop()*/    
+
         .end();
-        /* End Animacion 4 */        
-        }, false);
-      
+/*           End Animacion 4 */         
+        
+        /*         Animacion 5 */
+        move('caja_animacion5')
+          .set('background-position','0 0')
+          //.y(80)
+          .duration('2s')
+          .ease('out')
+          .then()
+          	.y(48)
+          	.duration('1s')
+	          .then()
+	          	.x(570)
+	          	.duration('8s')
+	          	.then()
+	          		.ease('in')
+	          		.y(103)
+	          		.x(40)
+	          		.rotate(90)
+	          		.duration('2s')
+	          		.then()
+	          			.x(5)
+	          			.y(-15)
+	          			.set('background-position', '60px')
+	          			.duration('1s')
+	          		.pop()	
+	          	.pop()
+	          .pop()
+	      .pop()    
+        .end(); 
+/*           End Animacion 5 */ 
+
+
+
+/* *********** Animacion 6 ********** */
+
+/*    =========== Caja 1 ========== */
+
+		move('caja1_animacion6')
+		.set('background-position','0 0')
+          //.y(80)
+          .duration('1.5s')
+          .ease('out')
+          .then()
+	          //.y(80)
+	          .y(48)
+	          .duration('1s')
+	          	.then()
+	          		.x(250)
+	          		.duration('5s')
+	          		.then()
+	          			.x(100)
+	          			.y(60)
+	          			.rotate(90)
+	          			.duration('1.5s')
+	          		.pop()
+	          	.pop()
+	       .pop()
+	       .end();
+/*    =========== End Caja 1 ========== */
+
+
+/*    =========== Caja 2 ========== */
+  	move('caja2_animacion6')
+		.set('background-position','0 0')
+          //.y(80)
+          .duration('1.5s')
+          .ease('out')
+          .then()
+	          //.y(80)
+	          .y(48)
+	          .duration('1s')
+	          	.then()
+	          		.x(-250)
+	          		.duration('5s')
+	          		.then()
+	          			.x(-100)
+	          			.y(60)
+	          			.rotate(-90)
+	          			.duration('1.5s')
+	          		.pop()
+	          	.pop()
+	       .pop()
+	       .end();
+/*    =========== End Caja 2 ========== */
+
+
+
+/* *********** End Animacion 6 ********** */
+        
+      }, false);
+
+
       
       
 </script>
@@ -212,12 +322,67 @@ var cont=0;
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
+                        rewind: true});
+                    
+
+                    $('#banda1_animacion5')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                    
+
+                    $('#banda2_animacion5')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                    $('#banda3_animacion5')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+
+
+                    $('#banda4_animacion5')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                        
+                    $('#banda1_animacion6')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                     
+                     
+                    $('#banda2_animacion6')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                    
+                    
+                    $('#banda3_animacion6')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                        
+                     
+                    $('#banda4_animacion6')
+                    .sprite({
+                        fps: 5, 
+                        no_of_frames: 2,
+                        rewind: true});
+                        
+                        
                     
                     $('#banda3_animacion4')
+
                     .sprite({
                         fps: 5, 
                         no_of_frames: 2,
@@ -229,11 +394,16 @@ var cont=0;
                     
                     $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
                     $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
+
+                    $('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
                     
-            });
+
+                    
+         
+
             
-  
-    })(jQuery);
+  });
+})(jQuery);
     
 
 </script>
@@ -445,7 +615,17 @@ var cont=0;
 				    <tr>
 				     	<td>
 					     	<div id="animation5">
-					     		<table>
+					     	
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_05"/>
+
+					     		<div id="banda1_animacion5"></div>
+					     		<div id="banda2_animacion5"></div>
+					     		<div id="banda3_animacion5"></div>
+					     		<div id="banda4_animacion5"></div>
+					     		<div id="caja_animacion5"></div>
+					     		
+					     		<table id="tabla_animacion5">	
+
 							    	<tr>
 							     		<td><p>C</p></td>
 							     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
@@ -457,6 +637,7 @@ var cont=0;
 			     	<tr>
 				     	<td>
 					     	<div id="menu5">
+					     	
 						     	<!-- Slider 5 -->
 							     <div id="slider5">
 									<a class="buttons prev" href="#">left</a>
@@ -473,12 +654,30 @@ var cont=0;
 									<a class="buttons next" href="#">right</a>
 								</div>
 							     <!-- End Slider 5 -->	
+							     <img src="${resource(dir: 'images', file: 'tubo_menu5.png')}" id="tubo_menu5"/>
 					     	</div>
 				     	</td>
 			     	</tr>	 	
 			     	<tr>
 					     <td>
 					     	<div id="animation6">
+					     	<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_07"/>
+					     	<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo3"/>
+					     	<img src="${resource(dir: 'images', file: 'tubo_04.png')}" id="tubo_06"/>
+					     	
+					     	
+					     	<div id="banda4_animacion6"></div>
+					     	<div id="banda3_animacion6"></div>
+					     	
+					     	<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion6"/>
+					     	
+					     	<div id="banda2_animacion6"></div>
+					     	<div id="banda1_animacion6"></div>
+		     	
+					     	<div id="over-caja">
+					     		<div id="caja1_animacion6"></div>
+					     		<div id="caja2_animacion6"></div>
+					     	</div>
 					     	</div>
 				     	</td>
 			     	</tr>	     	
