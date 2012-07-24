@@ -332,20 +332,7 @@ height: 226px;
 height: 512px;
 }
 
-#maquina {
-	background: transparent url(../images/maquina_anima.png) 0 0 no-repeat;
-	width:467px;
-	height: 353px;
-	//margin-top: 11%;
-}
 
-#garra {
-	background: transparent url(../images/garra_02.png) 0 0 no-repeat;
-	position: absolute;
-    width: 100px;
-    height: 327px;
-    z-index: 1;
-}
 #caja {
 	background: transparent url(../images/cajaS_cerrada.png) 0 0 no-repeat;
 	position: absolute;
@@ -354,16 +341,6 @@ height: 512px;
 }
 
 
-#foco {
-	background: transparent url(../images/foco_03.png) 0 0 repeat-y;
-	width:48px;
-	height: 50px;
-	float: right;
-	padding-top: 2%;
-	padding-right: 5%;
-	position: relative;
-	overflow: hidden;
-}
 
 #caja_tubo01{
 	background: transparent url(../images/cajaP_cerrada_53x130.png) 0 0 repeat-y;
@@ -384,7 +361,7 @@ height: 512px;
 	margin-left: 82%;
 	float: left;
 }
-
+/*
 #tubo { 
 	//background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
 	width:249px;
@@ -393,7 +370,7 @@ height: 512px;
 	float: left;
 	position: relative;
 }
-
+*/
 #tubo_abajo{
 	background: transparent url(../images/tubo_abajo.png) 0 0 no-repeat;
 	width:115px;
@@ -424,13 +401,17 @@ height: 512px;
 	overflow: hidden;
 }
 
+
 #banda {
 	background: transparent url(../images/banda_01.png) 0 0 no-repeat;
 	width:144px;
 	height: 103px;
-	margin-top: 19%;
+	margin-left: 300px;
+	margin-top: 277px;
 	float: left;
+	position: absolute;
 }
+
 
 #banda_04 {
 	background: transparent url(../images/banda_simple_02.png) 0 0 no-repeat;
@@ -891,4 +872,88 @@ color:#000000;
 	position: absolute;
 	margin-left: 336px;
 	margin-top: 101px;
+}
+
+#foco {
+	background: transparent url(../images/foco.png) 0 0 repeat-y;
+	width: 48px;
+	height: 68px;
+	margin-left: 835px;
+	position: absolute;
+}
+
+#foco-gen {
+	height: 112px;
+	width: 1000px;
+	overflow: hidden;
+	position: absolute;
+}
+
+#frame {
+	width: 1300px;
+	height: 460px;
+}
+
+#garra {
+	background: transparent url(../images/garra_02.png);
+	width: 88px;
+	height: 327px;
+	margin-top: -200px;
+	margin-left: 331px;
+	position: absolute;
+}
+
+#maquina {
+	background: transparent url(../images/maquina_anima.png) 0 0 no-repeat;
+	width:467px;
+	height: 353px;
+	position: absolute;
+	margin-left: 450px;
+	margin-top: 50px;
+	position: absolute;
+}
+
+#tubo {
+	background: transparent url(../images/tubo_01.png) 0 0 no-repeat;
+	height: 208px;
+	width: 249px;
+	margin-top: 180px;
+	position: absolute;
+}
+
+
+
+#caja1{
+	background: transparent url(../images/caja.png) 0 0 no-repeat;
+	height: 50px;
+	width: 53px;
+	margin-left: 180px;
+	position: absolute;
+}
+
+#caja1-gen{
+	height: 49px;
+	margin-left: 591px;
+	margin-top: 235px;
+	width: 180px;
+	overflow: hidden;
+	position: absolute;
+}
+
+#caja2{
+	background: transparent url(../images/caja.png) 0 0 no-repeat;
+	height: 50px;
+	width: 52px;
+	margin-left: 430px;
+	margin-top: 150px;
+	position: absolute;
+}
+
+#caja2-gen{
+	height: 200px;
+	margin-left: 28px;
+	margin-top: 80px;
+	width: 430px;
+	overflow: hidden;
+	position: absolute;
 }

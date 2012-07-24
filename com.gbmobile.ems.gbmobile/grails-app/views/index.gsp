@@ -10,14 +10,22 @@
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
 <script src="${resource(dir: 'js', file: 'move.js')}"></script>
 
+<!--
+	
+-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script>
+	
+
+
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
 	<!-- begin Carrusel -->
 	<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
 	<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'website.css')}" media="screen"></link>
-	
+	<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
 		<script type="text/javascript">
-			$(document).ready(function(){
+			/*$(document).ready(function(){
 				$('#slider1').tinycarousel();	
 				$('#slider2').tinycarousel();	
 				$('#slider3').tinycarousel();	
@@ -26,7 +34,18 @@
 				$('#slider6').tinycarousel();	
 				
 	
-			});
+			});*/
+			$(document).ready(function() {
+            // example 1
+            $("ul.example1").simplecarousel({
+                width:770,
+                height:303,
+                visible: 1,
+                auto: 60000,
+                next: $('.next'),
+                prev: $('.prev')
+            });
+        });
 		</script>	
 	<!-- end carrusel -->
 
@@ -368,8 +387,6 @@ var cont=0;
                     })
 
                     
-                    $('#foco').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
-                    $('#caja_tubo01').pan({fps: 10, speed: 7, dir: 'down', depth: 70});
 
                     //$('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
                     
@@ -409,48 +426,85 @@ var cont=0;
 		    <div id="main" style="float:right;">
 			    <table border="2px">	    
 				    <tr>
-				    	<td>
-					    	<div id="animation1">
+					    <div id="frame">
 
-					    		<img src="images/flecha.png"  style="margin-top: 35px; float:left"/> 
-					    		<div id="tubo">
-						    		<img src="images/tubo_01.png" />
-						    		<div id="caja_tubo01"></div>
-						    		<img id="tubo02" src="images/tubo_02.png" />
-					    		</div>
-							    <div id="banda"></div>
-							    <div id="rightmiddle">	
-							    	<div id="foco"></div>		    	
-							    	<div id="maquina">
-								    	<table class="buttomRight">
-										<tr>
-									    	<td><p>E</p></td>
-									     	<td>mpresa mexicana de servicios de valor agregado a telefon&iacute;a m&oacute;vil para M&eacute;xico y America Latina desde el 2003</td>
-									    </tr>
-								    </table>
-							    	</div>			    				    	
-							    </div>
-							    <img src="images/flecha.png"  style="margin-top: 35px; marigin-right: 50%"/>		    			    
-						    </div>		
-						 </td>
+						  	<div id="foco-gen">
+						  		<div id="foco"></div>
+						  	</div>
+							<div id="tubo"></div>
+					
+							<div id="banda"></div>
+							<div id="maquina"></div>
+					
+							<div id="caja1-gen">
+								<div id="caja1"></div>
+							</div>
+							<div id="caja2-gen">
+								<div id="caja2"></div>
+							</div>
+							<div id="garra"></div>
+					
+						</div>
+
 					</tr>	    
 				   <tr>
 					    <td>
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">
-									<a class="buttons prev" href="#">left</a>
-									<div class="viewport">
-										<ul class="overview">
-											<li><img src="images/picture6.jpg" /></li>
-											<li><img src="images/picture5.jpg" /></li>
-											<li><img src="images/picture4.jpg" /></li>									
-											<li><img src="images/picture3.jpg" /></li>
-											<li><img src="images/picture2.jpg" /></li>
-											<li><img src="images/picture1.jpg" /></li>
-										</ul>
-									</div>
-									<a class="buttons next" href="#">right</a>
+							     	    <ul class="example1">
+									        <li>
+									
+										        	<div id="div_imgs">
+												        <img src="images/video.png"/>
+												        <img src="images/cel_infonavit.png" />
+										        	</div>
+											        <div id="subelem">
+												        <h2>
+												        	Casos de Éxito
+												        </h2>
+												        <br />
+												        <br />
+												        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
+											        </div>
+									        	
+									        </li>
+									                <li>
+									
+										        	<div id="div_imgs">
+												        <img src="images/video.png"/>
+												        <img src="images/cel_infonavit.png" />
+										        	</div>
+											        <div id="subelem">
+												        <h2>
+												        	Casos de Éxito
+												        </h2>
+												        <br />
+												        <br />
+												        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
+											        </div>
+									        	
+									        </li>
+									                <li>
+									
+										        	<div id="div_imgs">
+												        <img src="images/video.png"/>
+												        <img src="images/cel_infonavit.png" />
+										        	</div>
+											        <div id="subelem">
+												        <h2>
+												        	Casos de Éxito
+												        </h2>
+												        <br />
+												        <br />
+												        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
+											        </div>
+									        	
+									        </li>
+									</ul>
+
+								    <span class="prev"><img src="images/boton_left.png" /></span>
+								    <span class="next"><img src="images/boton_right.png" /></span>
 								</div>
 							     <!-- End Slider 1 -->
 				     		</div>
@@ -481,18 +535,7 @@ var cont=0;
 				     		<div id="menu2">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">
-									<a class="buttons prev" href="#">left</a>
-									<div class="viewport">
-										<ul class="overview">
-											<li><img src="images/picture6.jpg" /></li>
-											<li><img src="images/picture5.jpg" /></li>
-											<li><img src="images/picture4.jpg" /></li>									
-											<li><img src="images/picture3.jpg" /></li>
-											<li><img src="images/picture2.jpg" /></li>
-											<li><img src="images/picture1.jpg" /></li>
-										</ul>
-									</div>
-									<a class="buttons next" href="#">right</a>
+
 								</div>									
 							     <!-- End Slider 2 -->
 				     		</div>
@@ -526,18 +569,7 @@ var cont=0;
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
-										<a class="buttons prev" href="#">left</a>
-										<div class="viewport">
-											<ul class="overview">
-												<li><img src="images/picture6.jpg" /></li>
-												<li><img src="images/picture5.jpg" /></li>
-												<li><img src="images/picture4.jpg" /></li>									
-												<li><img src="images/picture3.jpg" /></li>
-												<li><img src="images/picture2.jpg" /></li>
-												<li><img src="images/picture1.jpg" /></li>
-											</ul>
-										</div>
-										<a class="buttons next" href="#">right</a>
+										
 									</div>
 								     <!-- End Slider 3 -->
 					     		</div>							
@@ -571,18 +603,7 @@ var cont=0;
 					     	<div id="menu4">
 						     	<!-- Slider 4 -->
 							     <div id="slider4">
-									<a class="buttons prev" href="#">left</a>
-									<div class="viewport">
-										<ul class="overview">
-											<li><img src="images/picture6.jpg" /></li>
-											<li><img src="images/picture5.jpg" /></li>
-											<li><img src="images/picture4.jpg" /></li>									
-											<li><img src="images/picture3.jpg" /></li>
-											<li><img src="images/picture2.jpg" /></li>
-											<li><img src="images/picture1.jpg" /></li>
-										</ul>
-									</div>
-									<a class="buttons next" href="#">right</a>
+
 								</div>
 							     <!-- End Slider 4 -->
 						    </div>
@@ -616,18 +637,7 @@ var cont=0;
 					     	
 						     	<!-- Slider 5 -->
 							     <div id="slider5">
-									<a class="buttons prev" href="#">left</a>
-									<div class="viewport">
-										<ul class="overview">
-											<li><img src="images/picture6.jpg" /></li>
-											<li><img src="images/picture5.jpg" /></li>
-											<li><img src="images/picture4.jpg" /></li>									
-											<li><img src="images/picture3.jpg" /></li>
-											<li><img src="images/picture2.jpg" /></li>
-											<li><img src="images/picture1.jpg" /></li>
-										</ul>
-									</div>
-									<a class="buttons next" href="#">right</a>
+									
 								</div>
 							     <!-- End Slider 5 -->	
 							     <img src="${resource(dir: 'images', file: 'tubo_menu5.png')}" id="tubo_menu5"/>
@@ -662,19 +672,7 @@ var cont=0;
 					     	<div id="menu6">
 						     	<!-- Slider 6 -->
 							     <div id="slider6">
-									<a class="buttons prev" href="#">left</a>
-									<div class="viewport">
-										<ul class="overview">
-											<li><img src="images/picture6.jpg" /></li>
-											<li><img src="images/picture5.jpg" /></li>
-											<li><img src="images/picture4.jpg" /></li>									
-											<li><img src="images/picture3.jpg" /></li>
-											<li><img src="images/picture2.jpg" /></li>
-											<li><img src="images/picture1.jpg" /></li>
-										</ul>
-									</div>
-									<a class="buttons next" href="#">right</a>
-								</div>
+																	</div>
 							     <!-- End Slider 6 -->	
 					     	</div>
 				     	</td>
