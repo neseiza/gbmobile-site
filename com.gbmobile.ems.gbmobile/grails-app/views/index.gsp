@@ -406,7 +406,7 @@ var cont=0;
 		    <div id="line">
 		    </div>
 		    
-		    <div id="main" style="float:right;">
+		    <div id="main" style="float:center;">
 			    <table border="2px">	    
 				    <tr>
 				    	<td>
