@@ -10,7 +10,6 @@
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
  <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script> 
- <script type="text/javascript" src="${resource(dir: 'js', file: 'jsAnim.js')}"></script>
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
 	<!-- begin Carrusel -->
@@ -411,16 +410,6 @@ var cont=0;
                         // the following are optional: new in version 0.6...
                         start_at_frame: 5
                     })
-
-                    
-
-                    //$('#caja_tubo02').pan({fps: 10, speed: 5, dir: 'down', depth: 70, rewind:true}); 
-                    
-
-                    
-         
-
-            
   });
 })(jQuery);
     
@@ -450,7 +439,7 @@ var cont=0;
 		    </div>
 		    
 		    <div id="main" style="float:center;">
-			    <table border="2px">	    
+			    <table border="2px">
 				    <tr>
 				    <td>
 					    <div id="frame">
