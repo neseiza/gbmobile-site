@@ -46,32 +46,53 @@
  <script>
       addEventListener('DOMContentLoaded', function(){
       
+      var lado = true;
       
+      
+      /* Animation 1 caja 3 */
+       move('caja3_animacion1')
+       .set('visibility','visible')
+       .duration('32s')
+       .then()
+	       .y(150)
+	       .duration('5s')
+	    .pop()   
+	   .end(); 	        
+	    /* End Animation 1 caja 3*/  
+	    
+	    
       /* Animation 2 */
        move('caja_tubo02')
-		.set('background-position','0 0')   
-		  .y(10)       
-          .duration('1.5s')
-          .ease('out')
-          .then()
-          	.y(32)
-          	.duration('1s')
-          	.then()
-          		.x(-220)
-          		.duration('5s')
-          		.then()
-          			.x(-80)
-          			.y(60)
-          			.rotate(-90)
-          			.duration('1.5s')
-          		.pop()
-          	.pop()
-		  .pop()          
+       .set('visibility','visible')
+       .duration('37s')
+	   .then()
+			.set('background-position','0 0')   
+			  .y(10)       
+	          .duration('1.5s')
+	          .ease('out')
+	          .then()
+	          	.y(32)
+	          	.duration('1s')
+	          	.then()
+	          		.x(-220)
+	          		.duration('5s')
+	          		.then()
+	          			.x(-80)
+	          			.y(60)
+	          			.rotate(-90)
+	          			.duration('1.5s')
+	          		.pop()
+	          	.pop()
+			  .pop()          
+		.pop()	  
 	   .end(); 	        
 	    /* End Animation 2 */    
 	             
 	    /* Animacion 3 */
         move('caja_animacion3')
+        .set('visibility','visible')
+        .duration('48s')
+        .then()
           .set('background-position','0 0')
           .duration('2s')
           .ease('out')
@@ -96,12 +117,15 @@
 	          	.pop()
 	          .pop()
 	      .pop()    
+	    .pop()  
         .end();
         /* End Animacion 3 */
 
         /* Animacion 4 */ 
         move('caja_animacion4')
-          //.y(80)
+        .set('visibility','visible')
+        .duration('62s')
+        .then()
           .y(100)
           .duration('2s')
           	.then()
@@ -114,11 +138,15 @@
           			.duration('1s')
           		.pop()
           	.pop()
+        .pop()  	
         .end();
         /* End Animacion 4 */         
         
         /* Animacion 5 */
         move('caja_animacion5')
+        .set('visibility','visible')
+        .duration('72s')
+        .then()
           .set('background-position','0 0')
           //.y(80)
           .duration('2s')
@@ -143,65 +171,74 @@
 	          		.pop()	
 	          	.pop()
 	          .pop()
-	      .pop()    
+	      .pop()
+	    .pop()      
         .end(); 
         /* End Animacion 5 */ 
 
 
-
+        if(lado){
 /* *********** Animacion 6 ********** */
 
 /*    =========== Caja 1 ========== */
 
 		move('caja1_animacion6')
-		.set('background-position','0 0')
-          //.y(80)
-          .duration('1.5s')
-          .ease('out')
-          .then()
+		.set('visibility','visible')
+        .duration('88s')
+        .then()
+			.set('background-position','0 0')
 	          //.y(80)
-	          .y(48)
-	          .duration('1s')
-	          	.then()
-	          		.x(250)
-	          		.duration('5s')
-	          		.then()
-	          			.x(100)
-	          			.y(60)
-	          			.rotate(90)
-	          			.duration('1.5s')
-	          		.pop()
-	          	.pop()
-	       .pop()
+	          .duration('1.5s')
+	          .ease('out')
+	          .then()
+		          //.y(80)
+		          .y(48)
+		          .duration('1s')
+		          	.then()
+		          		.x(250)
+		          		.duration('5s')
+		          		.then()
+		          			.x(100)
+		          			.y(60)
+		          			.rotate(90)
+		          			.duration('1.5s')
+		          		.pop()
+		          	.pop()
+		       .pop()
+		   .pop()    
 	       .end();
 /*    =========== End Caja 1 ========== */
-
-
+		lado=false;
+		}else{
 /*    =========== Caja 2 ========== */
   	move('caja2_animacion6')
-		.set('background-position','0 0')
-          //.y(80)
-          .duration('1.5s')
-          .ease('out')
-          .then()
+  		.set('visibility','visible')
+        .duration('88s')
+        .then()
+			.set('background-position','0 0')
 	          //.y(80)
-	          .y(48)
-	          .duration('1s')
-	          	.then()
-	          		.x(-250)
-	          		.duration('5s')
-	          		.then()
-	          			.x(-100)
-	          			.y(60)
-	          			.rotate(-90)
-	          			.duration('1.5s')
-	          		.pop()
-	          	.pop()
-	       .pop()
+	          .duration('1.5s')
+	          .ease('out')
+	          .then()
+		          //.y(80)
+		          .y(48)
+		          .duration('1s')
+		          	.then()
+		          		.x(-250)
+		          		.duration('5s')
+		          		.then()
+		          			.x(-100)
+		          			.y(60)
+		          			.rotate(-90)
+		          			.duration('1.5s')
+		          		.pop()
+		          	.pop()
+		       .pop()
+		   .pop()    
 	       .end();
 /*    =========== End Caja 2 ========== */
-
-
+		lado=true;
+		}
 
 /* *********** End Animacion 6 ********** */
         
@@ -415,6 +452,7 @@ var cont=0;
 		    <div id="main" style="float:center;">
 			    <table border="2px">	    
 				    <tr>
+				    <td>
 					    <div id="frame">
 
 						  	<div id="foco-gen">
@@ -432,9 +470,20 @@ var cont=0;
 								<div id="caja2"></div>
 							</div>
 							<div id="garra"></div>
+							<img id="tubo02" src="${resource(dir: 'images', file: 'tubo_02.png')}" />
+							<table id="tabla_animacion1" align="left">				     			
+							     	<tr>
+							     		<td><p>E</p></td>
+							     		<td>mpresa mexicana de servicios de valor agregado a telefonía móvil para México y Latinoamérica desde el 2003</td>
+							     	</tr>
+					     		</table>
+					     		
+					     	<div id="over-caja1">
+					     		<div id="caja3_animacion1"></div>
+					     	</div>	
 					
 						</div>
-
+					</td>	
 					</tr>	    
 				   <tr>
 					    <td>

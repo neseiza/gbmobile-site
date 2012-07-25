@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="57" version="2.0">
+<workbench progressCount="54" version="2.0">
 <workbenchAdvisor/>
-<window height="1006" width="1861" x="402" y="164">
+<window height="996" width="1861" x="59" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -21,6 +21,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.compare.CompareEditor" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -38,9 +39,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" partName="index.gsp" path="/Users/mauricio/gbmobile-site/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" title="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" partName="index.gsp" path="/Users/GBAdmin/gbmobile-site/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" title="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="application.properties" partName="application.properties" path="/Users/GBAdmin/gbmobile-site/com.gbmobile.ems.gbmobile/application.properties" title="application.properties" tooltip="com.gbmobile.ems.gbmobile/application.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/application.properties"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="135" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -83,7 +88,7 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.team.ui.GenericHistoryView" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -210,7 +215,27 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/com.gbmobile.ems.gbmobile/application.properties"/>
+</editors>
+<item historyLabel="index.gsp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.gsp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application.properties" index="1">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="index.gsp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="index.gsp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -228,6 +253,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="application.properties" tooltip="com.gbmobile.ems.gbmobile/application.properties">
+<persistable path="/com.gbmobile.ems.gbmobile/application.properties"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.gsp" tooltip="com.gbmobile.ems.gbmobile/grails-app/views/index.gsp">
 <persistable path="/com.gbmobile.ems.gbmobile/grails-app/views/index.gsp"/>
 </file>
