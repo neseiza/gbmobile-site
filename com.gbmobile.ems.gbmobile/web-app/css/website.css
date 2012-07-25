@@ -1,4 +1,4 @@
-/* Tiny Carousel */
+/* Tiny Carousel 
 #slider1, #slider2, #slider3, #slider4, 
 #slider5, #slider6
 { height: 87%; padding: 23px 0px 17px; width: 132%;  margin: 0 -3%;}
@@ -32,3 +32,66 @@
 #slider3 .overview li, #slider4 .overview li,
 #slider5 .overview li, #slider6 .overview li
 { float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+
+*/
+        .example1 {
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        
+        li {
+            text-align:center;
+        }
+        
+        li span {
+            display:block;
+            margin:5px;
+            background:red;
+        }
+        
+        .next
+        {
+            cursor:pointer;
+            position: absolute;
+            margin-top: -190px;	
+            margin-left: 721px;
+        }
+        .prev{
+        	cursor:pointer;
+	        position: absolute;
+	        margin-top: -190px;
+	        margin-left: -16px;
+        }
+
+        #elemento1{
+        	background: url("../images/fondo_casosex.pn"g) no-repeat;
+        	background-position-x: 471px;
+        	background-position-y: 59px;
+	        width: 732px;
+	        height: 263px;
+	        margin-top: 20px;
+	        margin-left: 16px;
+        }
+        #subelem{
+	        float: right;
+	        background: url("../images/pleca_titulo.png") no-repeat;
+	        background-position-y: 45px;
+	        background-position-x: 34px;
+			width: 327px;
+			height: 263px;
+			font-family: "Sonsie One";
+			font-size: 13px;
+        }
+        #subelem h2{
+        	font-family: "Sonsie One";
+        	font-size: 14px;
+	        color: white;
+	        margin-top: 53px;
+	        margin-left: 82px;
+        }
+        #div_imgs{
+	        float: left;
+	        margin-left: 50px;
+	        margin-top: 30px;
+        }
