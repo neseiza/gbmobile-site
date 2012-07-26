@@ -1,27 +1,49 @@
-	var i=0;
 
-	addEventListener('DOMContentLoaded', function animation(){			
-		myfunction();
-		console.log('test' + i);
-		++i;
+
+
+/**/
+var i=0;
+
+addEventListener('DOMContentLoaded', 
+	function animation()
+	{
+		do
+		{
+			myfunction()
+			//console.log('hello' + i);
+			//pausecomp(1000)
+		}while(++i<2);
 	}, 0);
 
 
-	function pausecomp(ms) {
-		ms += new Date().getTime();
-		while (new Date() < ms){}
-	} 
+function pausecomp(ms) {
+	ms += new Date().getTime();
+	while (new Date() < ms){}
+} 
 
 
 
 
-function myfunction(){
+function myfunction()
+{
 	//var lado = true;
-	
-	// Animation 1
+		
 	move('foco')
 		.y(130)
-		.duration('4s')		
+		.duration('4s')
+		.then()
+			.set('visibility', 'hidden')
+			.then()
+				.y(-130)
+				.then()
+					.set('width', '48px')
+					.duration('60s')
+					.then()
+						.set('visibility', 'visible')
+					.pop()
+				.pop()
+			.pop()
+		.pop()
 	.end();
 	
 	
@@ -152,10 +174,10 @@ function myfunction(){
 			.duration('5s')
 		.pop()   
 	.end(); 	        
-	// End Animation 1 caja 3// 
-	 
-	//End Animation 1
-    // Animation 2 
+	// End Animation 1 caja 3//  
+	   
+
+      // Animation 2 
 	move('caja_tubo02')
 		.set('visibility','visible')
 		.duration('37s')
@@ -332,7 +354,34 @@ function myfunction(){
 		//lado=true;
 	//}*/
         
-	setTimeout(function(){myfunction();}, 4000);
+		
+	setTimeout(myfunction, 97000);
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
