@@ -42,7 +42,7 @@
 		</script>	
 	<!-- end carrusel -->
 	
- <script>
+ <!--<script>
       addEventListener('DOMContentLoaded', function(){
       
       var lado = true;
@@ -246,7 +246,7 @@
 
       
       
-</script>
+</script>-->
 
 	
 <script type="text/javascript">
@@ -439,7 +439,7 @@ var cont=0;
 		    </div>
 		    
 		    <div id="main" style="float:center;">
-			    <table border="2px">
+			    <table>
 				    <tr>
 				    <td>
 					    <div id="frame">
