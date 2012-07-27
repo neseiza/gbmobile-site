@@ -20,6 +20,7 @@ body {
 	font-family: "Sonsie One";
 	font-size: 11px;
 	color: #FFFFFF;
+	text-shadow: 0.1em 0.1em #000000;
 }
 
 
@@ -995,3 +996,5 @@ color:#000000;
 	overflow: hidden;
 	position: absolute;
 }
+
+

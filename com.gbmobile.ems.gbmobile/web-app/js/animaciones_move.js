@@ -3,24 +3,15 @@
 
 /**/
 var i=0;
+var lado = true;
 
 addEventListener('DOMContentLoaded', 
 	function animation()
 	{
-		do
-		{
-			myfunction()
-			//console.log('hello' + i);
-			//pausecomp(1000)
-		}while(++i<2);
+		
+		myfunction()
+		
 	}, 0);
-
-
-function pausecomp(ms) {
-	ms += new Date().getTime();
-	while (new Date() < ms){}
-} 
-
 
 
 
@@ -31,19 +22,6 @@ function myfunction()
 	move('foco')
 		.y(130)
 		.duration('4s')
-		.then()
-			.set('visibility', 'hidden')
-			.then()
-				.y(-130)
-				.then()
-					.set('width', '48px')
-					.duration('60s')
-					.then()
-						.set('visibility', 'visible')
-					.pop()
-				.pop()
-			.pop()
-		.pop()
 	.end();
 	
 	
@@ -53,19 +31,6 @@ function myfunction()
 		.then()
 			.x(-240)
 			.duration('5s')
-			.then() // The element is sent to the begining
-				.set('visibility', 'hidden')
-				.then()
-					.x(240)
-					.then()
-						.set('width', '52px')
-						//.duration('32s')
-						.then()
-							.set('visibility', 'visible')
-						.pop()
-					.pop()
-				.pop()
-			.pop()
 		.pop()
 	.end();
 	
@@ -203,7 +168,7 @@ function myfunction()
 		.pop()	  
 	.end(); 	        
 	    // End Animation 2 
-		 /*
+		 
 	
 	    // Animacion 3 
 	move('caja_animacion3')
@@ -294,7 +259,7 @@ function myfunction()
         // End Animacion 5 //
         
         
-	//if(lado){
+	if(lado){
 		// *********** Animacion 6 ********** //
 		
 		//    =========== Caja 1 ========== //
@@ -324,8 +289,8 @@ function myfunction()
 			.pop()    
 		.end();
 		//    =========== End Caja 1 ========== //
-		//lado=false;
-	//}else{
+		lado=false;
+	}else{
 		//    =========== Caja 2 ========== //
 		move('caja2_animacion6')
 			.set('visibility','visible')
@@ -351,18 +316,103 @@ function myfunction()
 			.pop()    
 		.end();
 		//    =========== End Caja 2 ========== */
-		//lado=true;
-	//}*/
+		lado=true;
+	}
         
 		
+	//setTimeout(myfunction, 97000);
 	setTimeout(myfunction, 97000);
+	setTimeout(resetAnimation1, 37000)
+	setTimeout(resetAnimation2, 48000)
+	setTimeout(resetAnimation3, 62000)
+	setTimeout(resetAnimation4, 72000)
+	setTimeout(resetAnimation5, 88000)
+	setTimeout(resetAnimation6, 88000)
+	
+	
+
+	
 	
 }
 
 
+function resetAnimation1() {
+	move('foco')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+	
+	move('garra')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+	
+	move('caja1')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+	
+	move('caja2')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+	
+	move('caja3_animacion1')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+	
+	
+}
 
+function resetAnimation2() { 
+	move('caja_tubo02')
+	.translate(0,0)
+	.set('background-position','0 -50px')
+	.duration('0s')
+	.end();
+}
 
+function resetAnimation3() { 
+	move('caja_animacion3')
+	.translate(0,0)
+	.set('background-position','0 -50px')
+	.duration('0s')
+	.end();
+}
 
+function resetAnimation4() { 
+	move('caja_animacion4')
+	.translate(0,0)
+	.duration('0s')
+	.end();
+}
+
+function resetAnimation5() { 
+	move('caja_animacion5')
+	.translate(0,0)
+	.set('background-position','0 -50px')
+	.duration('0s')
+	.end();
+}
+
+function resetAnimation6() { 
+
+	if(lado){
+		move('caja1_animacion6')
+		.translate(0,0)
+		.set('background-position','0 -50px')
+		.duration('0s')
+		.end();
+	
+	}else{
+		move('caja2_animacion6')
+		.translate(0,0)
+		.set('background-position','0 -50px')
+		.duration('0s')
+		.end();
+	}
+}
 
 
 
