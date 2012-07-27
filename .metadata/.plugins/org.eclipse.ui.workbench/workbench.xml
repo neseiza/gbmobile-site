@@ -52,7 +52,15 @@
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="animaciones_move.js" partName="animaciones_move.js" path="/Users/GBAdmin/gbmobile-site/com.gbmobile.ems.gbmobile/web-app/js/animaciones_move.js" title="animaciones_move.js" tooltip="com.gbmobile.ems.gbmobile/web-app/js/animaciones_move.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.gbmobile.ems.gbmobile/web-app/js/animaciones_move.js"/>
+<<<<<<< HEAD
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="5607"/>
+=======
+<<<<<<< HEAD
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5633" selectionTopPixel="5130"/>
+=======
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+>>>>>>> d6a919b3b770cd64e1f207c66f19a29fb02a6754
+>>>>>>> 4b0eb2f35fca080161bf146fc239df843aa05d70
 </editor>
 </editors>
 <views>
@@ -244,6 +252,7 @@
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="index.gsp" index="0">
+<<<<<<< HEAD
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="index.gsp" index="0">
@@ -252,7 +261,21 @@
 <item historyLabel="style.css" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
+<<<<<<< HEAD
 <item historyLabel="animaciones_move.js" index="3">
+=======
+=======
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.gsp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="style.css" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+>>>>>>> d6a919b3b770cd64e1f207c66f19a29fb02a6754
+<item active="true" historyLabel="animaciones_move.js" index="3">
+>>>>>>> 4b0eb2f35fca080161bf146fc239df843aa05d70
 <position info="not_deleted" x="5633" y="0"/>
 </item>
 <item historyLabel="animaciones_move.js" index="3">
