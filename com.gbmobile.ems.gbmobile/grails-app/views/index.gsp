@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
  <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
-<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script> 
+ <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
  
 <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
