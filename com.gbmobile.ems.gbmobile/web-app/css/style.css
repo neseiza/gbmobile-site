@@ -654,21 +654,15 @@ height: 512px;
 
 /* end animacion 4 */
 
-
-
-
-
 /* 	Animacion 5 */
 
 #tabla_animacion5 {
-	
+	position: relative;	
 	width:482px;
 	height: 56px;
-	margin-top: -11.5%;
-	margin-left: 42%;
-	float: left;
-	//position: absolute;
-	
+	margin-top: -2%;
+	margin-left: 18%;
+	float: left;	
 }
 
 #caja_animacion5 {
