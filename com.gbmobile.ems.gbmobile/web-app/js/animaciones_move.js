@@ -4,6 +4,7 @@
 /**/
 var i=0;
 var lado = true;
+var d_es = 'linear';
 
 addEventListener('DOMContentLoaded', 
 	function animation()
@@ -21,14 +22,14 @@ function myfunction()
 
 
 	move('foco')
-		.ease('linear')
+		.ease(d_es)
 		.y(130)
 		.duration('2s')
 	.end();
 	
 	
 	move('caja1')
-		.ease('linear')
+		.ease(d_es)
 		.set('visibility', 'visible')
 		.duration('3s')
 		.then()
@@ -40,7 +41,7 @@ function myfunction()
 	
 	
 	move('caja2')
-		.ease('linear')
+		.ease(d_es)
 		.set('width', '52px')
 		.duration('8s') // wait for 'foco' & 'caja1'
 		.then()
@@ -86,7 +87,7 @@ function myfunction()
 	
 	
 	move('garra')
-		.ease('linear')
+		.ease(d_es)
 		.set('width', '88px')
 		.duration('9s')
 		.then()
@@ -118,7 +119,7 @@ function myfunction()
 	
 	
 	move('caja2-gen')
-		.ease('linear')
+		.ease(d_es)
 		.set('width', '430px')
 		.duration('22s')
 		.then()
@@ -137,7 +138,7 @@ function myfunction()
 		
     // Animation 1 caja 3 
 	move('caja3_animacion1')
-		.ease('linear')
+		.ease(d_es)
 		.set('visibility','visible')
 		.duration('25s') // waiting for 'caja2'
 		.then()
@@ -151,7 +152,7 @@ function myfunction()
 		
 		// Animation 2 
 	move('caja_tubo02')
-		.ease('linear')
+		.ease(d_es)
 		.set('visibility','visible')
 		.duration('27s') // waiting for End Animation 1
 		.then()
@@ -182,7 +183,7 @@ function myfunction()
 	    
 	    // Animacion 3 
 	move('caja_animacion3')
-		.ease('linear')
+		.ease(d_es)
 		.set('visibility','visible')
 		.duration('33s')
 		.then()
@@ -215,7 +216,7 @@ function myfunction()
         // Animacion 4 
 	move('caja_animacion4')
 		.set('visibility','visible')
-		.ease('linear')
+		.ease(d_es)
 		.duration('43s')
 		.then()
 			.y(98)
@@ -241,7 +242,7 @@ function myfunction()
 
     // Animacion 5 //
 	move('caja_animacion5')
-		.ease('linear')
+		.ease(d_es)
 		.set('visibility','visible')
 		.duration('51s')//72s 
 		.then()
@@ -273,7 +274,7 @@ function myfunction()
 		//    =========== Caja 1 ========== //
 		
 		move('caja1_animacion6')
-			.ease('linear')
+			.ease(d_es)
 			.set('visibility','visible')
 			.duration('62s')
 			.then()
@@ -297,7 +298,7 @@ function myfunction()
 	}else{
 		//    =========== Caja 2 ========== //
 		move('caja2_animacion6')
-			.ease('linear')
+			.ease(d_es)
 			.set('visibility','visible')
 			.duration('62s')
 			.then()
