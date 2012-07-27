@@ -17,7 +17,8 @@ addEventListener('DOMContentLoaded',
 
 function myfunction()
 {
-	//var lado = true;
+
+
 
 	move('foco')
 		.ease('linear')
@@ -156,7 +157,7 @@ function myfunction()
 		.set('visibility','visible')
 		.duration('37s')
 		.then()
-			.y(83)
+			.y(92)
 			.rotate(90)
 			.duration('1s')
 			.then()
@@ -185,7 +186,7 @@ function myfunction()
 		.set('visibility','visible')
 		.duration('48s')
 		.then()
-			.y(96)
+			.y(98)
 			.rotate(90)
 			.duration('1s')
 			.then()
@@ -217,20 +218,15 @@ function myfunction()
 		.then()
 			.y(98)
 			.rotate(90)
-			.duration('2s')
+			.duration('1s')
 			.then()
 				.y(-450)
-				.duration('5s')
+				.duration('3s')
 				.then()
-					.x(20)
+					.x(50)
 					.y(-25)
 					.rotate(90)
-					.duration('1s')
-					.then()
-						.y(-50)
-						.duration('2s')
-						//.rotate(180)
-					.pop()
+					.duration('.5s')
 				.pop()
 			.pop()
 		.pop()  	
@@ -239,7 +235,7 @@ function myfunction()
         
 
         
-		 /*
+		 
 		
 
     // Animacion 5 //
@@ -267,6 +263,7 @@ function myfunction()
 		.pop()
 	.end(); 
         // End Animacion 5 //
+
         
         
 	if(lado){
@@ -279,18 +276,17 @@ function myfunction()
 			.set('visibility','visible')
 			.duration('88s')
 			.then()
+				.y(98)
+				.rotate(90)
+				.duration('1s')
 				.then()
-					.y(98)
-					.duration('1s')
+					.y(-255)
+					.duration('3s')
 					.then()
-						.x(255)
-						.duration('5s')
-						.then()
-							.x(100)
-							.y(60)
-							.rotate(90)
-							.duration('2.5s')
-						.pop()
+						.y(-100)
+						.x(60)
+						.rotate(90)
+						.duration('.5s')
 					.pop()
 				.pop()
 			.pop()    
@@ -304,36 +300,37 @@ function myfunction()
 			.set('visibility','visible')
 			.duration('88s')
 			.then()
+				.y(95)
+				.rotate(-90)
+				.duration('1s')
 				.then()
-					.y(95)
-					.duration('1s')
+					.y(-250)
+					.duration('3s')
 					.then()
-						.x(-250)
-						.duration('5s')
-						.then()
-							.x(-100)
-							.y(60)
-							.rotate(-90)
-							.duration('1.5s')
-						.pop()
+						.y(-100)
+						.x(-60)
+						.rotate(-90)
+						.duration('.5s')
 					.pop()
 				.pop()
 			.pop()    
 		.end();
 		//    =========== End Caja 2 ========== 
 		lado=true;
-	}*/
 	}
+	
         
 		
-	//setTimeout(myfunction, 97000);
+	
+	
 	setTimeout(myfunction, 97000)
 	setTimeout(resetAnimation1, 37000)
 	setTimeout(resetAnimation2, 48000)
 	setTimeout(resetAnimation3, 62000)
 	setTimeout(resetAnimation4, 72000)
 	setTimeout(resetAnimation5, 88000)
-	setTimeout(resetAnimation6, 88000)	
+	setTimeout(resetAnimation6, 88000)
+
 	
 }
 
@@ -370,7 +367,6 @@ function resetAnimation1() {
 function resetAnimation2() { 
 	move('caja_tubo02')
 	.translate(0,0)
-	.set('background-position','0 -50px')
 	.duration('0s')
 	.end();
 }
@@ -378,7 +374,6 @@ function resetAnimation2() {
 function resetAnimation3() { 
 	move('caja_animacion3')
 	.translate(0,0)
-	.set('background-position','0 -50px')
 	.duration('0s')
 	.end();
 }
@@ -393,7 +388,6 @@ function resetAnimation4() {
 function resetAnimation5() { 
 	move('caja_animacion5')
 	.translate(0,0)
-	.set('background-position','0 -50px')
 	.duration('0s')
 	.end();
 }
@@ -403,14 +397,12 @@ function resetAnimation6() {
 	if(lado){
 		move('caja1_animacion6')
 		.translate(0,0)
-		.set('background-position','0 -50px')
 		.duration('0s')
 		.end();
 	
 	}else{
 		move('caja2_animacion6')
 		.translate(0,0)
-		.set('background-position','0 -50px')
 		.duration('0s')
 		.end();
 	}

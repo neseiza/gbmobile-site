@@ -220,12 +220,11 @@
 					     		<div id="banda_04"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation3"/></div>
 					     		<div id="banda_05"></div>
 					     		<div id="banda_06"></div>
-					     		<div id="banda_07"></div>
 								<div id="over-caja3">
 					     			<div id="caja_animacion3"></div>
 								</div>
 					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>
-					     		<div id="caja_animacion3"></div>
+
 					     		
 					     	</div>
 					     	</td>
