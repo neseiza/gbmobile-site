@@ -220,6 +220,10 @@
 					     		<div id="banda_04"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation3"/></div>
 					     		<div id="banda_05"></div>
 					     		<div id="banda_06"></div>
+					     		<div id="banda_07"></div>
+								<div id="over-caja3">
+					     			<div id="caja_animacion3"></div>
+								</div>
 					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>
 					     		<div id="caja_animacion3"></div>
 					     		
@@ -255,7 +259,7 @@
 					     		<div id="banda1_animacion4"><img src="${resource(dir: 'images', file: 'flecha.png')}" alt="*" class="flecha1Animation4"/></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
-					     		<div id="over-caja">
+					     		<div id="over-caja4">
 					     			<div id="caja_animacion4"></div>
 					     			<img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation4"/>
 					     		</div>
@@ -284,7 +288,9 @@
 					     		<div id="banda2_animacion5"></div>
 					     		<div id="banda3_animacion5"></div>
 					     		<div id="banda4_animacion5"></div>
-					     		<div id="caja_animacion5"></div>
+								<div id ="over-caja5">
+						     		<div id="caja_animacion5"></div>
+								</div>
 					     		
 					     		<table id="tabla_animacion5">	
 
@@ -325,7 +331,7 @@
 					     	<div id="banda2_animacion6"></div>
 					     	<div id="banda1_animacion6"></div>
 		     	
-					     	<div id="over-caja">
+					     	<div id="over-caja6">
 					     		<div id="caja1_animacion6"></div>
 					     		<div id="caja2_animacion6"></div>
 					     	</div>
