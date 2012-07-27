@@ -71,18 +71,25 @@
 		    </div>
 		    
 		    <div id="main" style="float:center;">
-			    <table>
+			    <table border="0px">
 				    <tr>
 				    <td>
 					    <div id="frame">
-
+						    <img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" clas="flecha1Animation1"/>
 						  	<div id="foco-gen">
 						  		<div id="foco"></div>
 						  	</div>
 							<div id="tubo"></div>
 					
 							<div id="banda"></div>
-							<div id="maquina"></div>
+							<div id="maquina">
+								<table id="tabla_animacion1" align="left" border="0px">				     			
+							     	<tr>
+							     		<td><p>E</p></td>
+							     		<td>mpresa mexicana de servicios de valor agregado a telefonía móvil para México y Latinoamérica desde el 2003</td>
+							     	</tr>
+					     		</table>
+							</div>
 					
 							<div id="caja1-gen">
 								<div id="caja1"></div>
@@ -91,13 +98,8 @@
 								<div id="caja2"></div>
 							</div>
 							<div id="garra"></div>
-							<img id="tubo02" src="${resource(dir: 'images', file: 'tubo_02.png')}" />
-							<table id="tabla_animacion1" align="left">				     			
-							     	<tr>
-							     		<td><p>E</p></td>
-							     		<td>mpresa mexicana de servicios de valor agregado a telefonía móvil para México y Latinoamérica desde el 2003</td>
-							     	</tr>
-					     		</table>
+							<img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha2Animation1" />   			    				
+							<img id="tubo02" src="${resource(dir: 'images', file: 'tubo_02.png')}" />				
 					     		
 					     	<div id="over-caja1">
 					     		<div id="caja3_animacion1"></div>
@@ -177,6 +179,7 @@
 							     	<tr>
 							     		<td width="370px">
 							     			<div id="over-caja2">
+							     				<img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation2"/>
 									     		<div id="caja_tubo02"></div>
 							     			</div>
 							     		</td>
@@ -214,13 +217,15 @@
 					     		</table>
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
 
-					     		<div id="banda_04"></div>
+					     		<div id="banda_04"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation3"/></div>
 					     		<div id="banda_05"></div>
 					     		<div id="banda_06"></div>
 					     		<div id="banda_07"></div>
 								<div id="over-caja3">
 					     			<div id="caja_animacion3"></div>
 								</div>
+					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>
+					     		<div id="caja_animacion3"></div>
 					     		
 					     	</div>
 					     	</td>
@@ -251,11 +256,12 @@
 							     	</tr>
 						     	</table>
 					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
-					     		<div id="banda1_animacion4"></div>
+					     		<div id="banda1_animacion4"><img src="${resource(dir: 'images', file: 'flecha.png')}" alt="*" class="flecha1Animation4"/></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
 					     		<div id="over-caja4">
 					     			<div id="caja_animacion4"></div>
+					     			<img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation4"/>
 					     		</div>
 					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
 					     	</div>
@@ -278,7 +284,7 @@
 					     	
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_05"/>
 
-					     		<div id="banda1_animacion5"></div>
+					     		<div id="banda1_animacion5"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation5"/></div>
 					     		<div id="banda2_animacion5"></div>
 					     		<div id="banda3_animacion5"></div>
 					     		<div id="banda4_animacion5"></div>

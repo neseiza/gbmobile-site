@@ -179,9 +179,6 @@ function myfunction()
 	.end(); 	 
 
 	    // End Animation 2 
-
-
-
 	    // Animacion 3 
 	move('caja_animacion3')
 		.ease('linear')
@@ -326,6 +323,7 @@ function myfunction()
 		//    =========== End Caja 2 ========== 
 		lado=true;
 	}*/
+	}
         
 		
 	//setTimeout(myfunction, 97000);
@@ -335,7 +333,7 @@ function myfunction()
 	setTimeout(resetAnimation3, 62000)
 	setTimeout(resetAnimation4, 72000)
 	setTimeout(resetAnimation5, 88000)
-	setTimeout(resetAnimation6, 88000)
+	setTimeout(resetAnimation6, 88000)	
 	
 }
 
