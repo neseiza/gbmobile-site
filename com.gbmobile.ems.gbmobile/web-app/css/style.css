@@ -354,11 +354,10 @@ height: 512px;
 
 #caja_tubo02{
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 0%;
-	margin-left: 82%;
+	margin-top: -48px;
+	margin-left: 298px;
 	float: left;
 }
 /*
@@ -470,14 +469,12 @@ height: 512px;
 }*/
 
 #caja_animacion3 {
-	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
-	width:53px;
-	height: 50px;
-	margin-top: 6.5%;
-	margin-left: -13%;
-	float: left;
-
+	background: url("../images/cajaP_cerrada.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 50px;
+    margin-left: 585px;
+    margin-top: -47px;
+    width: 53px;
 }
 
 #maquina_abajo1 {
@@ -584,11 +581,10 @@ height: 512px;
 
 #caja_animacion4 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 0;
 	width:53px;
 	height: 50px;
 	margin-top: -49px;
-	float: left;
+	margin-left: 20px;
 }
 
 
@@ -613,11 +609,10 @@ height: 512px;
 
 #caja_animacion5 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 6.6%;
-	margin-left: -40%;
+	margin-top: -48px;
+	margin-left: 18px;
 	float: left;
 }
 
@@ -692,11 +687,10 @@ height: 512px;
 
 #caja1_animacion6 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 0%;
-	margin-left: 3.7%;
+	margin-top: -48px;
+	margin-left: 17px;
 	float: left;
 
 
@@ -704,11 +698,10 @@ height: 512px;
 
 #caja2_animacion6 {
 	background: transparent url(../images/cajaP_cerrada.png) 0 0 no-repeat;
-	background-position: 0 -50px;
 	width:53px;
 	height: 50px;
-	margin-top: 0%;
-	margin-left: 78%;
+	margin-top: -50px;
+	margin-left: 639px;
 	float: left;
 }
 
@@ -875,14 +868,6 @@ color:#000000;
 	
 }
 
-#over-caja{
-	width: 715px;
-	height: 95px;
-	overflow: hidden;
-	position: absolute;
-	margin-left: 336px;
-	margin-top: 101px;
-}
 #over-caja1{
 	width: 75px;
 	height: 65px;
@@ -893,13 +878,48 @@ color:#000000;
 }
 #over-caja2{
 	width: 370px;
-	height: 95px;
+	height: 85px;
 	overflow: hidden;
 	position: absolute;
-	margin-top: -35px;
+	margin-top: -29px;
 	border: 2px;
 }
 
+#over-caja3{
+	height: 162px;
+    margin-top: 99px;
+    overflow: hidden;
+    position: absolute;
+    width: 657px;
+    margin-left: 200px;
+}
+
+#over-caja4{
+    height: 97px;
+    margin-left: 344px;
+    margin-top: 99px;
+    overflow: hidden;
+    position: absolute;
+    width: 581px;
+}
+
+#over-caja5{
+	height: 209px;
+    margin-left: 432px;
+    margin-top: 98px;
+    overflow: hidden;
+    position: absolute;
+    width: 752px;
+}
+
+#over-caja6{
+	width: 715px;
+	height: 95px;
+	overflow: hidden;
+	position: absolute;
+	margin-left: 336px;
+	margin-top: 101px;
+}
 
 #foco {
 	background: transparent url(../images/foco.png) 0 0 repeat-y;

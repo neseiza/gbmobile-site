@@ -10,6 +10,8 @@
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
  <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script> 
+<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
+ 
 <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
@@ -42,380 +44,9 @@
         });
 		</script>	
 	<!-- end carrusel -->
-	
- <!--<script>
-      addEventListener('DOMContentLoaded', function(){
-      
-      var lado = true;
-      
-      
-      /* Animation 1 caja 3 */
-       move('caja3_animacion1')
-       .set('visibility','visible')
-       .duration('32s')
-       .then()
-	       .y(150)
-	       .duration('5s')
-	    .pop()   
-	   .end(); 	        
-	    /* End Animation 1 caja 3*/  
-	    
-	    
-      /* Animation 2 */
-       move('caja_tubo02')
-       .set('visibility','visible')
-       .duration('37s')
-	   .then()
-			.set('background-position','0 0')   
-			  .y(10)       
-	          .duration('1.5s')
-	          .ease('out')
-	          .then()
-	          	.y(32)
-	          	.duration('1s')
-	          	.then()
-	          		.x(-220)
-	          		.duration('5s')
-	          		.then()
-	          			.x(-80)
-	          			.y(60)
-	          			.rotate(-90)
-	          			.duration('1.5s')
-	          		.pop()
-	          	.pop()
-			  .pop()          
-		.pop()	  
-	   .end(); 	        
-	    /* End Animation 2 */    
-	             
-	    /* Animacion 3 */
-        move('caja_animacion3')
-        .set('visibility','visible')
-        .duration('48s')
-        .then()
-          .set('background-position','0 0')
-          .duration('2s')
-          .ease('out')
-          .then()
-          	.y(50)
-          	.duration('1s')
-	          .then()
-	          	.x(-500)
-	          	.duration('7s')
-	          	.then()
-	          		.ease('in')
-	          		.y(65)
-	          		.x(-50)
-	          		.rotate(-90)
-	          		.duration('1s')
-	          		.then()
-	          			.x(5)
-	          			.y(-10)
-	          			.set('background-position', '-60px')
-	          			.duration('1s')
-	          		.pop()	
-	          	.pop()
-	          .pop()
-	      .pop()    
-	    .pop()  
-        .end();
-        /* End Animacion 3 */
-
-        /* Animacion 4 */ 
-        move('caja_animacion4')
-        .set('visibility','visible')
-        .duration('62s')
-        .then()
-          .y(100)
-          .duration('2s')
-          	.then()
-          		.x(450)
-          		.duration('5s')
-          		.then()
-          			.x(100)
-          			.y(60)
-          			.rotate(90)
-          			.duration('1s')
-          		.pop()
-          	.pop()
-        .pop()  	
-        .end();
-        /* End Animacion 4 */         
-        
-        /* Animacion 5 */
-        move('caja_animacion5')
-        .set('visibility','visible')
-        .duration('72s')
-        .then()
-          .set('background-position','0 0')
-          //.y(80)
-          .duration('2s')
-          .ease('out')
-          .then()
-          	.y(48)
-          	.duration('1s')
-	          .then()
-	          	.x(570)
-	          	.duration('8s')
-	          	.then()
-	          		.ease('in')
-	          		.y(103)
-	          		.x(40)
-	          		.rotate(90)
-	          		.duration('2s')
-	          		.then()
-	          			.x(5)
-	          			.y(-15)
-	          			.set('background-position', '60px')
-	          			.duration('1s')
-	          		.pop()	
-	          	.pop()
-	          .pop()
-	      .pop()
-	    .pop()      
-        .end(); 
-        /* End Animacion 5 */ 
 
 
-        if(lado){
-/* *********** Animacion 6 ********** */
 
-/*    =========== Caja 1 ========== */
-
-		move('caja1_animacion6')
-		.set('visibility','visible')
-        .duration('88s')
-        .then()
-			.set('background-position','0 0')
-	          //.y(80)
-	          .duration('1.5s')
-	          .ease('out')
-	          .then()
-		          //.y(80)
-		          .y(48)
-		          .duration('1s')
-		          	.then()
-		          		.x(250)
-		          		.duration('5s')
-		          		.then()
-		          			.x(100)
-		          			.y(60)
-		          			.rotate(90)
-		          			.duration('1.5s')
-		          		.pop()
-		          	.pop()
-		       .pop()
-		   .pop()    
-	       .end();
-/*    =========== End Caja 1 ========== */
-		lado=false;
-		}else{
-/*    =========== Caja 2 ========== */
-  	move('caja2_animacion6')
-  		.set('visibility','visible')
-        .duration('88s')
-        .then()
-			.set('background-position','0 0')
-	          //.y(80)
-	          .duration('1.5s')
-	          .ease('out')
-	          .then()
-		          //.y(80)
-		          .y(48)
-		          .duration('1s')
-		          	.then()
-		          		.x(-250)
-		          		.duration('5s')
-		          		.then()
-		          			.x(-100)
-		          			.y(60)
-		          			.rotate(-90)
-		          			.duration('1.5s')
-		          		.pop()
-		          	.pop()
-		       .pop()
-		   .pop()    
-	       .end();
-/*    =========== End Caja 2 ========== */
-		lado=true;
-		}
-
-/* *********** End Animacion 6 ********** */
-        
-      }, false);
-
-
-      
-      
-</script>-->
-
-	
-<script type="text/javascript">
-var cont=0;
-	
-	(function($) {
-            $(document).ready(function() {
-            var cont=0;
-            	$('#maquina')
-                    .sprite({
-                        fps: 2, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 1
-                    })
-                    
-                 $('#banda')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 1
-                    })
-                    
-            	$('#bandaSimple')
-
-                    .sprite({
-                        fps: 2, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 1
-                    })
-                    
-                $('#bandaSimple1')
-
-                    .sprite({
-                        fps: 2, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 1
-                    })   
-                    
-                    $('#banda_04')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-                    
-                    $('#banda_05')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-
-                    $('#banda_06')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-                    
-                    $('#banda_07')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-                    
-                    $('#banda1_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-                    
-                    $('#banda2_animacion4')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                    
-
-                    $('#banda1_animacion5')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                    
- 
-                    $('#banda2_animacion5')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-
-
-                    $('#banda3_animacion5')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-
-
-                    $('#banda4_animacion5')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                        
-                    $('#banda1_animacion6')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                     
-                     
-                    $('#banda2_animacion6')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                    
-                    
-                    $('#banda3_animacion6')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                        
-                     
-                    $('#banda4_animacion6')
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true});
-                        
-                        
-                    
-                    $('#banda3_animacion4')
-
-                    .sprite({
-                        fps: 5, 
-                        no_of_frames: 2,
-                        rewind: true,
-                        // the following are optional: new in version 0.6...
-                        start_at_frame: 5
-                    })
-  });
-})(jQuery);
-    
-
-</script>
 
 <title>gbMobile</title>
 
@@ -587,7 +218,9 @@ var cont=0;
 					     		<div id="banda_05"></div>
 					     		<div id="banda_06"></div>
 					     		<div id="banda_07"></div>
-					     		<div id="caja_animacion3"></div>
+								<div id="over-caja3">
+					     			<div id="caja_animacion3"></div>
+								</div>
 					     		
 					     	</div>
 					     	</td>
@@ -621,7 +254,7 @@ var cont=0;
 					     		<div id="banda1_animacion4"></div>
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
-					     		<div id="over-caja">
+					     		<div id="over-caja4">
 					     			<div id="caja_animacion4"></div>
 					     		</div>
 					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
@@ -649,7 +282,9 @@ var cont=0;
 					     		<div id="banda2_animacion5"></div>
 					     		<div id="banda3_animacion5"></div>
 					     		<div id="banda4_animacion5"></div>
-					     		<div id="caja_animacion5"></div>
+								<div id ="over-caja5">
+						     		<div id="caja_animacion5"></div>
+								</div>
 					     		
 					     		<table id="tabla_animacion5">	
 
@@ -690,7 +325,7 @@ var cont=0;
 					     	<div id="banda2_animacion6"></div>
 					     	<div id="banda1_animacion6"></div>
 		     	
-					     	<div id="over-caja">
+					     	<div id="over-caja6">
 					     		<div id="caja1_animacion6"></div>
 					     		<div id="caja2_animacion6"></div>
 					     	</div>
