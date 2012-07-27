@@ -224,9 +224,7 @@
 								<div id="over-caja3">
 					     			<div id="caja_animacion3"></div>
 								</div>
-					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>
-					     		<div id="caja_animacion3"></div>
-					     		
+					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>					     		
 					     	</div>
 					     	</td>
 					     	</tr>
@@ -290,15 +288,13 @@
 					     		<div id="banda4_animacion5"></div>
 								<div id ="over-caja5">
 						     		<div id="caja_animacion5"></div>
+						     		<table id="tabla_animacion5">		
+								    	<tr>
+								     		<td><p>C</p></td>
+								     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
+								     	</tr>
+							     	</table>
 								</div>
-					     		
-					     		<table id="tabla_animacion5">	
-
-							    	<tr>
-							     		<td><p>C</p></td>
-							     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
-							     	</tr>
-						     	</table>
 					     	</div>
 				     	</td>
 			     	</tr>	     	

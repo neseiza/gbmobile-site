@@ -22,44 +22,44 @@ function myfunction()
 	move('foco')
 		.ease('linear')
 		.y(130)
-		.duration('4s')
+		.duration('2s')
 	.end();
 	
 	
 	move('caja1')
 		.ease('linear')
 		.set('visibility', 'visible')
-		.duration('5s')
+		.duration('3s')
 		.then()
 			.x(-240)
-			.duration('5s')
+			.duration('4s')
 		.pop()
-	.end();
+	.end(); //total time:7s
 	
 	
 	
 	move('caja2')
 		.ease('linear')
 		.set('width', '52px')
-		.duration('10s')
+		.duration('8s') // wait for 'foco' & 'caja1'
 		.then()
 			.x(-110)
-			.duration('5s')
-			.then()
-			.set('width', '52px')
 			.duration('3s')
-				.then()
+			.then()
+				//.set('width', '52px')
+				.duration('2s') //keep static waiting for 'garra'
+				.then() // interaction with 'garra'
 					.y(-152)
-					.duration('4s')
+					.duration('3s')
 					.then()
 						.x(-320)
 						.duration('4s')
 						.then()
 							.y(56)
-							.duration('3s')
-							.then()
+							.duration('3s')  
+							.then() //drops the box 'caja2'
 								.y(58)
-								.duration('2s')
+								.duration(500) //total time since the begining: 23.5s
 								.then() //The element is sent to the begining
 									.set('visibility', 'hidden')
 									.then()
@@ -87,13 +87,13 @@ function myfunction()
 	move('garra')
 		.ease('linear')
 		.set('width', '88px')
-		.duration('14s')
+		.duration('9s')
 		.then()
 			.y(152)
 			.duration('4s')
 			.then()
 				.y(-152)
-				.duration('4s')
+				.duration('3s')
 				.then()
 					.x(-320)
 					.duration('4s')
@@ -138,23 +138,21 @@ function myfunction()
 	move('caja3_animacion1')
 		.ease('linear')
 		.set('visibility','visible')
-		.duration('32s')
+		.duration('25s') // waiting for 'caja2'
 		.then()
 			.y(150)
 			.rotate(120)
-			.duration('5s')
+			.duration('1s')
 		.pop()   
-	.end(); 	        
-	// End Animation 1 caja 3//  
-
-
-
-
-      // Animation 2 
+	.end(); 	
+		// Total time Animation 1: 26s      
+		// End Animation 1 caja 3// 
+		
+		// Animation 2 
 	move('caja_tubo02')
 		.ease('linear')
 		.set('visibility','visible')
-		.duration('37s')
+		.duration('27s') // waiting for End Animation 1
 		.then()
 			.y(83)
 			.rotate(90)
@@ -166,19 +164,21 @@ function myfunction()
 					.x(20)
 					.y(25)
 					.rotate(-90)
-					.duration('0.5s')
+					.duration(500)
 					.then()
 						.y(105)
 						.x(-20)
 						.rotate(-90)
-						.duration('1.1s')
+						.duration(1100)
 					.pop()
 				.pop()
 			.pop()
 		.pop()	  
-	.end(); 	 
-
+	.end(); 
+		//Total time Animation 2: 4.6s
+		//total time since the begining: 31.6s
 	    // End Animation 2 
+	    
 	    // Animacion 3 
 	move('caja_animacion3')
 		.ease('linear')
@@ -206,10 +206,8 @@ function myfunction()
 			.pop()
 		.pop()    
 	.end();
-        // End Animacion 3 
-
-        
-    // Animacion 4 
+        // End Animacion 3         
+        // Animacion 4 
 	move('caja_animacion4')
 		.set('visibility','visible')
 		.ease('linear')
@@ -237,31 +235,23 @@ function myfunction()
 	.end();
         // End Animacion 4 
         
-
-        
-		 /*
-		
-
     // Animacion 5 //
 	move('caja_animacion5')
 		.ease('linear')
 		.set('visibility','visible')
-		.duration('72s')
+		.duration('1s')//72s 
 		.then()
-			.ease('out')
+			.y(98)
+			.rotate(180)
+			.duration('1s')
 			.then()
-				.y(98)
-				.duration('1s')
+				.x(-585)
+				.duration('8s')
 				.then()
-					.x(585)
-					.duration('8s')
-					.then()
-						.ease('in')
-						.y(160)
-						.x(40)
-						.rotate(90)
-						.duration('2s')
-					.pop()
+					.y(-170)
+					.x(-40)
+					.rotate(190)
+					.duration(1200)
 				.pop()
 			.pop()
 		.pop()
@@ -322,11 +312,8 @@ function myfunction()
 		.end();
 		//    =========== End Caja 2 ========== 
 		lado=true;
-	}*/
 	}
-        
-		
-	//setTimeout(myfunction, 97000);
+	
 	setTimeout(myfunction, 97000)
 	setTimeout(resetAnimation1, 37000)
 	setTimeout(resetAnimation2, 48000)
@@ -334,6 +321,7 @@ function myfunction()
 	setTimeout(resetAnimation4, 72000)
 	setTimeout(resetAnimation5, 88000)
 	setTimeout(resetAnimation6, 88000)	
+	
 	
 }
 
