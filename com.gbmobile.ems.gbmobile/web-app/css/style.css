@@ -296,6 +296,7 @@ margin-bottom:12px;
 
 #animation1
 {
+position: relative;
 margin: 0% 10%
 }
 
@@ -384,13 +385,12 @@ height: 512px;
 }
 
 #tubo02{
-	
+	position: relative;
 	width:137px;
 	height: 75px;
 	float: right;
-	margin-top: 34.2%;
-	margin-right: 80%;
-	position: relative;
+	margin-top: 2.2%;
+	margin-right: 80%;	
 	overflow: hidden;
 }
 
@@ -499,12 +499,75 @@ height: 512px;
 	
 }
 
+.flecha1Animation2 {
+	margin-top: 0px;
+	margin-left: 150px; 
+	float:left;
+}
+.flecha1Animation3 {
+	margin-top: -50px; 
+	margin-left: -60px; 
+	float:left;
+}
+.flecha2Animation3 {
+	float: right;
+	margin-top: -85px;
+	margin-right: 0px;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(-0deg);
+	-ms-transform:rotate(90deg);
+	z-index: -1;
+}
+.flecha1Animation4 {
+	float: left;
+	margin-left: -73px;;
+	margin-top: -105px;;	
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	 
+}
+.flecha2Animation4 {
+	float: left;
+	margin-left: 380px;
+	margin-top: 35px;
+}
+.flecha1Animation5{
+	float: left;
+	margin-left: 100px;
+	margin-top: -65px;
+	-moz-transform:rotate(-120deg);
+	-webkit-transform:rotate(-120deg);
+	-o-transform:rotate(-120deg);
+	-ms-transform:rotate(-120deg);
+	 
+}
+
 #tabla_animacion1 {
-	float: left;	
-	width:40%;
-	margin-top: -9.5%;
-	margin-left: 31%;
+	position: relative;
+	float: center;		
+	width:100%;
+	margin-top: 77%;
+	margin-left: 0%;
+	-webkit-margin-top-collapse: -10%;
+
 	
+}
+.flecha1Animation1 {
+	margin-top: 35px;
+	margin-left: 150px; 
+	float:left;
+}
+.flecha2Animation1 {
+	float: left;
+	margin-top: 420px; 
+	margin-left: 50px; 	
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);	 
 }
 
 #tubo_03 {
