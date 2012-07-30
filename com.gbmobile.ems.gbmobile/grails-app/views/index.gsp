@@ -284,7 +284,6 @@ jquery.colorbox.js
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<!-- <img src="${resource(dir: 'images', file: 'tubo_menu3.png')}" id="tubo_menu3"/> -->
 					     		<div id ="menu3">					     			 
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
