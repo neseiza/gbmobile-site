@@ -1,91 +1,61 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<! --  pop ups
-http://pixelentity.com/previews/components/flare/ 
-http://www.ericmmartin.com/projects/simplemodal/
-http://www.jacklmoore.com/colorbox
-http://pixelentity.com/previews/components/flare/
-lexnardx@gmail( or hotmail).com
 
-jquery.colorbox.js
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!-- Index Styles-->
-<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>-->
-		<!-- JS Sprites-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
+
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-ui-1.8.7.custom.min.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}" ></script>
+
+ <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
+ <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
-		<!-- JS Move-->
-<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
-		<!-- JS Modal PopUp-->
-<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'colorbox.css')}"></link>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox.js')}"></script>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox-min.js')}"></script>
-<script>
-	$(document).ready(function(){
-			//How to assign the ColorBox event to elements
-			$(".group1").colorbox({rel:'group1'});
-			$(".group2").colorbox({rel:'group2', transition:"fade"});
-			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-			$(".group4").colorbox({rel:'group4', slideshow:true});
-			$(".ajax").colorbox();
-			$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
-			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-			$(".inline").colorbox({inline:true, width:"50%"});
-			$(".callbacks").colorbox({
-				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-			});
-			
-			//Example of preserving a JavaScript event for inline calls.
-			$("#click").click(function(){ 
-				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-				return false;
-			});
-		});
-</script>
+ 
 <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
-		<!-- begin Carrusel -->
-<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
-<script type="text/javascript">
-	/*$(document).ready(function(){
-		$('#slider1').tinycarousel();	
-		$('#slider2').tinycarousel();	
-		$('#slider3').tinycarousel();	
-		$('#slider4').tinycarousel();	
-		$('#slider5').tinycarousel();	
-		$('#slider6').tinycarousel();	
-		
+	<!-- begin Carrusel -->
+	
+	<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
+	<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
+		<script type="text/javascript">
+			$(document).ready(function() {
+            // example 1
+            $("ul.example1").simplecarousel({
+                width:770,
+                height:303,
+                visible: 1,
+                auto: 60000,
+                next: $('.next'),
+                prev: $('.prev')
+            });
+            
+            $("#sms_a").click(function(){
+					$("#slider1").slideto({highlight: false});
+			});
+			$("#msites_a").click(function(){
+					$("#slider2").slideto({highlight: false});
+			});
+			$("#apps_a").click(function(){
+					$("#slider3").slideto({highlight: false});
+			});
+			$("#mcoupons_a").click(function(){
+					$("#slider4").slideto({highlight: false});
+			});
+			$("#web_a").click(function(){
+					$("#slider5").slideto({highlight: false});
+			});
+        });
+		</script>	
+	<!-- end carrusel -->
 
-	});*/
-	$(document).ready(function() {
-	    // example 1
-	    $("ul.example1").simplecarousel({
-	        width:770,
-	        height:303,
-	        visible: 1,
-	        auto: 60000,
-	        next: $('.next'),
-	        prev: $('.prev')
-	    });
-	    
-	    $("#sms_a").click(function(){
-				$("#slider1").slideto({highlight: false});
-		});
-	});
-</script>	
-		<!-- end carrusel -->
+
+
 
 <title>gbMobile</title>
 
@@ -99,7 +69,7 @@ jquery.colorbox.js
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
-		                <li><a id="msites_a" href="#a_mSites">mSites</a></li>
+		                <li><a id="msites_a" href="#msites">mSites</a></li>
 		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
 		               	<li><img id="logo" src="images/logogb.png" /></li>
 		             </ul>
@@ -156,7 +126,7 @@ jquery.colorbox.js
 									        <li>
 									
 										        	<div id="div_imgs">
-												        <a class="group1" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img src="images/video.png"/></a>
+												        <img src="images/video.png"/>
 												        <img src="images/cel_infonavit.png" />
 										        	</div>
 											        <div id="subelem">
@@ -271,7 +241,8 @@ jquery.colorbox.js
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<div id ="menu3"><a name="a_mSites" id="a_mSites"></a>			     			 
+					     		<!-- <img src="${resource(dir: 'images', file: 'tubo_menu3.png')}" id="tubo_menu3"/> -->
+					     		<div id ="menu3">					     			 
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
