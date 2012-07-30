@@ -23,7 +23,6 @@ jquery.colorbox.js
 		<!-- JS Move-->
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
-
 		<!-- JS Modal PopUp-->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'colorbox.css')}"></link>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox.js')}"></script>
@@ -84,18 +83,6 @@ jquery.colorbox.js
 	    $("#sms_a").click(function(){
 				$("#slider1").slideto({highlight: false});
 		});
-		$("#msites_a").click(function(){
-				$("#slider2").slideto({highlight: false});
-		});
-		$("#apps_a").click(function(){
-				$("#slider3").slideto({highlight: false});
-		});
-		$("#mcoupons_a").click(function(){
-				$("#slider4").slideto({highlight: false});
-		});
-		$("#web_a").click(function(){
-				$("#slider5").slideto({highlight: false});
-		});
 	});
 </script>	
 		<!-- end carrusel -->
@@ -112,7 +99,7 @@ jquery.colorbox.js
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
-		                <li><a id="msites_a" href="#msites">mSites</a></li>
+		                <li><a id="msites_a" href="#a_mSites">mSites</a></li>
 		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
 		               	<li><img id="logo" src="images/logogb.png" /></li>
 		             </ul>
@@ -284,7 +271,7 @@ jquery.colorbox.js
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<div id ="menu3">					     			 
+					     		<div id ="menu3"><a name="a_mSites" id="a_mSites"></a>			     			 
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
