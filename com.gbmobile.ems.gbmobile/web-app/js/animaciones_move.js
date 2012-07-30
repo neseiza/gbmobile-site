@@ -302,7 +302,7 @@ function playAnimations(){
 		//total time since the begining: 66.5s
 		// *********** End Animacion 6 ********** //	
 
-	setTimeout(myfunction, 66000)
+	setTimeout(playAnimations, 66000)
 	setTimeout(resetAnimation1, 33000)
 	setTimeout(resetAnimation2, 33000)
 	setTimeout(resetAnimation3, 43000)
