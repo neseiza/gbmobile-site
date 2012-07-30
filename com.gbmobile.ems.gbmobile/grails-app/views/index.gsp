@@ -25,16 +25,6 @@
 	<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
 	<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
 		<script type="text/javascript">
-			/*$(document).ready(function(){
-				$('#slider1').tinycarousel();	
-				$('#slider2').tinycarousel();	
-				$('#slider3').tinycarousel();	
-				$('#slider4').tinycarousel();	
-				$('#slider5').tinycarousel();	
-				$('#slider6').tinycarousel();	
-				
-	
-			});*/
 			$(document).ready(function() {
             // example 1
             $("ul.example1").simplecarousel({
