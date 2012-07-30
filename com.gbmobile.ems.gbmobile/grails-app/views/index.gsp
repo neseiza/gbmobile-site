@@ -1,52 +1,63 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<! --  pop ups
+http://pixelentity.com/previews/components/flare/ 
+http://www.ericmmartin.com/projects/simplemodal/
+http://www.jacklmoore.com/colorbox
+http://pixelentity.com/previews/components/flare/
+lexnardx@gmail( or hotmail).com
 
+jquery.colorbox.js
+-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>
+		<!-- Index Styles-->
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}" ></script>-->
+		<!-- JS Sprites-->
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
- <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
- <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
- 
+		<!-- JS Move-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script> 
+
+		<!-- JS Modal PopUp-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox.js')}">
+	
+</script>
+
 <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
-	<!-- begin Carrusel -->
-	
-	<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'website.css')}" media="screen"></link>
-	<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.tinycarousel.min.js')}" ></script>
-	<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
-		<script type="text/javascript">
-			/*$(document).ready(function(){
-				$('#slider1').tinycarousel();	
-				$('#slider2').tinycarousel();	
-				$('#slider3').tinycarousel();	
-				$('#slider4').tinycarousel();	
-				$('#slider5').tinycarousel();	
-				$('#slider6').tinycarousel();	
-				
-	
-			});*/
-			$(document).ready(function() {
-            // example 1
-            $("ul.example1").simplecarousel({
-                width:770,
-                height:303,
-                visible: 1,
-                auto: 60000,
-                next: $('.next'),
-                prev: $('.prev')
-            });
-        });
-		</script>	
-	<!-- end carrusel -->
+		<!-- begin Carrusel -->
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
+<script type="text/javascript">
+	/*$(document).ready(function(){
+		$('#slider1').tinycarousel();	
+		$('#slider2').tinycarousel();	
+		$('#slider3').tinycarousel();	
+		$('#slider4').tinycarousel();	
+		$('#slider5').tinycarousel();	
+		$('#slider6').tinycarousel();	
+		
 
-
-
+	});*/
+	$(document).ready(function() {
+	    // example 1
+	    $("ul.example1").simplecarousel({
+	        width:770,
+	        height:303,
+	        visible: 1,
+	        auto: 60000,
+	        next: $('.next'),
+	        prev: $('.prev')
+	    });
+	});
+</script>	
+		<!-- end carrusel -->
 
 <title>gbMobile</title>
 

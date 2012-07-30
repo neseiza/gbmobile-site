@@ -1,25 +1,12 @@
-
-
-
-/**/
-var i=0;
 var lado = true;
 
 addEventListener('DOMContentLoaded', 
-	function animation()
-	{
-		
-		myfunction()
-		
+	function animations(){		
+		playAnimations()		
 	}, 0);
 
-
-
-function myfunction()
-{
-
-
-
+function playAnimations(){
+		//Animation 1
 	move('foco')
 		.ease('linear')
 		.y(130)
@@ -36,7 +23,6 @@ function myfunction()
 			.duration('4s')
 		.pop()
 	.end(); //total time:7s
-	
 	
 	
 	move('caja2')
@@ -83,8 +69,6 @@ function myfunction()
 	.end();
 	
 	
-	
-	
 	move('garra')
 		.ease('linear')
 		.set('width', '88px')
@@ -116,7 +100,6 @@ function myfunction()
 	.end();
 	
 	
-	
 	move('caja2-gen')
 		.ease('linear')
 		.set('width', '430px')
@@ -134,8 +117,7 @@ function myfunction()
 	.end();
 		
 		
-		
-    // Animation 1 caja 3 
+		// Animation 1 caja 3 
 	move('caja3_animacion1')
 		.ease('linear')
 		.set('visibility','visible')
@@ -146,9 +128,10 @@ function myfunction()
 			.duration('1s')
 		.pop()   
 	.end(); 	
+		// End Animation 1 caja 3	
 		// Total time Animation 1: 26s      
-		// End Animation 1 caja 3// 
-		
+		//End Animation 1
+				
 		// Animation 2 
 	move('caja_tubo02')
 		.ease('linear')
@@ -208,6 +191,7 @@ function myfunction()
 		.pop()    
 	.end();
         // End Animacion 3         
+        
         // Animacion 4 
 	move('caja_animacion4')
 		.set('visibility','visible')
@@ -229,14 +213,13 @@ function myfunction()
 			.pop()
 		.pop()  	
 	.end();
-        // End Animacion 4 
-        
+        // End Animacion 4         
 
-    // Animacion 5 //
+        // Animacion 5
 	move('caja_animacion5')
 		.ease('linear')
 		.set('visibility','visible')
-		.duration('1s')//72s 
+		.duration('72s')
 		.then()
 			.y(98)
 			.rotate(180)
@@ -253,15 +236,11 @@ function myfunction()
 			.pop()
 		.pop()
 	.end(); 
-        // End Animacion 5 //
-
+        // End Animacion 5 
         
-        
-	if(lado){
-		// *********** Animacion 6 ********** //
-		
-		//    =========== Caja 1 ========== //
-		
+        //Animation 6
+	if(lado){		
+		//    =========== Caja 1 ========== //		
 		move('caja1_animacion6')
 			.ease('linear')
 			.set('visibility','visible')
@@ -309,17 +288,15 @@ function myfunction()
 		//    =========== End Caja 2 ========== 
 		lado=true;
 	}
-	
+		//End Animation 6
 
-	setTimeout(myfunction, 97000)
+	setTimeout(playAnimations, 97000)
 	setTimeout(resetAnimation1, 37000)
 	setTimeout(resetAnimation2, 48000)
 	setTimeout(resetAnimation3, 62000)
 	setTimeout(resetAnimation4, 72000)
 	setTimeout(resetAnimation5, 88000)
 	setTimeout(resetAnimation6, 88000)
-
-	
 	
 }
 
@@ -348,9 +325,7 @@ function resetAnimation1() {
 	move('caja3_animacion1')
 	.translate(0,0)
 	.duration('0s')
-	.end();
-	
-	
+	.end();	
 }
 
 function resetAnimation2() { 
