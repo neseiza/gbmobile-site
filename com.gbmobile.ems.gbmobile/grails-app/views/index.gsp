@@ -113,7 +113,7 @@ jquery.colorbox.js
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
 		                <li><a id="msites_a" href="#msites">mSites</a></li>
-		           	   	<li><a id="sms_a" href="#" >SMS</a></li>
+		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
 		               	<li><img id="logo" src="images/logogb.png" /></li>
 		             </ul>
 		               
