@@ -22,7 +22,6 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
-<!-- <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-ui-1.8.7.custom.min.js')}" ></script> -->
 		<!-- JS Move-->
 <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script> 
@@ -30,7 +29,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'colorbox.css')}"></link>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox-min.js')}"></script>
-		<!-- begin Carrusel -->
+		<!-- JS Carrusel -->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}" ></script>
@@ -152,7 +151,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 							     	    <ul class="example1">
 									        <li>
 									        	<div id="div_imgs">
-											        <a class="group1" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/video.png" src="images/loading-grey.jpg" class="alwaysLoad"/></a>
+											        <a class="group1" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img src="images/video.png" class="alwaysLoad"/></a>
 											        <a class="group1" href="images/ohoopee2.jpg" title="Just Me."></a>
 											        <img src="images/cel_infonavit.png" />
 									        	</div>
