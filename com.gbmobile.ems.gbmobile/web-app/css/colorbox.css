@@ -41,7 +41,7 @@
         #cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
         #cboxNext:hover{background-position:-50px -25px;}
         #cboxLoadingOverlay{background:url(../images/loading_background.png) no-repeat center center;}
-        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../images/loading-grey.gif) no-repeat center center;}
         #cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
         #cboxClose:hover{background-position:-25px -25px;}
 
