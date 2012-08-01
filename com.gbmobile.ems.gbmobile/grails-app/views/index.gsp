@@ -4,7 +4,6 @@ http://pixelentity.com/previews/components/flare/
 http://www.ericmmartin.com/projects/simplemodal/
 http://www.jacklmoore.com/colorbox
 http://pixelentity.com/previews/components/flare/
-lexnardx@gmail( or hotmail).com
 jquery.colorbox.js
 
 http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
@@ -23,6 +22,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
+<!-- <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-ui-1.8.7.custom.min.js')}" ></script> -->
 		<!-- JS Move-->
 <script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script> 
@@ -96,7 +96,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
-		                <li><a id="msites_a" href="#mSites">mSites</a></li>
+		                <li><a id="msites_a" href="#msites">mSites</a></li>
 		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
 		               	<li><img id="logo" src="images/logogb.png" /></li>
 		             </ul>
@@ -163,7 +163,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 											        <br />
 											        <br />
 											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
-										        </div>									        	
+										        </div>		
 									        </li>
 							                <li>							
 									        	<div id="div_imgs">
@@ -261,7 +261,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 					     	</tr>
 					     	<tr>
 					     	<td>
-					     		<div id ="menu3">		     			 
+					     		<div id ="menu3">
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
