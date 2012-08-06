@@ -31,29 +31,59 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox-min.js')}"></script>
 		<!-- JS Carrusel -->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
-<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>	
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>
+
+		<!-- JS Slide to  &  Lazy load -->	
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jail.0.9.5.js')}"></script>
 
 <script type="text/javascript">
+	function showNextPageMenu(className){	    
+		$(className).jail({ //#menu1-6 (next pages)
+	        timeout: 1000,
+	        effect: 'fadeIn',
+            speed : 1000, 
+        });
+	}	
+	
+	function mensaje(num){
+		console.log('menu '+num);
+	}
 
 	$(document).ready(function() {
-		//How to assign the ColorBox event to elements
-		$(".group1").colorbox({rel:'group1'});			
-		//Example of preserving a JavaScript event for inline calls.
+	
+			//Lazy load
+		$('.alwaysLoad').jail({ timeout: 10, effect: 'fadeIn'}); //#menu1's page 1
+		$('.loadNow').jail({ //#menu2-6 (page 1)
+            event: 'scroll', 
+            placeholder : 'images/loading-green.gif', 
+            effect: 'fadeIn',
+            speed : 1000, 
+        });
+		
+			//Modal PopUps
+			//How to assign the ColorBox event to elements
+		$(".modalContentImg").colorbox({rel:'modalContentImg'});			
+			//Example of preserving a JavaScript event for inline calls.
 		$("#click").click(function(){ 
 			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 			return false;
 		});
-	
-	    // example 1
-	    $("ul.example1").simplecarousel({
-	        width:770,
-	        height:303,
-	        visible: 1,
-	        auto: 60000,
-	        next: $('.next'),
-	        prev: $('.prev')
-	    });
+		
+		for(var i=1; i<7; i++){
+			var prev = '.prevMenu'+i;
+			var next = '.nextMenu'+i;
+			var carouselMenu = ".carouselMenu"+i;
+			
+		    $(carouselMenu).simplecarousel({
+		        width:770,
+		        height:303,
+		        visible: 1,
+		        auto: 60000,
+		        next: $(next),
+		        prev: $(prev)
+		    });
+		 }
 	    
 	    $("#sms_a").click(function(){
 					$("#slider1").slideto({highlight: false});
@@ -69,10 +99,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		});
 		$("#web_a").click(function(){
 				$("#slider5").slideto({highlight: false});
-		});		
-		$("#frame").focusin(function() {
-        alert('Focusin lanzado!')
-        });
+		});	
 	});		
 </script>	
 		<!-- end carrusel -->
@@ -89,9 +116,10 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 	<body>	
 	    <div id="page">
 	      	<div id="pagetop">			
-				<div id="menu" class="links"> 	
+				<div id="menu" class="links"> 
 				
-	            	<ul>
+	            	<ul>	            	
+	            		<li class="${classcontacto}"><g:link controller="inicio" action="contacto" params='aldo'>Contato</g:link></li>
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
@@ -148,12 +176,12 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">
-							     	    <ul class="example1">
+							     	    <ul class="carouselMenu1">
 									        <li>
 									        	<div id="div_imgs">
-											        <a class="group1" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img src="images/video.png" class="alwaysLoad"/></a>
-											        <a class="group1" href="images/ohoopee2.jpg" title="Just Me."></a>
-											        <img src="images/cel_infonavit.png" />
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/video.png" class="alwaysLoad"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+											        <img data-href="images/cel_infonavit.png" src="images/loading-green.gif" class="alwaysLoad"/>
 									        	</div>
 										        <div id="subelem">
 											        <h2>
@@ -166,26 +194,11 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 									        </li>
 							                <li>							
 									        	<div id="div_imgs">
-											        <img src="images/video.png"/>
-											        <img src="images/cel_infonavit.png" />
+											        <img data-href="images/balon.png" src="images/loading-green.gif" class="page2Menu1"/>
 									        	</div>
 										        <div id="subelem">
 											        <h2>
-											        	Casos de Éxito
-											        </h2>
-											        <br />
-											        <br />
-											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
-										        </div>									        	
-									        </li>
-							                <li>							
-									        	<div id="div_imgs">
-											        <img src="images/video.png"/>
-											        <img src="images/cel_infonavit.png" />
-									        	</div>
-										        <div id="subelem">
-											        <h2>
-											        	Casos de Éxito
+											        	pagina 2
 											        </h2>
 											        <br />
 											        <br />
@@ -193,8 +206,8 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 										        </div>									        	
 									        </li>
 									     </ul>
-								    <span class="prev"><img src="images/boton_left.png" /></span>
-								    <span class="next"><img src="images/boton_right.png" /></span>
+								    <span class="prevMenu1"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu1"><img src="images/boton_right.png" onclick="showNextPageMenu('.page2Menu1')"/></span>
 								</div>
 							     <!-- End Slider 1 -->
 				     		</div>
@@ -225,9 +238,19 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 			        <tr>	     	
 			        <tr>
 				     	<td>
-				     		<div id="menu2" onfocus="func();">
+				     		<div id="menu2"">
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">  
+							     	<ul class="carouselMenu2">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/appleBanner1.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu2"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu2"><img src="images/boton_right.png" onclick="mensaje(2)"/></span>	
 								</div>									
 							     <!-- End Slider 2 -->
 				     		</div>
@@ -264,7 +287,16 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 					     			<div id="tubo_menu3"></div>
 					     			 <!-- Slider 3 -->
 								     <div id="slider3">
-										
+										<ul class="carouselMenu3">
+									        <li>
+									        	<div id="div_imgs">
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/imacBanner.jpg" src="images/loading-green.gif" width="450px" height="200px" class="loadNow"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+									        	</div>
+									        </li>
+								     	</ul>							               
+									    <span class="prevMenu3"><img src="images/boton_left.png" /></span>
+									    <span class="nextMenu3"><img src="images/boton_right.png" onclick="mensaje(3)"/></span>	
 									</div>
 								     <!-- End Slider 3 -->
 					     		</div>							
@@ -299,7 +331,16 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 					     	<div id="menu4">
 						     	<!-- Slider 4 -->
 							     <div id="slider4">
-
+								     <ul class="carouselMenu4">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT1.jpg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu4"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu4"><img src="images/boton_right.png" onclick="mensaje(4)"/></span>	
 								</div>
 							     <!-- End Slider 4 -->
 						    </div>
@@ -329,11 +370,19 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 			     	</tr>	     	
 			     	<tr>
 				     	<td>
-					     	<div id="menu5">
-					     	
+					     	<div id="menu5">					     	
 						     	<!-- Slider 5 -->
 							     <div id="slider5">
-									
+							     	<ul class="carouselMenu5">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT.jpeg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu5"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu5"><img src="images/boton_right.png" onclick="mensaje(5)"/></span>									
 								</div>
 							     <!-- End Slider 5 -->	
 							     <img src="${resource(dir: 'images', file: 'tubo_menu5.png')}" id="tubo_menu5"/>
@@ -367,7 +416,18 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 				     	<td>
 					     	<div id="menu6">
 						     	<!-- Slider 6 -->
-							     <div id="slider6"></div>
+							     <div id="slider6">
+								     <ul class="carouselMenu6">
+									        <li>
+									        	<div id="div_imgs">
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/i5.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+									        	</div>
+									        </li>
+								     	</ul>							               
+									    <span class="prevMenu6"><img src="images/boton_left.png" /></span>
+									    <span class="nextMenu6"><img src="images/boton_right.png" onclick="mensaje(6)"/></span>	
+							     </div>
 							     <!-- End Slider 6 -->	
 					     	</div>
 				     	</td>
