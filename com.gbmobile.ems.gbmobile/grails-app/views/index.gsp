@@ -16,7 +16,8 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<!-- Index Styles-->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
-<link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- JS Sprites-->
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
@@ -183,7 +184,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
 		                <li><a id="msites_a" href="#msites">mSites</a></li>
 		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
-		               	<li><img id="logo" src="images/logogb.png" /></li>
+		               	<li><img id="logo" src="images/logogb.png"/></li>
 		             </ul>
 		               
 		        </div>
@@ -368,7 +369,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
 					     		<table id="tabla_animacion4">
 							     	<tr>
-							     		<td><p>g</p></td>
+							     		<td><p>G</p></td>
 							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
 							     	</tr>
 						     	</table>
@@ -377,8 +378,9 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 					     		<div id="banda2_animacion4"></div>
 					     		<div id="banda3_animacion4"></div>
 					     		<div id="over-caja4">
+					     			<img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation4" />
 					     			<div id="caja_animacion4"></div>
-					     			<img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation4"/>
+					     			
 					     		</div>
 					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
 					     	</div>

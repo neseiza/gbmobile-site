@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sonsie One'), local('SonsieOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/sonsieone/v2/EL7Rcl854lo1-oEwLR8r0r3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
 html, body {
 text-align: center;
 }
@@ -544,8 +551,6 @@ height: 512px;
 	margin-top: 77%;
 	margin-left: 0%;
 	-webkit-margin-top-collapse: -10%;
-
-	
 }
 .flecha1Animation1 {
 	margin-top: 35px;
