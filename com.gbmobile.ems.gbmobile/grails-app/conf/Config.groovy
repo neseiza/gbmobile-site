@@ -34,6 +34,18 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
 // What URL patterns should be processed by the resources plugin
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 
+grails {
+   mail {
+     host = "smtp.gmail.com"
+     port = 465
+     username = "pruebagbmobile@gmail.com"
+     password = "prueba123"
+     props = ["mail.smtp.auth":"true",             
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+   }
+}
 
 // The default codec used to encode data with ${}
 grails.views.default.codec = "none" // none, html, base64
@@ -69,6 +81,7 @@ environments {
         // TODO: grails.serverURL = "http://www.changeme.com"
     }
 }
+
 
 // log4j configuration
 log4j = {

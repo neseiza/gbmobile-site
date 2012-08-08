@@ -1,5 +1,5 @@
 
-        .example1 {
+        .carouselMenu1, .carouselMenu2, .carouselMenu3, .carouselMenu4, .carouselMenu5, .carouselMenu6 {
             margin:0;
             padding:0;
             list-style:none;
@@ -15,19 +15,20 @@
             background:red;
         }
         
-        .next
-        {
+        .nextMenu1, .nextMenu2, .nextMenu3, .nextMenu4, .nextMenu5, .nextMenu6 {
             cursor:pointer;
             position: absolute;
             margin-top: -190px;	
             margin-left: 721px;
         }
-        .prev{
+        
+        .prevMenu1, .prevMenu2, .prevMenu3, .prevMenu4, .prevMenu5, .prevMenu6{
         	cursor:pointer;
 	        position: absolute;
 	        margin-top: -190px;
 	        margin-left: -16px;
         }
+
 
         #elemento1{
         	background: url("../images/fondo_casosex.png") no-repeat;
