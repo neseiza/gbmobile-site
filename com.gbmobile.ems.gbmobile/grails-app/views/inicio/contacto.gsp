@@ -10,9 +10,22 @@
    		<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-impromptu.3.1.js')}"></script>
 
    		<title> Contacto gbmobile</title>
+   		<style type="text/css">
+   			.contact {font: 12px verdana, arial,sans-serif;}
+			.tooltip { position:relative;}
+			.tooltip span {display:block; position:absolute; left:12px; color: #cccccc; line-height: 20px; }
+			.simple-input { width: 346px; height: 20px; padding-left: 10px; color: #919191; margin-bottom: 18px; margin-right: 20px; line-height: 35px;}
+			.simple-button { width: 129px; height: 33px; text-align: center; color: #fff; background: #61c2ef;}
+			
+			#ContactDivId {display:none;}
+			#contacto-title { margin-left: 60px; }
+			#contacto-text { margin-left: 60px; margin-top: 30px; position: relative; }
+			#contacto-wrap { margin: 0 auto;}
+			#contacto-content { margin: 0 auto; padding-top: 45px;}
+   		</style>
 
    		<script>
-   		$(document).ready(function() {
+   			$(document).ready(function() {
    			$('.tooltip input').focusin( function() { $(this).parent().find('span').fadeOut('slow'); });
 			$('.tooltip input').focusout( function() { if ($(this).val() == '') { $(this).parent().find('span').fadeIn('slow'); } });
 
@@ -28,7 +41,7 @@
 
 			$('#contact').submit(function(e) {
 				e.preventDefault();
-				if ($('#name').val() == ""|| $('#email').val()=="") {
+				if ($('#name').val() == "" || $('#email').val()=="") {
 					$.prompt('Los campos de nombre, E-mail son necesarios para continuar');
 				}
 				else if (!$('#email').correo()) {
@@ -50,9 +63,8 @@
 					});
 				}
 			});
-
-			//$.prompt('Por favor elige otro título, el que escribiste ya esta utilizado.');
    		});
+
    		</script>
 
    	</head>

@@ -32,10 +32,11 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		<!-- JS Carrusel -->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>
-
 		<!-- JS Slide to  &  Lazy load -->	
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}"></script>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jail.0.9.5.js')}"></script>
+		<!-- JS Contact section -->		
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.simplemodal.js')}"></script>
 
 <script type="text/javascript">
 	function showNextPageMenu(className){	    
@@ -49,7 +50,30 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 	function mensaje(num){
 		console.log('menu '+num);
 	}
-
+	
+	function checkContactInfo(){				
+		if ($('#name').val() == ""|| $('#email').val()=="") {
+			console.log('Los campos de nombre, E-mail son necesarios para continuar');
+			return false;
+		}
+		else if ($('#email').correo()) {
+			console.log('Enviar e-mail');
+			return true;
+		}else{
+			console.log('wrong mail');
+			return false;
+		} 
+	}
+	
+	// Load contact modal dialog on click
+	jQuery(function ($) {			
+		$('#contactclass .modalContact').click(function (e) {
+			$('#ContactDivId').modal();
+	
+			return false;
+		});
+	});
+	
 	$(document).ready(function() {
 	
 			//Lazy load
@@ -61,8 +85,8 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
             speed : 1000, 
         });
 		
-			//Modal PopUps
-			//How to assign the ColorBox event to elements
+				//Modal PopUps
+				//How to assign the ColorBox event to elements
 		$(".modalContentImg").colorbox({rel:'modalContentImg'});			
 			//Example of preserving a JavaScript event for inline calls.
 		$("#click").click(function(){ 
@@ -84,7 +108,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		        prev: $(prev)
 		    });
 		 }
-	    
+		 		//Menu
 	    $("#sms_a").click(function(){
 					$("#slider1").slideto({highlight: false});
 		});
@@ -100,13 +124,46 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		$("#web_a").click(function(){
 				$("#slider5").slideto({highlight: false});
 		});	
+		
+				//Contact section
+		$('.tooltip input').focusin( function() { $(this).parent().find('span').fadeOut('slow'); });
+		$('.tooltip input').focusout( function() { if ($(this).val() == '') { $(this).parent().find('span').fadeIn('slow'); } });
+
+		$('#contactModal').find('input').each(function(i) { if ($(this).val() != '') { $(this).parent().find('span').fadeOut('fast'); } })		
+				
+		jQuery.fn.correo=function()
+		{
+			if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($(this).val()))
+				return true;
+			else
+				return false;
+		}
+
+		$('#contactModal').submit(function(e) {
+			e.preventDefault();
+			if(checkContactInfo()){
+				$.ajax({
+			        url: "inicio/sendmail",
+					dataType: "json",
+			        data: $(this).serialize(),
+			        success: function(datos){
+						if (datos.status=="success") {
+							console.log('<p style="font-size: 18px;">!Gracias¡<br><br>Su informacion fue enviada con exito</p>', { show: 'slideDown' });
+							$(':input').each(function() { $(this).val(''); $(this).parent().find('span').fadeIn('slow'); });
+							$('#bsub').val('Enviar');
+						}
+			        },
+			        type: "POST"
+				});
+			}
+		});
 	});		
 </script>	
 		<!-- end carrusel -->
 <!--[if !IE10]>
     <script type="text/javascript">
         $(document).ready(function(){    
-            console.log('Este mensaje solo saldra en IE10')
+            console.log('Massage: IE10');
         });    
     </script>
 <![endif]-->  
@@ -120,6 +177,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 				
 	            	<ul>	            	
 	            		<li class="${classcontacto}"><g:link controller="inicio" action="contacto" params='aldo'>Contato</g:link></li>
+	            		<li><div id='contactclass'><a href='#' class='modalContact'>ContactoMODAL</a></div></li>
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
@@ -438,7 +496,56 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 				     	</td>
 			     	</tr>
 			     </table>
-		     </div>	     
+		     </div>
+						     <!-- CONTACT MODAL SECTION -->
+			 <div id="ContactDivId">
+				<div id="contacto-title" class="contact"><h2>Contacto</h2></div>
+				<div id="contacto-text">
+					<p class="contact">Para saber mas de nosotros: </p>
+				</div>
+				<br>
+				<div id="contacto-wrap">
+					<div id="contacto-content" class="clearfix">
+						<g:form method="post" name="contactModal" id="contactModal" url="[controller:'inicio', action:'sendmail']">
+							<table id="table-contacto" class="contact">
+								<tr>
+									<td>Hola, mi nombre es:</td>
+									<td>
+										<label class="tooltip">
+											<span>(nombre)</span>
+											<input type="text" name="name" id="name" class="simple-input"  />
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>Y represento a la empresa:</td>
+									<td>
+										<label class="tooltip">
+											<span>(empresa)</span>
+											<input type="text" name="empresa" class="simple-input"  />
+										</label>
+									</td>
+								</tr>							
+								<tr>
+									<td>Por favor contactenme a traves de mi emal:</td>
+									<td>
+										<label class="tooltip">
+											<span>(email)</span>
+											<input type="text" name="email" id="email" class="simple-input"  />
+										</label>
+									</td>
+								</tr>
+								<tr><td colspan="2" align="center">&nbsp;</td></tr>
+								<tr><td colspan="2" align="center"><input type="submit" id="bsub" class="simple-button" value="Enviar" /></td></tr>
+							</table>
+						</g:form>
+					</div>
+				</div>				
+			 </div>	
+				<!-- preload the images -->
+			 <div style='display:none'>
+				<img src='images/x.png' alt='' />
+			 </div>	     
 		     <div id="footer">
 		     </div>
 	     </div>
