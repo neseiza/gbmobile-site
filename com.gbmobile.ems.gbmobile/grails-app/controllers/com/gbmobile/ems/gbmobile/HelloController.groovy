@@ -4,6 +4,5 @@ class HelloController {
 
     def index() {     
     }
-    
 
 }
