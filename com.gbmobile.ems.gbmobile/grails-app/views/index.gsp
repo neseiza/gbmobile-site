@@ -5,9 +5,7 @@ http://www.ericmmartin.com/projects/simplemodal/
 http://www.jacklmoore.com/colorbox
 http://pixelentity.com/previews/components/flare/
 jquery.colorbox.js
-
 http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
-
  -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -160,7 +158,6 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		});
 	});		
 </script>	
-		<!-- end carrusel -->
 <!--[if !IE10]>
     <script type="text/javascript">
         $(document).ready(function(){    
