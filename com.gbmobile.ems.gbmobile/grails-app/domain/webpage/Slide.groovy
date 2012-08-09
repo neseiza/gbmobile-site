@@ -11,6 +11,7 @@ class Slide {
 	Date createTime
 	Date lastUpdated
 	Boolean isActive
+	static hasMany = [media:Media]
 
     static constraints = {
 		
