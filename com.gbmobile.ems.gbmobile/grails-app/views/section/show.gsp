@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list section">
 			
-				<g:if test="${sectionInstance?.sectionid}">
+				<g:if test="${sectionInstance?.sectionOrder}">
 				<li class="fieldcontain">
-					<span id="sectionid-label" class="property-label"><g:message code="section.sectionid.label" default="Sectionid" /></span>
+					<span id="sectionOrder-label" class="property-label"><g:message code="section.sectionOrder.label" default="Section Order" /></span>
 					
-						<span class="property-value" aria-labelledby="sectionid-label"><g:fieldValue bean="${sectionInstance}" field="sectionid"/></span>
+						<span class="property-value" aria-labelledby="sectionOrder-label"><g:fieldValue bean="${sectionInstance}" field="sectionOrder"/></span>
 					
 				</li>
 				</g:if>
@@ -37,6 +37,15 @@
 					<span id="label-label" class="property-label"><g:message code="section.label.label" default="Label" /></span>
 					
 						<span class="property-value" aria-labelledby="label-label"><g:link controller="label" action="show" id="${sectionInstance?.label?.id}">${sectionInstance?.label?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sectionInstance?.carousel}">
+				<li class="fieldcontain">
+					<span id="carousel-label" class="property-label"><g:message code="section.carousel.label" default="Carousel" /></span>
+					
+						<span class="property-value" aria-labelledby="carousel-label"><g:link controller="carousel" action="show" id="${sectionInstance?.carousel?.id}">${sectionInstance?.carousel?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

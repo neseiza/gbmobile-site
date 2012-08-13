@@ -2,11 +2,19 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: modalInstance, field: 'modalid', 'error')} required">
-	<label for="modalid">
-		<g:message code="modal.modalid.label" default="Modalid" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: modalInstance, field: 'media', 'error')} ">
+	<label for="media">
+		<g:message code="modal.media.label" default="Media" />
+		
 	</label>
-	<g:field name="modalid" type="number" value="${modalInstance.modalid}" required=""/>
+	<g:select name="media" from="${webpage.Media.list()}" multiple="multiple" optionKey="id" size="5" value="${modalInstance?.media*.id}" class="many-to-many"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: modalInstance, field: 'name', 'error')} ">
+	<label for="name">
+		<g:message code="modal.name.label" default="Name" />
+		
+	</label>
+	<g:textField name="name" value="${modalInstance?.name}"/>
 </div>
 

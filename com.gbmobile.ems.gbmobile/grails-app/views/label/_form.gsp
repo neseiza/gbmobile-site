@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: labelInstance, field: 'createdTime', 'error')} required">
-	<label for="createdTime">
-		<g:message code="label.createdTime.label" default="Created Time" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: labelInstance, field: 'isActive', 'error')} ">
+	<label for="isActive">
+		<g:message code="label.isActive.label" default="Is Active" />
+		
 	</label>
-	<g:datePicker name="createdTime" precision="day"  value="${labelInstance?.createdTime}"  />
+	<g:checkBox name="isActive" value="${labelInstance?.isActive}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: labelInstance, field: 'description', 'error')} ">
@@ -15,14 +15,14 @@
 		<g:message code="label.description.label" default="Description" />
 		
 	</label>
-	<g:textField name="description" value="${labelInstance?.description}"/>
+	<g:textArea name="description" cols="40" rows="5" maxlength="65535" value="${labelInstance?.description}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: labelInstance, field: 'isActive', 'error')} ">
-	<label for="isActive">
-		<g:message code="label.isActive.label" default="Is Active" />
-		
+<div class="fieldcontain ${hasErrors(bean: labelInstance, field: 'createdTime', 'error')} required">
+	<label for="createdTime">
+		<g:message code="label.createdTime.label" default="Created Time" />
+		<span class="required-indicator">*</span>
 	</label>
-	<g:checkBox name="isActive" value="${labelInstance?.isActive}" />
+	<g:datePicker name="createdTime" precision="day"  value="${labelInstance?.createdTime}"  />
 </div>
 

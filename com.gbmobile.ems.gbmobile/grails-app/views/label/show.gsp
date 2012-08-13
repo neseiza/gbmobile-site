@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list label">
 			
-				<g:if test="${labelInstance?.createdTime}">
+				<g:if test="${labelInstance?.isActive}">
 				<li class="fieldcontain">
-					<span id="createdTime-label" class="property-label"><g:message code="label.createdTime.label" default="Created Time" /></span>
+					<span id="isActive-label" class="property-label"><g:message code="label.isActive.label" default="Is Active" /></span>
 					
-						<span class="property-value" aria-labelledby="createdTime-label"><g:formatDate date="${labelInstance?.createdTime}" /></span>
+						<span class="property-value" aria-labelledby="isActive-label"><g:formatBoolean boolean="${labelInstance?.isActive}" /></span>
 					
 				</li>
 				</g:if>
@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${labelInstance?.isActive}">
+				<g:if test="${labelInstance?.createdTime}">
 				<li class="fieldcontain">
-					<span id="isActive-label" class="property-label"><g:message code="label.isActive.label" default="Is Active" /></span>
+					<span id="createdTime-label" class="property-label"><g:message code="label.createdTime.label" default="Created Time" /></span>
 					
-						<span class="property-value" aria-labelledby="isActive-label"><g:formatBoolean boolean="${labelInstance?.isActive}" /></span>
+						<span class="property-value" aria-labelledby="createdTime-label"><g:formatDate date="${labelInstance?.createdTime}" /></span>
 					
 				</li>
 				</g:if>

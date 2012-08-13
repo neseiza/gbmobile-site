@@ -10,12 +10,12 @@
 	<g:field name="carouselOrder" type="number" value="${carouselInstance.carouselOrder}" required=""/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: carouselInstance, field: 'carouselid', 'error')} required">
-	<label for="carouselid">
-		<g:message code="carousel.carouselid.label" default="Carouselid" />
+<div class="fieldcontain ${hasErrors(bean: carouselInstance, field: 'modal', 'error')} required">
+	<label for="modal">
+		<g:message code="carousel.modal.label" default="Modal" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="carouselid" type="number" value="${carouselInstance.carouselid}" required=""/>
+	<g:select id="modal" name="modal.id" from="${webpage.Modal.list()}" optionKey="id" required="" value="${carouselInstance?.modal?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: carouselInstance, field: 'slides', 'error')} ">

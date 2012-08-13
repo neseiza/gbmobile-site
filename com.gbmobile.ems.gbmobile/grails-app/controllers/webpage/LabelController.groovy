@@ -99,4 +99,8 @@ class LabelController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def labels(){
+		print('pruebita')
+	}
 }

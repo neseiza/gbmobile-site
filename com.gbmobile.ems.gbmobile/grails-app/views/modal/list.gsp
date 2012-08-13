@@ -24,7 +24,7 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="modalid" title="${message(code: 'modal.modalid.label', default: 'Modalid')}" />
+						<g:sortableColumn property="name" title="${message(code: 'modal.name.label', default: 'Name')}" />
 					
 					</tr>
 				</thead>
@@ -32,7 +32,7 @@
 				<g:each in="${modalInstanceList}" status="i" var="modalInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${modalInstance.id}">${fieldValue(bean: modalInstance, field: "modalid")}</g:link></td>
+						<td><g:link action="show" id="${modalInstance.id}">${fieldValue(bean: modalInstance, field: "name")}</g:link></td>
 					
 					</tr>
 				</g:each>

@@ -23,6 +23,33 @@
 			</g:if>
 			<ol class="property-list slide">
 			
+				<g:if test="${slideInstance?.title}">
+				<li class="fieldcontain">
+					<span id="title-label" class="property-label"><g:message code="slide.title.label" default="Title" /></span>
+					
+						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${slideInstance}" field="title"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${slideInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="slide.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${slideInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${slideInstance?.slideOrder}">
+				<li class="fieldcontain">
+					<span id="slideOrder-label" class="property-label"><g:message code="slide.slideOrder.label" default="Slide Order" /></span>
+					
+						<span class="property-value" aria-labelledby="slideOrder-label"><g:fieldValue bean="${slideInstance}" field="slideOrder"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${slideInstance?.createTime}">
 				<li class="fieldcontain">
 					<span id="createTime-label" class="property-label"><g:message code="slide.createTime.label" default="Create Time" /></span>
@@ -37,15 +64,6 @@
 					<span id="descStyle-label" class="property-label"><g:message code="slide.descStyle.label" default="Desc Style" /></span>
 					
 						<span class="property-value" aria-labelledby="descStyle-label"><g:fieldValue bean="${slideInstance}" field="descStyle"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${slideInstance?.description}">
-				<li class="fieldcontain">
-					<span id="description-label" class="property-label"><g:message code="slide.description.label" default="Description" /></span>
-					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${slideInstance}" field="description"/></span>
 					
 				</li>
 				</g:if>
@@ -68,29 +86,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${slideInstance?.slideOrder}">
+				<g:if test="${slideInstance?.media}">
 				<li class="fieldcontain">
-					<span id="slideOrder-label" class="property-label"><g:message code="slide.slideOrder.label" default="Slide Order" /></span>
+					<span id="media-label" class="property-label"><g:message code="slide.media.label" default="Media" /></span>
 					
-						<span class="property-value" aria-labelledby="slideOrder-label"><g:fieldValue bean="${slideInstance}" field="slideOrder"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${slideInstance?.slideid}">
-				<li class="fieldcontain">
-					<span id="slideid-label" class="property-label"><g:message code="slide.slideid.label" default="Slideid" /></span>
-					
-						<span class="property-value" aria-labelledby="slideid-label"><g:fieldValue bean="${slideInstance}" field="slideid"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${slideInstance?.title}">
-				<li class="fieldcontain">
-					<span id="title-label" class="property-label"><g:message code="slide.title.label" default="Title" /></span>
-					
-						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${slideInstance}" field="title"/></span>
+						<g:each in="${slideInstance.media}" var="m">
+						<span class="property-value" aria-labelledby="media-label"><g:link controller="media" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

@@ -24,15 +24,15 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="classStyle" title="${message(code: 'media.classStyle.label', default: 'Class Style')}" />
-					
 						<g:sortableColumn property="fileName" title="${message(code: 'media.fileName.label', default: 'File Name')}" />
-					
-						<g:sortableColumn property="isBackGround" title="${message(code: 'media.isBackGround.label', default: 'Is Back Ground')}" />
 					
 						<g:sortableColumn property="mediaType" title="${message(code: 'media.mediaType.label', default: 'Media Type')}" />
 					
-						<g:sortableColumn property="mediaid" title="${message(code: 'media.mediaid.label', default: 'Mediaid')}" />
+						<g:sortableColumn property="classStyle" title="${message(code: 'media.classStyle.label', default: 'Class Style')}" />
+					
+						<g:sortableColumn property="modalOrder" title="${message(code: 'media.modalOrder.label', default: 'Modal Order')}" />
+					
+						<g:sortableColumn property="isBackGround" title="${message(code: 'media.isBackGround.label', default: 'Is Back Ground')}" />
 					
 					</tr>
 				</thead>
@@ -40,15 +40,15 @@
 				<g:each in="${mediaInstanceList}" status="i" var="mediaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${mediaInstance.id}">${fieldValue(bean: mediaInstance, field: "classStyle")}</g:link></td>
-					
-						<td>${fieldValue(bean: mediaInstance, field: "fileName")}</td>
-					
-						<td><g:formatBoolean boolean="${mediaInstance.isBackGround}" /></td>
+						<td><g:link action="show" id="${mediaInstance.id}">${fieldValue(bean: mediaInstance, field: "fileName")}</g:link></td>
 					
 						<td>${fieldValue(bean: mediaInstance, field: "mediaType")}</td>
 					
-						<td>${fieldValue(bean: mediaInstance, field: "mediaid")}</td>
+						<td>${fieldValue(bean: mediaInstance, field: "classStyle")}</td>
+					
+						<td>${fieldValue(bean: mediaInstance, field: "modalOrder")}</td>
+					
+						<td><g:formatBoolean boolean="${mediaInstance.isBackGround}" /></td>
 					
 					</tr>
 				</g:each>

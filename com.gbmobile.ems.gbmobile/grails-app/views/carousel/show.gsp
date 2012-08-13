@@ -32,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${carouselInstance?.carouselid}">
+				<g:if test="${carouselInstance?.modal}">
 				<li class="fieldcontain">
-					<span id="carouselid-label" class="property-label"><g:message code="carousel.carouselid.label" default="Carouselid" /></span>
+					<span id="modal-label" class="property-label"><g:message code="carousel.modal.label" default="Modal" /></span>
 					
-						<span class="property-value" aria-labelledby="carouselid-label"><g:fieldValue bean="${carouselInstance}" field="carouselid"/></span>
+						<span class="property-value" aria-labelledby="modal-label"><g:link controller="modal" action="show" id="${carouselInstance?.modal?.id}">${carouselInstance?.modal?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

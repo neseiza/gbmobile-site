@@ -1,10 +1,13 @@
 package webpage
 
 class Section {
-	Integer sectionid
+	Integer sectionOrder
 	Label label
+	Carousel carousel
 	
     static constraints = {
-		sectionid unique:true
+		sectionOrder(blank:false)
+		label(blank:false)
+		carousel(blank:false)
     }
 }

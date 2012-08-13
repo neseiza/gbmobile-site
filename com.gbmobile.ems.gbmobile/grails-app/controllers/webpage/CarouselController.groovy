@@ -21,6 +21,7 @@ class CarouselController {
 
     def save() {
         def carouselInstance = new Carousel(params)
+		println(params)
         if (!carouselInstance.save(flush: true)) {
             render(view: "create", model: [carouselInstance: carouselInstance])
             return

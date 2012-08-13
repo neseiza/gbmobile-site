@@ -1,8 +1,8 @@
 package webpage
 
 class Modal {
-	Integer modalid
-	static hasMany = [media:Media]
+	String name
+	static hasMany = [ media: Media ]	
 		
     static constraints = {
     }

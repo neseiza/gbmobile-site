@@ -2,7 +2,6 @@ package webpage
 
 class Slide {
 	
-	Integer slideid
 	String title
 	String titleStyle
 	String description
@@ -14,6 +13,9 @@ class Slide {
 	static hasMany = [media:Media]
 
     static constraints = {
-		
+		title(blank:false)
+		description(blank:false)
+		slideOrder(blank:false)
+		description(maxSize: 65535)
     }
 }

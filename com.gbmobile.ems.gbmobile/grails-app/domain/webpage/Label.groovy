@@ -6,6 +6,7 @@ class Label {
 	Date lastUpdated
 	Boolean isActive
     static constraints = {
-		
+		isActive(blank:false)
+		description(maxSize: 65535)
     }
 }

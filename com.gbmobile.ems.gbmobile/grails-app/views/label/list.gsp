@@ -24,11 +24,11 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="createdTime" title="${message(code: 'label.createdTime.label', default: 'Created Time')}" />
+						<g:sortableColumn property="isActive" title="${message(code: 'label.isActive.label', default: 'Is Active')}" />
 					
 						<g:sortableColumn property="description" title="${message(code: 'label.description.label', default: 'Description')}" />
 					
-						<g:sortableColumn property="isActive" title="${message(code: 'label.isActive.label', default: 'Is Active')}" />
+						<g:sortableColumn property="createdTime" title="${message(code: 'label.createdTime.label', default: 'Created Time')}" />
 					
 						<g:sortableColumn property="lastUpdated" title="${message(code: 'label.lastUpdated.label', default: 'Last Updated')}" />
 					
@@ -38,11 +38,11 @@
 				<g:each in="${labelInstanceList}" status="i" var="labelInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${labelInstance.id}">${fieldValue(bean: labelInstance, field: "createdTime")}</g:link></td>
+						<td><g:link action="show" id="${labelInstance.id}">${fieldValue(bean: labelInstance, field: "isActive")}</g:link></td>
 					
 						<td>${fieldValue(bean: labelInstance, field: "description")}</td>
 					
-						<td><g:formatBoolean boolean="${labelInstance.isActive}" /></td>
+						<td><g:formatDate date="${labelInstance.createdTime}" /></td>
 					
 						<td><g:formatDate date="${labelInstance.lastUpdated}" /></td>
 					

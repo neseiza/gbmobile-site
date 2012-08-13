@@ -23,29 +23,11 @@
 			</g:if>
 			<ol class="property-list media">
 			
-				<g:if test="${mediaInstance?.classStyle}">
-				<li class="fieldcontain">
-					<span id="classStyle-label" class="property-label"><g:message code="media.classStyle.label" default="Class Style" /></span>
-					
-						<span class="property-value" aria-labelledby="classStyle-label"><g:fieldValue bean="${mediaInstance}" field="classStyle"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${mediaInstance?.fileName}">
 				<li class="fieldcontain">
 					<span id="fileName-label" class="property-label"><g:message code="media.fileName.label" default="File Name" /></span>
 					
 						<span class="property-value" aria-labelledby="fileName-label"><g:fieldValue bean="${mediaInstance}" field="fileName"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${mediaInstance?.isBackGround}">
-				<li class="fieldcontain">
-					<span id="isBackGround-label" class="property-label"><g:message code="media.isBackGround.label" default="Is Back Ground" /></span>
-					
-						<span class="property-value" aria-labelledby="isBackGround-label"><g:formatBoolean boolean="${mediaInstance?.isBackGround}" /></span>
 					
 				</li>
 				</g:if>
@@ -59,11 +41,29 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${mediaInstance?.mediaid}">
+				<g:if test="${mediaInstance?.classStyle}">
 				<li class="fieldcontain">
-					<span id="mediaid-label" class="property-label"><g:message code="media.mediaid.label" default="Mediaid" /></span>
+					<span id="classStyle-label" class="property-label"><g:message code="media.classStyle.label" default="Class Style" /></span>
 					
-						<span class="property-value" aria-labelledby="mediaid-label"><g:fieldValue bean="${mediaInstance}" field="mediaid"/></span>
+						<span class="property-value" aria-labelledby="classStyle-label"><g:fieldValue bean="${mediaInstance}" field="classStyle"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${mediaInstance?.modalOrder}">
+				<li class="fieldcontain">
+					<span id="modalOrder-label" class="property-label"><g:message code="media.modalOrder.label" default="Modal Order" /></span>
+					
+						<span class="property-value" aria-labelledby="modalOrder-label"><g:fieldValue bean="${mediaInstance}" field="modalOrder"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${mediaInstance?.isBackGround}">
+				<li class="fieldcontain">
+					<span id="isBackGround-label" class="property-label"><g:message code="media.isBackGround.label" default="Is Back Ground" /></span>
+					
+						<span class="property-value" aria-labelledby="isBackGround-label"><g:formatBoolean boolean="${mediaInstance?.isBackGround}" /></span>
 					
 				</li>
 				</g:if>

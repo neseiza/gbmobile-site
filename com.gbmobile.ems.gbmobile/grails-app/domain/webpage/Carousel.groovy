@@ -1,10 +1,15 @@
 package webpage
 
 class Carousel {
-	Integer carouselid
 	Integer carouselOrder
-	static hasMany = [slides:Slide,modals:Modal]
-
-    static constraints = {
+	Modal modal
+	
+	static hasMany = [slides:Slide]
+	
+	static mapping = {
+		cache 'transactional'
+	}
+    
+	static constraints = {
     }
 }

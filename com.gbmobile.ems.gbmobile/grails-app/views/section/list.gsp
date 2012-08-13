@@ -24,9 +24,11 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="sectionid" title="${message(code: 'section.sectionid.label', default: 'Sectionid')}" />
+						<g:sortableColumn property="sectionOrder" title="${message(code: 'section.sectionOrder.label', default: 'Section Order')}" />
 					
 						<th><g:message code="section.label.label" default="Label" /></th>
+					
+						<th><g:message code="section.carousel.label" default="Carousel" /></th>
 					
 					</tr>
 				</thead>
@@ -34,9 +36,11 @@
 				<g:each in="${sectionInstanceList}" status="i" var="sectionInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${sectionInstance.id}">${fieldValue(bean: sectionInstance, field: "sectionid")}</g:link></td>
+						<td><g:link action="show" id="${sectionInstance.id}">${fieldValue(bean: sectionInstance, field: "sectionOrder")}</g:link></td>
 					
 						<td>${fieldValue(bean: sectionInstance, field: "label")}</td>
+					
+						<td>${fieldValue(bean: sectionInstance, field: "carousel")}</td>
 					
 					</tr>
 				</g:each>

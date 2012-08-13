@@ -26,7 +26,7 @@
 					
 						<g:sortableColumn property="carouselOrder" title="${message(code: 'carousel.carouselOrder.label', default: 'Carousel Order')}" />
 					
-						<g:sortableColumn property="carouselid" title="${message(code: 'carousel.carouselid.label', default: 'Carouselid')}" />
+						<th><g:message code="carousel.modal.label" default="Modal" /></th>
 					
 					</tr>
 				</thead>
@@ -36,7 +36,7 @@
 					
 						<td><g:link action="show" id="${carouselInstance.id}">${fieldValue(bean: carouselInstance, field: "carouselOrder")}</g:link></td>
 					
-						<td>${fieldValue(bean: carouselInstance, field: "carouselid")}</td>
+						<td>${fieldValue(bean: carouselInstance, field: "modal")}</td>
 					
 					</tr>
 				</g:each>

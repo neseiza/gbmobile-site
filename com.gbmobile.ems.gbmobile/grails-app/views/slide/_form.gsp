@@ -2,6 +2,30 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'title', 'error')} required">
+	<label for="title">
+		<g:message code="slide.title.label" default="Title" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="title" required="" value="${slideInstance?.title}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'description', 'error')} required">
+	<label for="description">
+		<g:message code="slide.description.label" default="Description" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textArea name="description" cols="40" rows="5" maxlength="65535" required="" value="${slideInstance?.description}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'slideOrder', 'error')} required">
+	<label for="slideOrder">
+		<g:message code="slide.slideOrder.label" default="Slide Order" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="slideOrder" type="number" value="${slideInstance.slideOrder}" required=""/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'createTime', 'error')} required">
 	<label for="createTime">
 		<g:message code="slide.createTime.label" default="Create Time" />
@@ -18,14 +42,6 @@
 	<g:textField name="descStyle" value="${slideInstance?.descStyle}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'description', 'error')} ">
-	<label for="description">
-		<g:message code="slide.description.label" default="Description" />
-		
-	</label>
-	<g:textField name="description" value="${slideInstance?.description}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'isActive', 'error')} ">
 	<label for="isActive">
 		<g:message code="slide.isActive.label" default="Is Active" />
@@ -34,28 +50,12 @@
 	<g:checkBox name="isActive" value="${slideInstance?.isActive}" />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'slideOrder', 'error')} required">
-	<label for="slideOrder">
-		<g:message code="slide.slideOrder.label" default="Slide Order" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field name="slideOrder" type="number" value="${slideInstance.slideOrder}" required=""/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'slideid', 'error')} required">
-	<label for="slideid">
-		<g:message code="slide.slideid.label" default="Slideid" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field name="slideid" type="number" value="${slideInstance.slideid}" required=""/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'title', 'error')} ">
-	<label for="title">
-		<g:message code="slide.title.label" default="Title" />
+<div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'media', 'error')} ">
+	<label for="media">
+		<g:message code="slide.media.label" default="Media" />
 		
 	</label>
-	<g:textField name="title" value="${slideInstance?.title}"/>
+	<g:select name="media" from="${webpage.Media.list()}" multiple="multiple" optionKey="id" size="5" value="${slideInstance?.media*.id}" class="many-to-many"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: slideInstance, field: 'titleStyle', 'error')} ">

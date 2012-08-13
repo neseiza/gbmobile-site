@@ -23,11 +23,22 @@
 			</g:if>
 			<ol class="property-list modal">
 			
-				<g:if test="${modalInstance?.modalid}">
+				<g:if test="${modalInstance?.media}">
 				<li class="fieldcontain">
-					<span id="modalid-label" class="property-label"><g:message code="modal.modalid.label" default="Modalid" /></span>
+					<span id="media-label" class="property-label"><g:message code="modal.media.label" default="Media" /></span>
 					
-						<span class="property-value" aria-labelledby="modalid-label"><g:fieldValue bean="${modalInstance}" field="modalid"/></span>
+						<g:each in="${modalInstance.media}" var="m">
+						<span class="property-value" aria-labelledby="media-label"><g:link controller="media" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${modalInstance?.name}">
+				<li class="fieldcontain">
+					<span id="name-label" class="property-label"><g:message code="modal.name.label" default="Name" /></span>
+					
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${modalInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>

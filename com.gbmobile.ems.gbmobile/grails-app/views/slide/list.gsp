@@ -24,17 +24,17 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="title" title="${message(code: 'slide.title.label', default: 'Title')}" />
+					
+						<g:sortableColumn property="description" title="${message(code: 'slide.description.label', default: 'Description')}" />
+					
+						<g:sortableColumn property="slideOrder" title="${message(code: 'slide.slideOrder.label', default: 'Slide Order')}" />
+					
 						<g:sortableColumn property="createTime" title="${message(code: 'slide.createTime.label', default: 'Create Time')}" />
 					
 						<g:sortableColumn property="descStyle" title="${message(code: 'slide.descStyle.label', default: 'Desc Style')}" />
 					
-						<g:sortableColumn property="description" title="${message(code: 'slide.description.label', default: 'Description')}" />
-					
 						<g:sortableColumn property="isActive" title="${message(code: 'slide.isActive.label', default: 'Is Active')}" />
-					
-						<g:sortableColumn property="lastUpdated" title="${message(code: 'slide.lastUpdated.label', default: 'Last Updated')}" />
-					
-						<g:sortableColumn property="slideOrder" title="${message(code: 'slide.slideOrder.label', default: 'Slide Order')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${slideInstanceList}" status="i" var="slideInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${slideInstance.id}">${fieldValue(bean: slideInstance, field: "createTime")}</g:link></td>
-					
-						<td>${fieldValue(bean: slideInstance, field: "descStyle")}</td>
+						<td><g:link action="show" id="${slideInstance.id}">${fieldValue(bean: slideInstance, field: "title")}</g:link></td>
 					
 						<td>${fieldValue(bean: slideInstance, field: "description")}</td>
 					
-						<td><g:formatBoolean boolean="${slideInstance.isActive}" /></td>
-					
-						<td><g:formatDate date="${slideInstance.lastUpdated}" /></td>
-					
 						<td>${fieldValue(bean: slideInstance, field: "slideOrder")}</td>
+					
+						<td><g:formatDate date="${slideInstance.createTime}" /></td>
+					
+						<td>${fieldValue(bean: slideInstance, field: "descStyle")}</td>
+					
+						<td><g:formatBoolean boolean="${slideInstance.isActive}" /></td>
 					
 					</tr>
 				</g:each>
