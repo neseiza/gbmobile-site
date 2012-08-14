@@ -10,7 +10,10 @@ class Media {
 	String classStyle
 	Integer modalOrder
 	
-	static mapping = {id generator: 'increment'}
+	static mapping = {
+		id generator: 'increment'
+		cache 'transactional'
+	}
     static constraints = {
     	fileName(blank: false)
     	mediaType(blank: false)

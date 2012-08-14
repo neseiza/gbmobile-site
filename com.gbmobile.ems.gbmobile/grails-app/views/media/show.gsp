@@ -67,6 +67,12 @@
 					
 				</li>
 				</g:if>
+				
+				<g:if test="${mediaInstance?.fileName}">
+				<li class="fieldcontain">
+					<img src="${resource(dir: 'images', file: mediaInstance?.fileName)}" alt="Image preview" style="margin-left:140px;"/>
+				</li>
+				</g:if>
 			
 			</ol>
 			<g:form>

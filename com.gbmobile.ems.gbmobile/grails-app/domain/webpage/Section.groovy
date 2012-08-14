@@ -8,7 +8,7 @@ import webpage.Carousel
 class Section {
 	Integer sectionOrder
 	Carousel carousel
-	Label label	
+	Label label
     static constraints = {
 		sectionOrder(blank:false)
 		label(blank:false)
