@@ -1,4 +1,7 @@
 package webpage
+import org.codehaus.groovy.grails.scaffolding.view.ScaffoldingViewResolver
+import org.codehaus.groovy.grails.plugins.scaffolding.ScaffoldingGrailsPlugin
+
 
 class Carousel {
 	Integer carouselOrder
@@ -12,4 +15,9 @@ class Carousel {
     
 	static constraints = {
     }
+	
+	def doWithSpring = {
+		ScaffoldingViewResolver.clearViewCache()
+		ScaffoldingGrailsPlugin.onChange()
+	}
 }

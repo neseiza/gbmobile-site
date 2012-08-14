@@ -1,4 +1,6 @@
 package webpage
+import org.codehaus.groovy.grails.scaffolding.view.ScaffoldingViewResolver
+import org.codehaus.groovy.grails.plugins.scaffolding.ScaffoldingGrailsPlugin
 
 class Media {
 
@@ -15,4 +17,8 @@ class Media {
     	classStyle(blank: false)
 		modalOrder(blank:true)
     }
+	def doWithSpring = {
+		ScaffoldingViewResolver.clearViewCache()
+		ScaffoldingGrailsPlugin.onChange()
+	}
 }
