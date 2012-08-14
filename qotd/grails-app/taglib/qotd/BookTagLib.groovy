@@ -1,0 +1,5 @@
+package qotd
+
+class BookTagLib {
+
+}

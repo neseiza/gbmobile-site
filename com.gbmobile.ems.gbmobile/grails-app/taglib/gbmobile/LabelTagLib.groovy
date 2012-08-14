@@ -1,19 +1,10 @@
 package gbmobile
 
-import org.springframework.dao.DataIntegrityViolationException
-
-import webpage.LabelController;
-
 class LabelTagLib {
-	def getLabelbyId = { attrs, body ->
-		String id_l = attrs.id_l
-		print(id_l)
-		function()
-		out << "sadas"
+	def label = {
+		attrs, body ->
+		Integer sectionID = Integer.parseInt(attrs.sectionID)
+		Section.get(id)
+		println ('Section: ' + sectionID)
 	}
-	
-	def function(){
-		out << "function"
-	}
-	
 }

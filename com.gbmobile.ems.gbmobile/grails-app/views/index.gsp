@@ -205,7 +205,12 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 								<table id="tabla_animacion1" align="left" border="0px">				     			
 							     	<tr>
 							     		<td><p>E</p></td>
-							     		<td>mpresa mexicana de servicios de valor agregado a telefonía móvil para México y Latinoamérica desde el 2003</td>
+							     		<td><g:label sectionID="10000"></g:label>
+
+
+
+
+										</td>
 							     	</tr>
 					     		</table>
 							</div>
