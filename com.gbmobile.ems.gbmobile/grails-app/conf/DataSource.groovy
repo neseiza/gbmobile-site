@@ -14,19 +14,19 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:file:/Users/mauricio/Desktop/backup;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:file:./db/gb_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:file:/Users/mauricio/Desktop/backup;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:file:./db/gb_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:file:/Users/mauricio/Desktop/backup;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:file:./db/gb_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
             pooled = true
             properties {
                maxActive = -1

@@ -21,7 +21,6 @@ class SlideController {
 
     def save() {
         def slideInstance = new Slide(params)
-		println(params)
         if (!slideInstance.save(flush: true)) {
             render(view: "create", model: [slideInstance: slideInstance])
             return
