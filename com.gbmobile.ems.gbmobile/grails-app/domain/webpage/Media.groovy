@@ -1,4 +1,6 @@
 package webpage
+import org.codehaus.groovy.grails.scaffolding.view.ScaffoldingViewResolver
+import org.codehaus.groovy.grails.plugins.scaffolding.ScaffoldingGrailsPlugin
 
 class Media {
 
@@ -8,11 +10,18 @@ class Media {
 	String classStyle
 	Integer modalOrder
 	
-	static mapping = {id generator: 'increment'}
+	static mapping = {
+		id generator: 'increment'
+		cache 'transactional'
+	}
     static constraints = {
     	fileName(blank: false)
     	mediaType(blank: false)
     	classStyle(blank: false)
 		modalOrder(blank:true)
     }
+	def doWithSpring = {
+		ScaffoldingViewResolver.clearViewCache()
+		ScaffoldingGrailsPlugin.onChange()
+	}
 }

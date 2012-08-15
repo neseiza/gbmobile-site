@@ -1,4 +1,6 @@
 package gbmobile
+import webpage.Label
+import webpage.Section
 
 import webpage.Label
 import webpage.Section
@@ -17,6 +19,6 @@ class LabelTagLib {
 		println ('var sectionInstance: ' +[sectionInstance: sectionInstance])
 		println('label description: ' + "${sectionInstance?.label.description}")
 		out << "${sectionInstance?.label.description}"
-		
 	}
+
 }
