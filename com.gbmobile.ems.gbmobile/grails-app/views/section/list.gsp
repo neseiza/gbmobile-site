@@ -38,7 +38,7 @@
 					
 						<td><g:link action="show" id="${sectionInstance.id}">${fieldValue(bean: sectionInstance, field: "sectionOrder")}</g:link></td>
 					
-						<td>${fieldValue(bean: sectionInstance, field: "label.description")}</td>
+						<td>${fieldValue(bean: sectionInstance, field: "label")}</td>
 					
 						<td>${fieldValue(bean: sectionInstance, field: "carousel")}</td>
 					
@@ -46,9 +46,6 @@
 				</g:each>
 				</tbody>
 			</table>
-			<p>...</p>
-			<span aria-labelledby="label-label"><g:link controller="label" action="show" id="${sectionInstance?.label?.id}">${sectionInstance?.label?.encodeAsHTML()}</g:link></span>
-			
 			<div class="pagination">
 				<g:paginate total="${sectionInstanceTotal}" />
 			</div>

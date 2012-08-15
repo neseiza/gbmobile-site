@@ -163,6 +163,7 @@
 
 </head>
 	<body>	
+		
 	    <div id="page">
 	      	<div id="pagetop">			
 				<div id="menu" class="links"> 
@@ -204,7 +205,7 @@
 							     		
 							     		 
 							     		 
-							     		 <% def sections = Section.getAll()%>
+							     		<% def sections = Section.getAll()%>
 										<g:findAll in="${sections}" expr="it.id == 1  ">
 											 ${it.label.description}
 										</g:findAll>
