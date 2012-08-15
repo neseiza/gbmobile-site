@@ -36,7 +36,7 @@
 				<li class="fieldcontain">
 					<span id="modal-label" class="property-label"><g:message code="carousel.modal.label" default="Modal" /></span>
 					
-						<span class="property-value" aria-labelledby="modal-label"><g:link controller="modal" action="show" id="${carouselInstance?.modal?.id}">${carouselInstance?.modal?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="modal-label"><g:link controller="modal" action="show" id="${carouselInstance?.modal?.id}">${carouselInstance?.modal.name}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -46,7 +46,7 @@
 					<span id="slides-label" class="property-label"><g:message code="carousel.slides.label" default="Slides" /></span>
 					
 						<g:each in="${carouselInstance.slides}" var="s">
-						<span class="property-value" aria-labelledby="slides-label"><g:link controller="slide" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="slides-label"><g:link controller="slide" action="show" id="${s.id}">${s.title}</g:link></span>
 						</g:each>
 					
 				</li>

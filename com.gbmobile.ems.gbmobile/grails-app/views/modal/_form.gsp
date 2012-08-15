@@ -15,7 +15,8 @@
 		<g:message code="modal.media.label" default="Media" />
 		
 	</label>
-	<g:select name="media" from="${webpage.Media.list()}" multiple="multiple" optionKey="id" size="5" value="${modalInstance?.media*.id}" class="many-to-many"/>
+	<g:select name="media" from="${webpage.Media.list()}" multiple="multiple" optionKey="id" size="5" value="${modalInstance?.media*.id}" optionValue="fileName" class="many-to-many" />
+	<!-- modalInstance?.media*.id -->
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: modalInstance, field: 'name', 'error')} ">

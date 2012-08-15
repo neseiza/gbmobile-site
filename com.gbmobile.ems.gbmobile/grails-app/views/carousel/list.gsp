@@ -36,7 +36,7 @@
 					
 						<td><g:link action="show" id="${carouselInstance.id}">${fieldValue(bean: carouselInstance, field: "carouselOrder")}</g:link></td>
 					
-						<td>${fieldValue(bean: carouselInstance, field: "modal")}</td>
+						<td>${fieldValue(bean: carouselInstance, field: "modal.name")}</td>
 					
 					</tr>
 				</g:each>
