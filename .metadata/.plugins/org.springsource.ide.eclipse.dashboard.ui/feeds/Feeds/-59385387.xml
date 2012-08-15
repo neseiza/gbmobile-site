@@ -6,6 +6,122 @@
  <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
  <language>en</language>
 <item>
+ <title>New Home for SpringSource University</title>
+ <link>http://www.springsource.org/vfabric-education-home</link>
+ <description>&lt;p&gt;SpringSource University has recently launched a &lt;a href=&quot;http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&amp;ui=www_edu&quot;&gt;new education website&lt;/a&gt; that will be hosted on VMware.com. Along with all the information on SpringSource / vFabric education you will find information about certification, class schedules, free class material and more. SpringSource has also released several new learning paths to assist students in becoming a professional developer, operator or administrator:&lt;/p&gt;
+
+&lt;p&gt;Spring Developer Path&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&quot;&gt;Core Spring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Step 2 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&quot;&gt;Rich Web Application with Spring&lt;/a&gt; | &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&quot;&gt;Enterprise Integration with Spring&lt;/a&gt; | &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&quot;&gt;Hibernate with Spring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Step 3 &lt;a href=&quot;http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31110&amp;ui=www_cert&quot;&gt;Get Certified&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Groovy &amp; Grails Developer Path&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18353&quot;&gt;Groovy &amp; Grails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vFabric Gemfire Developer Path&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=27918&quot;&gt;vFabric Gemfire Essentials&lt;/a&gt;
+&lt;li&gt;Step 2 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=30104&quot;&gt;vFabric Gemfire for Developers&lt;/a&gt;
+&lt;/ul&gt;
+&lt;p&gt;vFabric RabbitMQ Developer Path&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=32507&quot;&gt;vFabric RabbitMQ Essentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Step 2 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=31329&quot;&gt;vFabric RabbitMQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vFabric System Administrator Learning Paths&lt;/p&gt;
+
+&lt;p&gt;tc Server/Tomcat Administrator Path&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=27956&quot;&gt;vFabric tc Server Essentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Step 2 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=23470&quot;&gt;Tomcat Administration&lt;/a&gt; (4 day) or &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=23728&quot;&gt;tcServer Administration&lt;/a&gt; (4 day Custom Onsite -- choose &quot;Inquire About Onsite&quot;)&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;vFabric Hyperic Adminstrator Path&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Step 1 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=24456&quot;&gt;vFabric Hyperic Essentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Step 2 &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18470&quot;&gt;vFabric Hyperic Administration&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;For more information visit the &lt;a href=&quot;http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&amp;ui=www_edu&quot;&gt;New vFabric Education Page&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;float: left; padding: 10px&quot;&gt;
+&lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://www.springsource.org/files/VMware Education.jpg
+&quot; /&gt;</description>
+ <comments>http://www.springsource.org/vfabric-education-home#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <enclosure url="http://www.springsource.org/files/VMware Education.jpg" length="28747" type="image/jpeg" />
+ <pubDate>Wed, 15 Aug 2012 13:44:36 +0000</pubDate>
+ <dc:creator>Mark Baars</dc:creator>
+ <guid isPermaLink="false">3628 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>This Week in Spring, August 14th, 2012</title>
+ <link>http://www.springsource.org/node/3627</link>
+ <description> 
+&lt;P&gt; Welcome to another installment of &lt;EM&gt;This Week in Spring&lt;/EM&gt;!  As usual, we&#039;ve got a lot to cover, so let&#039;s get to it.
+
+&lt;/P&gt;
+&lt;OL&gt; 
+&lt;LI&gt; The &lt;a href =&quot;http://blog.springsource.org/2012/08/13/springsource-tool-suites-3-0-0-released-reorganized-open-sourced-and-at-github/&quot;&gt; SpringSource Tool Suite has been open sourced&lt;/A&gt;! And, two different versions of it are now available, supporting two different developers: the Spring developer, served by the Spring Tool Suite, and the Groovy and Grails developer, served by the Groovy/Grails Tool Suite.   For more on this fantastic news, check out Tool Suites-lead Martin Lippert&#039;s blog.
+	&lt;/LI&gt;
+	 &lt;li&gt; Spring Security lead Rob Winch announced the latest version of &lt;a href = &quot;http://www.springsource.org/node/3625&quot;&gt;Spring Security, version 3.1.2, has been released&lt;/a&gt;. 
+		
+		 &lt;/a&gt;
+	&lt;LI&gt; The ZeroTurnaround blog has a &lt;EM&gt; really&lt;/EM&gt; cool little blog on rapid development with Spring and Hibernate. 
+		 Of course, Zero Turnaround has a handy little software agent that lets you reload Java classes on the fly. So that&#039;s a &lt;EM&gt;huge&lt;/EM&gt; gain in productivity right there. That, coupled with XML-free Spring 3.1 and Hibernate 4.1, and you have yourself a &lt;Em&gt;really&lt;/EM&gt; awesome combination. To learn more, check out the blog!  The example he illustrates are also well &lt;a href = &quot;http://github.com/cloudfoundry-samples/springmvc-hibernate-template&quot;&gt;represented in this sample project on GitHub&lt;/A&gt;. The example even  includes &lt;CODE&gt;web.xml&lt;/CODE&gt;, even though it isn&#039;t required, just as was done in that blog post, specifically because it&#039;s more reliable on the buggy versions of JBoss 7 and Servlet 3 environments aren&#039;t ubiquitous, yet. 
+			 This is a seriously cool blog post, be sure to read the followups!
+
+		&lt;/LI&gt;
+
+ &lt;LI&gt;Joseph Kulandai &lt;a href = &quot;http://javapapers.com/spring/spring-applicationcontext/&quot;&gt;has a nice, introductory blog post on the Spring &lt;CODE&gt;ApplicationContext&lt;/CODE&gt;&lt;/a&gt;, including some tidbits about it that I&#039;d long since forgotten! Very nicely done, Joseph! 
+	&lt;/LI&gt; 
+	&lt;LI&gt;We talked about this before, but InfoQ&#039;s coverage is pretty awesome, too. 
+		  &lt;A href = &quot;http://www.infoq.com/news/2012/08/RESTDocletOpenSource&quot;&gt;IG Group Open-Sources RESTdoclet&lt;/A&gt;, which makes it dead simple to generate documentation for Spring-based RESTful services. REST, for better or for worse, does not have something like SOAP&#039;s WSDL, which enumerates the interface contract for clients connecting to SOAP-based web services. This technology fills that gap.
+		  &lt;/LI&gt;
+	
+	
+&lt;LI&gt;
+	Paxcel Labs has an interesting blog post on &lt;a href = &quot;http://blog.paxcel.net/blog/spring-dependency-injection/&quot;&gt;that attempts to demystify IoC (inversion of control) and how Spring supports the concept&lt;/A&gt;. 
+		 
+		&lt;/LI&gt; 
+
+&lt;LI&gt; The Hybris blog has been on a roll recently with their posts on consuming OAuth from the client perspective, but &lt;A href = &quot;http://techblog.hybris.com/2012/08/10/oauth2-server-side-implementation-using-spring-security-oauth2-module/&quot;&gt;&lt;EM&gt;this&lt;/em&gt; post, in particular, introducing how to setup Spring Security OAuth  &lt;/a&gt;
+	
+	is the one I&#039;ve been waiting for!  It&#039;s a very nice read, and I&#039;m glad they&#039;ve shared it with us, complete with working code and a blow-by-blow breakdown of the pieces. OAuth is complex, Spring Security OAuth (not yet GA!) makes it much simpler, but it&#039;s still nice to have guidance.
+	&lt;/LI&gt; 
+
+&lt;LI&gt; Speaking of Spring Security, the Java Code Geeks have a blog post  with a classic recipe (an oldie but a goodie): &lt;a href = &quot;http://www.javacodegeeks.com/2012/08/spring-security-implementing-custom.html&quot;&gt;how to implement a &lt;CODE&gt;UserDetails&lt;/CODE&gt; object backed by Hibernate&lt;/A&gt; entities (of your own design).
+	&lt;/LI&gt;
+
+&lt;LI&gt;Biju Kunjummen has a great blog post introducing  
+	
+	&lt;a href = &quot;http://biju-allandsundry.blogspot.hk/2012/08/spring-configuration-and-factorybean.html&quot;&gt;
+		 some of the nuances of using Java-based configuration 
+	&lt;/a&gt;. Specifically, he reminds us to let Spring provide the lifecycle callbacks by routing things through @Bean methods, instead of instatiating the objects directly. 
+ 	&lt;/LI&gt; 
+&lt;LI&gt; If  you use &lt;a href = &quot;http://www.agile-code.com/blog/aop-method-interception-with-spring-net/&quot;&gt; Spring.NET, and want to take advantage of AOP method interception&lt;/A&gt;, check out this post! &lt;/LI&gt; 
+	&lt;LI&gt; Spring Data Neo4j lead Michael Hunger, fresh off his very cool &lt;a href = &quot;http://www.youtube.com/watch?v=heC-8Pq2exQ&amp;feature=plcp&quot;&gt; Spring Data Neo4J webinar&lt;/A&gt; (find more great content like that on our &lt;a href = &quot;http://www.youtube.com/SpringSourceDev&quot;&gt;YouTube channel&lt;/A&gt;!), has put together &lt;a href = &quot;http://java.dzone.com/articles/spring-data-neo4j-webinar&quot;&gt;a followup blog with helpful resources like the location of the slides&lt;/A&gt;.  Thanks, Michael!    &lt;/LI&gt;
+
+&lt;LI&gt; Partha Bhattacharjee continues his blog series introducing Spring Integration. This time, he talks about &lt;a href = &quot;http://java.dzone.com/articles/spring-integration-gateways-1&quot;&gt;Spring Integration&#039;s gateways, which make request/reply semantic exchanges dead simple&lt;/A&gt;!
+	 
+	&lt;/LI&gt; 
+
+&lt;LI&gt; Captain Debug has a wonderful post on using &lt;a href =&quot;http://www.captaindebug.com/2012/08/using-spring-profiles-in-xml-config.html&quot;&gt;Spring 3.1&#039;s profiles to define environment-specific beans in XML&lt;/a&gt;.  &lt;/Li&gt;
+  	&lt;LI&gt; The Halycon code blog has a post on using Spring&#039;s sub-contexts to let you take advantage of Spring&#039;s property-placeholder resolution in &lt;CODE&gt; import &lt;/CODE&gt; statements. Normally, these statements are not able to &lt;EM&gt;see&lt;/EM&gt; the property placeholders of the current application context, but nested contexts &lt;EM&gt;can &lt;/EM&gt; see the property placeholders of the parent contexts. Solution? Simply instantiate &lt;a href = &quot;http://bottlenet.blogspot.hk/2012/08/spring-dynamic-import-with-properties.html&quot;&gt;everything in a child context so that the &lt;CODE&gt;import&lt;/CODE&gt; statement can use the parent context&#039;s properties&lt;/A&gt;! This trick&#039;s kind of sneaky! I like it.   
+	 
+ Remember, child contexts provide scoping - beans defined in one child can&#039;t see beans defined in another.  This makes it very useful for things like Spring Batch Admin, which lets you upload and launch new Spring Batch jobs (which themselves are based on Spring configuration)  on the fly.	&lt;/LI&gt;
+	&lt;LI&gt; The Java Assist blog has a nice post on &lt;a href= &quot;http://java-assist.blogspot.hk/2012/08/spring-mvc-validation.html&quot;&gt;using Spring MVC bean validation in 3.0 or later&lt;/A&gt;. Cool!  &lt;/LI&gt;
+	&lt;LI&gt; The Intelligrape blog has a quick post about using Grails&#039; support for Spring beans, &lt;a href = &quot;http://www.intelligrape.com/blog/2012/08/14/using-initialization-bean-to-set-properties/&quot;&gt;and exploiting Spring&#039;s lifecycle callbacks, particularly  &lt;CODE&gt;InitializingBean#afterPropertiesSet&lt;/CODE&gt;. &lt;/a&gt;  &lt;/LI&gt;
+	
+	&lt;LI&gt;   The Middleware magic blog has a nice, complete post on configuring &lt;A href = &quot;http://middlewaremagic.com/weblogic/?p=8092&quot;&gt; Spring to talk to a JBoss AS 7-managed JMS instance&lt;/A&gt;. The  example is particularly involved because of all the work required to setup JBoss and to build up a client connection to it.  &lt;/LI&gt;
+ 	
+	
+&lt;/ol&gt;</description>
+ <comments>http://www.springsource.org/node/3627#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Wed, 15 Aug 2012 01:25:03 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">3627 at http://www.springsource.org</guid>
+</item>
+<item>
  <title>Spring Security 3.1.2 Released</title>
  <link>http://www.springsource.org/node/3625</link>
  <description>&lt;p&gt;We&#039;re pleased to an announce the GA release of Spring Security 3.1.2&lt;br /&gt;
@@ -265,45 +381,6 @@ Readers and users of all experience levels will find something of value in this 
  <pubDate>Tue, 24 Jul 2012 15:17:13 +0000</pubDate>
  <dc:creator>ogierke</dc:creator>
  <guid isPermaLink="false">3607 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Last Chance to Save $400 on SpringOne 2GX Registration</title>
- <link>http://www.springsource.org/SpringOne2GX2012SuperEarlyBird</link>
- <description>&lt;p align=&quot;center&quot;&gt; 
-&lt;a href=&quot;https://springone2gx.com/conference/washington/2012/10/register&quot;&gt;&lt;img height=&quot;118&quot; alt=&quot;SpringOne 2GX Video: Cloud Foundry - Inside the Machine&quot; width=&quot;320&quot; border=&quot;0&quot; src=&quot;http://www.springsource.org/files/Banner_S2Org_SpringOne2GX2012_320x118.png&quot; /&gt;&lt;/a&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;
-&lt;a href=&quot;https://springone2gx.com/conference/washington/2012/10/home&quot;&gt;SpringOne 2GX 2012&lt;/a&gt; is the premier Java event of 2012 and this week is your last chance to &lt;strong&gt;save $400&lt;/strong&gt; on the regular registration fee. The conference covers all the tools you will need to develop business applications, create multi-device aware web applications, design cloud architectures, and manage high performance infrastructure. Check out a small preview of some of the &lt;a href=&quot;http://springone2gx.com/conference/washington/2012/10/sessions&quot;&gt;speakers and sessions&lt;/a&gt; that you will see at this year&#039;s event! SpringOne 2GX is a collocated event covering the entire Spring ecosystem, Groovy/Grails and Cloud technologies. The conference will be held in Washington DC, October 15-18, 2012, at the Washington Hilton Hotel. &lt;a href=&quot;https://springone2gx.com/conference/washington/2012/10/register&quot;&gt;Register&lt;/a&gt; before July 21st and receive up to a $400 discount.
-
-&lt;/p&gt;
-
-
-
-
-</description>
- <comments>http://www.springsource.org/SpringOne2GX2012SuperEarlyBird#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Thu, 19 Jul 2012 18:26:03 +0000</pubDate>
- <dc:creator>Adam Fitzgerald</dc:creator>
- <guid isPermaLink="false">3601 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Spring Shell 1.0 M1 released</title>
- <link>http://www.springsource.org/node/3600</link>
- <description>&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am pleased to announce the first milestone release of Spring Shell project! Spring Shell is an interactive shell that can be easily extended with commands using a Spring based programming model, extracted from the Spring Roo project.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.springsource.org/download/community?project=Spring Shell&quot;&gt;Downloads&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-shell/docs/1.0.0.M1/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-shell/docs/1.0.0.M1/reference/html&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-shell/docs/1.0.0.M1/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For more information about Spring Shell please see the &lt;a href=&quot;http://www.springsource.org/spring-shell&quot;&gt;home page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We look forward to your feedback on the &lt;a href=&quot;http://forum.springsource.org/forum.php&quot;&gt;forum&lt;/a&gt; or in the &lt;a href=&quot;https://jira.springsource.org/browse/SHL&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3600#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/5">Event</category>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Wed, 18 Jul 2012 21:01:54 +0000</pubDate>
- <dc:creator>Costin Leau</dc:creator>
- <guid isPermaLink="false">3600 at http://www.springsource.org</guid>
 </item>
 </channel>
 </rss>

@@ -2,14 +2,23 @@ package gbmobile
 import webpage.Label
 import webpage.Section
 
+import webpage.Label
+import webpage.Section
+
 class LabelTagLib {
-	def label = {
-		attrs, body ->  
-		Integer id = Integer.parseInt(attrs.sectionID)
 	
-		Section sec
-		  //Label label = Section.countByLabelAnd(id)
-		//Label label = Section.findByLabel()  
-		println ('Section: ' + sec)
+	static namespace = "cms"
+	static returnObjectForTags = ['label']
+	
+	def label = {
+		attrs, body ->
+		Integer id = Integer.parseInt(attrs.sectionID)
+		def sectionInstance = Section.get(id)
+				
+		println ('SectionID: ' + id)
+		println ('var sectionInstance: ' +[sectionInstance: sectionInstance])
+		println('label description: ' + "${sectionInstance?.label.description}")
+		out << "${sectionInstance?.label.description}"
 	}
+
 }

@@ -1,0 +1,16 @@
+package gbmobile
+
+import webpage.Label
+import webpage.Section
+
+class LabelTagLib {
+	def label = {
+		attrs, body ->		
+		Integer id = Integer.parseInt(attrs.sectionID)
+		def sec =  Section.get(id)
+		//Label label = Section.countByLabelAnd(id)
+		//Label label = Section.findByLabel(id)
+		
+		println ('Section: ' + sec)
+	}
+}
