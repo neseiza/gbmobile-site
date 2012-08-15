@@ -19,5 +19,25 @@
 			<type>2</type>
 			<location>/Users/mauricio/Downloads/eclipse Juno/plugins/org.codehaus.groovy_2.0.0.xx-20120807-2100-e42/plugin_dsld_support</location>
 		</link>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>/Users/mauricio/Downloads/eclipse Juno/plugins/org.grails.ide.eclipse.resources_3.0.0.201208072225-CI-B158/dsl-support</location>
+		</link>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>/Users/mauricio/Downloads/grails-2.1.0/scripts</location>
+		</link>
+		<link>
+			<name>.link4</name>
+			<type>2</type>
+			<location>/Users/mauricio/.grails/2.1.0/projects/gbmobile/plugin-classes</location>
+		</link>
+		<link>
+			<name>.link5</name>
+			<type>2</type>
+			<location>/Users/mauricio/.grails/2.1.0/projects/qotd/plugin-classes</location>
+		</link>
 	</linkedResources>
 </projectDescription>

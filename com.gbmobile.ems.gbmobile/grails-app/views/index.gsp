@@ -1,17 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<! --  pop ups
-http://pixelentity.com/previews/components/flare/ 
-http://www.ericmmartin.com/projects/simplemodal/
-http://www.jacklmoore.com/colorbox
-http://pixelentity.com/previews/components/flare/
-jquery.colorbox.js
-http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
- -->
+<%@ page import="webpage.Section" %>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 		<!-- Index Styles-->
 <link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
 
@@ -189,7 +183,7 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 		    <div id="line">
 		    </div>
 		    
-		    <div id="main" style="float:center;">
+		    <div id="main" style="float:center;" >
 			    <table border="0px">
 				    <tr>
 				    <td>
@@ -205,10 +199,16 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 								<table id="tabla_animacion1" align="left" border="0px">				     			
 							     	<tr>
 							     		<td><p>E</p></td>
-							     		<td><g:label sectionID="10000"></g:label>
-
-
-
+							     		<td>
+							     		
+							     		
+							     		 
+							     		 
+							     		 <% def sections = Section.getAll()%>
+										<g:findAll in="${sections}" expr="it.id == 1  ">
+											 ${it.label.description}
+										</g:findAll>
+							     		 
 
 										</td>
 							     	</tr>
@@ -287,7 +287,11 @@ http://www.sebastianoarmelibattana.com/projects/jail sobre  lazyload
 							     			</div>
 							     		</td>
 							     		<td><p>D</p></td>
-							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     		<td><!--  esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System) -->
+							     			<g:findAll in="${sections}" expr="it.id == 2  ">
+												 ${it.label.description}
+											</g:findAll>
+							     		</td>
 							     	</tr>
 						     	</table>
 						     	<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo03"/>

@@ -1,0 +1,25 @@
+package gbmobile
+
+import webpage.Label
+import webpage.Section
+
+class LabelTagLib {
+	
+	static namespace = "cms"
+	static returnObjectForTags = ['label']
+	
+	def label = {
+		attrs, body ->
+		/*Integer id = Integer.parseInt(attrs.sectionID)
+		def sec = Section.get(id)
+				
+		println ('SectionID: ' + id)
+		println ('var sec: ' + [sec:sec])
+		println('label description: ' + "${sec?.label.description}")
+		out << "${sec?.label.description}"
+		[sec:sec]*/
+		
+	
+		CmsContent.findByCode(attrs.sectionID)?.label
+	}
+}
