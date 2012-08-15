@@ -91,7 +91,7 @@
 					<span id="media-label" class="property-label"><g:message code="slide.media.label" default="Media" /></span>
 					
 						<g:each in="${slideInstance.media}" var="m">
-						<span class="property-value" aria-labelledby="media-label"><g:link controller="media" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="media-label"><g:link controller="media" action="show" id="${m.id}">${m.fileName}</g:link></span>
 						</g:each>
 					
 				</li>

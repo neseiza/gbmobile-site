@@ -15,7 +15,7 @@
 		<g:message code="carousel.modal.label" default="Modal" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="modal" name="modal.id" from="${webpage.Modal.list()}" optionKey="id" required="" value="${carouselInstance?.modal?.id}" class="many-to-one"/>
+	<g:select id="modal" name="modal.id" from="${webpage.Modal.list()}" optionKey="id" required="" value="${carouselInstance?.modal?.id}" optionValue="name" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: carouselInstance, field: 'slides', 'error')} ">
@@ -23,6 +23,6 @@
 		<g:message code="carousel.slides.label" default="Slides" />
 		
 	</label>
-	<g:select name="slides" from="${webpage.Slide.list()}" multiple="multiple" optionKey="id" size="5" value="${carouselInstance?.slides*.id}" class="many-to-many"/>
+	<g:select name="slides" from="${webpage.Slide.list()}" multiple="multiple" optionKey="id" size="5" value="${carouselInstance?.slides*.id}" optionValue="title" class="many-to-many"/>
 </div>
 
