@@ -11,7 +11,8 @@ import org.junit.*
 @TestFor(Carousel)
 class CarouselTests {
 
-    void testSomething() {
-       fail "Implement me"
+    void testSomething() { 
+		
+       fail "Implement me right away"
     }
 }
