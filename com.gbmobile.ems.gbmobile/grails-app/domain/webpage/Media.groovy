@@ -12,7 +12,7 @@ class Media {
 	
 	static mapping = {
 		id generator: 'increment'
-		cache 'transactional'
+		cache 'non-transactional'
 	}
     static constraints = {
     	fileName(blank: false)

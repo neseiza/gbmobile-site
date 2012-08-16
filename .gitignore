@@ -1,3 +1,6 @@
 #######
-target
-db
+target/*
+db/*
+*.class
+*.db
+
