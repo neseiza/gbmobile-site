@@ -1,0 +1,562 @@
+<%@ page import="webpage.Section" %>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!-- Index Styles-->
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'style.css')}"></link>
+
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- JS Sprites-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.spritely-0.6.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.crSpline.js')}" ></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_spritely.js')}" ></script> 
+		<!-- JS Move-->
+<script type="text/javascript" src="${resource(dir: 'js', file: 'move.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'animaciones_move.js')}"></script> 
+		<!-- JS Modal PopUp-->
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'colorbox.css')}"></link>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.colorbox-min.js')}"></script>
+		<!-- JS Carrusel -->
+<link rel="stylesheet" type="text/css"  href="${resource(dir: 'css', file: 'carousel.css')}" media="screen"></link>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'simple.carousel.js')}" ></script>
+		<!-- JS Slide to  &  Lazy load -->	
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.slideto.min.js')}"></script>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jail.0.9.5.js')}"></script>
+		<!-- JS Contact section -->		
+<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.simplemodal.js')}"></script>
+
+<script type="text/javascript">
+	function showNextPageMenu(className){	    
+		$(className).jail({ //#menu1-6 (next pages)
+	        timeout: 1000,
+	        effect: 'fadeIn',
+            speed : 1000, 
+        });
+	}	
+	
+	function mensaje(num){
+		console.log('menu '+num);
+	}
+	
+	function checkContactInfo(){				
+		if ($('#name').val() == ""|| $('#email').val()=="") {
+			console.log('Los campos de nombre, E-mail son necesarios para continuar');
+			return false;
+		}
+		else if ($('#email').correo()) {
+			console.log('Enviar e-mail');
+			return true;
+		}else{
+			console.log('wrong mail');
+			return false;
+		} 
+	}
+	
+	// Load contact modal dialog on click
+	jQuery(function ($) {			
+		$('#contactclass .modalContact').click(function (e) {
+			$('#ContactDivId').modal();
+	
+			return false;
+		});
+	});
+	
+	$(document).ready(function() {
+	
+			//Lazy load
+		$('.alwaysLoad').jail({ timeout: 10, effect: 'fadeIn'}); //#menu1's page 1
+		$('.loadNow').jail({ //#menu2-6 (page 1)
+            event: 'scroll', 
+            placeholder : 'images/loading-green.gif', 
+            effect: 'fadeIn',
+            speed : 1000, 
+        });
+		
+				//Modal PopUps
+				//How to assign the ColorBox event to elements
+		$(".modalContentImg").colorbox({rel:'modalContentImg'});			
+			//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+		
+		for(var i=1; i<7; i++){
+			var prev = '.prevMenu'+i;
+			var next = '.nextMenu'+i;
+			var carouselMenu = ".carouselMenu"+i;
+			
+		    $(carouselMenu).simplecarousel({
+		        width:770,
+		        height:303,
+		        visible: 1,
+		        auto: 60000,
+		        next: $(next),
+		        prev: $(prev)
+		    });
+		 }
+		 		//Menu
+	    $("#sms_a").click(function(){
+					$("#slider1").slideto({highlight: false});
+		});
+		$("#msites_a").click(function(){
+				$("#slider2").slideto({highlight: false});
+		});
+		$("#apps_a").click(function(){
+				$("#slider3").slideto({highlight: false});
+		});
+		$("#mcoupons_a").click(function(){
+				$("#slider4").slideto({highlight: false});
+		});
+		$("#web_a").click(function(){
+				$("#slider5").slideto({highlight: false});
+		});	
+		
+				//Contact section
+		$('.tooltip input').focusin( function() { $(this).parent().find('span').fadeOut('slow'); });
+		$('.tooltip input').focusout( function() { if ($(this).val() == '') { $(this).parent().find('span').fadeIn('slow'); } });
+
+		$('#contactModal').find('input').each(function(i) { if ($(this).val() != '') { $(this).parent().find('span').fadeOut('fast'); } })		
+				
+		jQuery.fn.correo=function()
+		{
+			if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($(this).val()))
+				return true;
+			else
+				return false;
+		}
+
+		$('#contactModal').submit(function(e) {
+			e.preventDefault();
+			if(checkContactInfo()){
+				$.ajax({
+			        url: "inicio/sendmail",
+					dataType: "json",
+			        data: $(this).serialize(),
+			        success: function(datos){
+						if (datos.status=="success") {
+							console.log('<p style="font-size: 18px;">!Gracias¡<br><br>Su informacion fue enviada con exito</p>', { show: 'slideDown' });
+							$(':input').each(function() { $(this).val(''); $(this).parent().find('span').fadeIn('slow'); });
+							$('#bsub').val('Enviar');
+						}
+			        },
+			        type: "POST"
+				});
+			}
+		});
+	});		
+</script>	
+<!--[if !IE10]>
+    <script type="text/javascript">
+        $(document).ready(function(){    
+            console.log('Massage: IE10');
+        });    
+    </script>
+<![endif]-->  
+<title>gbMobile</title>
+
+</head>
+	<body>	
+		<% def sections = Section.getAll()%>
+	    <div id="page">
+	      	<div id="pagetop">			
+				<div id="menu" class="links"> 
+				
+	            	<ul>	            	
+	            		<li class="${classcontacto}"><g:link controller="inicio" action="contacto" params='aldo'>Contato</g:link></li>
+	            		<li><div id='contactclass'><a href='#' class='modalContact'>ContactoMODAL</a></div></li>
+		                <li><a id="web_a" href="#web">Web</a></li>
+		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
+		                <li><a id="apps_a" href="#apps">Apps</a></li>
+		                <li><a id="msites_a" href="#msites">mSites</a></li>
+		           	   	<li><a id="sms_a" href="#sms" >SMS</a></li>
+		               	<li><img id="logo" src="images/logogb.png"/></li>
+		             </ul>
+		               
+		        </div>
+		    </div>
+		    <div id="line">
+		    </div>
+		    
+		    <div id="main" style="float:center;" >
+			    <table border="0px">
+				    <tr>
+				    <td>
+					    <div id="frame">
+						    <img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" clas="flecha1Animation1"/>
+						  	<div id="foco-gen">
+						  		<div id="foco"></div>
+						  	</div>
+							<div id="tubo"></div>
+					
+							<div id="banda"></div>
+							<div id="maquina">
+								<table id="tabla_animacion1" align="left" border="0px">				     			
+							     	<tr>
+							     		<td><p>E</p></td>
+							     		<td>
+							     		
+							     		
+							     		 
+							     		 
+							     		
+										<g:findAll in="${sections}" expr="it.id == 1  ">
+											 ${it.label.description}
+										</g:findAll>
+							     		 
+
+										</td>
+							     	</tr>
+					     		</table>
+							</div>
+					
+							<div id="caja1-gen">
+								<div id="caja1"></div>
+							</div>
+							<div id="caja2-gen">
+								<div id="caja2"></div>
+							</div>
+							<div id="garra"></div>
+							<img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha2Animation1" />   			    				
+							<img id="tubo02" src="${resource(dir: 'images', file: 'tubo_02.png')}" />				
+					     		
+					     	<div id="over-caja1">
+					     		<div id="caja3_animacion1"></div>
+					     	</div>	
+					
+						</div>
+					</td>	
+					</tr>	    
+				   <tr>
+					    <td> 
+				     		<div id="menu1">
+				     		     <!-- Slider 1 -->
+							     <div id="slider1">
+							     	    <ul class="carouselMenu1">
+									        <li>
+									        	<div id="div_imgs">
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/video.png" class="alwaysLoad"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+											        <img data-href="images/cel_infonavit.png" src="images/loading-green.gif" class="alwaysLoad"/>
+									        	</div>
+										        <div id="subelem">
+											        <h2>
+											        	Casos de Éxito
+											        </h2>
+											        <br />
+											        <br />
+											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
+										        </div>		
+									        </li>
+							                <li>							
+									        	<div id="div_imgs">
+											        <img data-href="images/balon.png" src="images/loading-green.gif" class="page2Menu1"/>
+									        	</div>
+										        <div id="subelem">
+											        <h2>
+											        	pagina 2
+											        </h2>
+											        <br />
+											        <br />
+											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
+										        </div>									        	
+									        </li>
+									     </ul>
+								    <span class="prevMenu1"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu1"><img src="images/boton_right.png" onclick="showNextPageMenu('.page2Menu1')"/></span>
+								</div>
+							     <!-- End Slider 1 -->
+				     		</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="animation2">
+						     	<img src="${resource(dir: 'images', file: 'animacion2_arriba.png')}" id="img" style="margin-left: 20%; margin-top:-0.5%; z-index:-1;"/>     		
+						     	<table border="0px" bordercolor="white" class="center" width="48%">
+							     	<tr>
+							     		<td width="370px">
+							     			<div id="over-caja2">
+							     				<img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation2"/>
+									     		<div id="caja_tubo02"></div>
+							     			</div>
+							     		</td>
+							     		<td><p>D</p></td>
+							     		<td><!--  esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System) -->
+							     			<g:findAll in="${sections}" expr="it.id == 2  ">
+												 ${it.label.description}
+											</g:findAll>
+							     		</td>
+							     	</tr>
+						     	</table>
+						     	<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo03"/>
+						     	<div id="bandaSimple"></div>
+					    		<div id="bandaSimple1"></div>
+					     	</div>	
+				     	</td>
+			     	</tr>	     	
+			        <tr>	     	
+			        <tr>
+				     	<td>
+				     		<div id="menu2"">
+					     		 <!-- Slider 2 -->
+							     <div id="slider2">  
+							     	<ul class="carouselMenu2">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/appleBanner1.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu2"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu2"><img src="images/boton_right.png" onclick="mensaje(2)"/></span>	
+								</div>									
+							     <!-- End Slider 2 -->
+				     		</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="animation3">					     		
+					     		<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo1"/>
+					     		<table id="tabla_animacion3" align="left">				     			
+							     	<tr>
+							     		<td><p>D</p></td>
+							     		<td>esarrollamos soluciones y herramientas comerciales, corporativas y a trav&eacute;s de nuestra plataforma tecnol&oacute;gica EMS (Enterpise Messaging System)</td>
+							     	</tr>
+					     		</table>
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_03"/>
+
+					     		<div id="banda_04"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation3"/></div>
+					     		<div id="banda_05"></div>
+					     		<div id="banda_06"></div>
+								<div id="over-caja3">
+					     			<div id="caja_animacion3"></div>
+								</div>
+
+					     		<div id="banda_07"><img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation3"/></div>
+
+					     		
+					     	</div>
+					     	</td>
+					     	</tr>
+					     	<tr>
+					     	<td>
+					     		<div id ="menu3">
+					     			<div id="tubo_menu3"></div>
+					     			 <!-- Slider 3 -->
+								     <div id="slider3">
+										<ul class="carouselMenu3">
+									        <li>
+									        	<div id="div_imgs">
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/imacBanner.jpg" src="images/loading-green.gif" width="450px" height="200px" class="loadNow"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+									        	</div>
+									        </li>
+								     	</ul>							               
+									    <span class="prevMenu3"><img src="images/boton_left.png" /></span>
+									    <span class="nextMenu3"><img src="images/boton_right.png" onclick="mensaje(3)"/></span>	
+									</div>
+								     <!-- End Slider 3 -->
+					     		</div>							
+					     	</div> 
+				     	</td>
+			     	</tr>
+		        	<tr>
+				     	<td>
+					     	<div id="animation4">
+					     	
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_04"/>
+					     		<table id="tabla_animacion4">
+							     	<tr>
+							     		<td><p>G</p></td>
+							     		<td>B Mobile ofrece soluciones a la transmisi&oacute;n de datos a dispositivos m&oacute;viles. Contamos con toda la infraestructura tecnol&oacute;gica necesaria para la recepci&oacute;n, env&iacute;o y procesamiento de mensajes de texto y datos</td>
+							     	</tr>
+						     	</table>
+					     	    <img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo2"/>
+					     		<div id="banda1_animacion4"><img src="${resource(dir: 'images', file: 'flecha.png')}" alt="*" class="flecha1Animation4"/></div>
+					     		<div id="banda2_animacion4"></div>
+					     		<div id="banda3_animacion4"></div>
+					     		<div id="over-caja4">
+					     			<img src="${resource(dir: 'images', file: 'flecha_invertida.png')}"  alt="*" class="flecha2Animation4" />
+					     			<div id="caja_animacion4"></div>
+					     			
+					     		</div>
+					     		<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion4"/>					     		
+					     	</div>
+				     	</td>
+			     	</tr>
+			     	<tr>
+				     	<td>
+					     	<div id="menu4">
+						     	<!-- Slider 4 -->
+							     <div id="slider4">
+								     <ul class="carouselMenu4">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT1.jpg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu4"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu4"><img src="images/boton_right.png" onclick="mensaje(4)"/></span>	
+								</div>
+							     <!-- End Slider 4 -->
+						    </div>
+					    </td>
+				    </tr>		    
+				    <tr>
+				     	<td>
+					     	<div id="animation5">
+					     	
+					     		<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_05"/>
+
+					     		<div id="banda1_animacion5"><img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation5"/></div>
+					     		<div id="banda2_animacion5"></div>
+					     		<div id="banda3_animacion5"></div>
+					     		<div id="banda4_animacion5"></div>
+								<div id ="over-caja5">
+						     		<div id="caja_animacion5"></div>
+						     		<table id="tabla_animacion5">		
+								    	<tr>
+								     		<td><p>C</p></td>
+								     		<td>on&eacute;ctate facilmente con cualquier operador, crea y administra servicios de informaci&oacute;n o contenido multimedia</td>
+								     	</tr>
+							     	</table>
+								</div>
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="menu5">					     	
+						     	<!-- Slider 5 -->
+							     <div id="slider5">
+							     	<ul class="carouselMenu5">
+								        <li>
+								        	<div id="div_imgs">
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT.jpeg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+								        	</div>
+								        </li>
+							     	</ul>							               
+								    <span class="prevMenu5"><img src="images/boton_left.png" /></span>
+								    <span class="nextMenu5"><img src="images/boton_right.png" onclick="mensaje(5)"/></span>									
+								</div>
+							     <!-- End Slider 5 -->	
+							     <img src="${resource(dir: 'images', file: 'tubo_menu5.png')}" id="tubo_menu5"/>
+					     	</div>
+				     	</td>
+			     	</tr>	 	
+			     	<tr>
+					     <td>
+					     	<div id="animation6">
+					     	<img src="${resource(dir: 'images', file: 'tubo_03.png')}" id="tubo_07"/>
+					     	<img src="${resource(dir: 'images', file: 'maquina_abajo1.png')}" id="maquina_abajo3"/>
+					     	<img src="${resource(dir: 'images', file: 'tubo_04.png')}" id="tubo_06"/>
+					     	
+					     	
+					     	<div id="banda4_animacion6"></div>
+					     	<div id="banda3_animacion6"></div>
+					     	
+					     	<img src="${resource(dir: 'images', file: 'tubo_corto_animacion4.png')}" id="tubo_corto_animacion6"/>
+					     	
+					     	<div id="banda2_animacion6"></div>
+					     	<div id="banda1_animacion6"></div>
+		     	
+					     	<div id="over-caja6">
+					     		<div id="caja1_animacion6"></div>
+					     		<div id="caja2_animacion6"></div>
+					     	</div>
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+					     	<div id="menu6">
+						     	<!-- Slider 6 -->
+							     <div id="slider6">
+								     <ul class="carouselMenu6">
+									        <li>
+									        	<div id="div_imgs">
+											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/i5.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+									        	</div>
+									        </li>
+								     	</ul>							               
+									    <span class="prevMenu6"><img src="images/boton_left.png" /></span>
+									    <span class="nextMenu6"><img src="images/boton_right.png" onclick="mensaje(6)"/></span>	
+							     </div>
+							     <!-- End Slider 6 -->	
+					     	</div>
+				     	</td>
+			     	</tr>	     	
+			     	<tr>
+				     	<td>
+				     		<div id="animation7"></div>	
+				     	</td>
+			     	</tr>
+			     </table>
+		     </div>
+						     <!-- CONTACT MODAL SECTION -->
+			 <div id="ContactDivId">
+				<div id="contacto-title" class="contact"><h2>Contacto</h2></div>
+				<div id="contacto-text">
+					<p class="contact">Para saber mas de nosotros: </p>
+				</div>
+				<br>
+				<div id="contacto-wrap">
+					<div id="contacto-content" class="clearfix">
+						<g:form method="post" name="contactModal" id="contactModal" url="[controller:'inicio', action:'sendmail']">
+							<table id="table-contacto" class="contact">
+								<tr>
+									<td>Hola, mi nombre es:</td>
+									<td>
+										<label class="tooltip">
+											<span>(nombre)</span>
+											<input type="text" name="name" id="name" class="simple-input"  />
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>Y represento a la empresa:</td>
+									<td>
+										<label class="tooltip">
+											<span>(empresa)</span>
+											<input type="text" name="empresa" class="simple-input"  />
+										</label>
+									</td>
+								</tr>							
+								<tr>
+									<td>Por favor contactenme a traves de mi emal:</td>
+									<td>
+										<label class="tooltip">
+											<span>(email)</span>
+											<input type="text" name="email" id="email" class="simple-input"  />
+										</label>
+									</td>
+								</tr>
+								<tr><td colspan="2" align="center">&nbsp;</td></tr>
+								<tr><td colspan="2" align="center"><input type="submit" id="bsub" class="simple-button" value="Enviar" /></td></tr>
+							</table>
+						</g:form>
+					</div>
+				</div>				
+			 </div>	
+				<!-- preload the images -->
+			 <div style='display:none'>
+				<img src='images/x.png' alt='' />
+			 </div>	     
+		     <div id="footer">
+		     </div>
+	     </div>
+	</body>
+</html>

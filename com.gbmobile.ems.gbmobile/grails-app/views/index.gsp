@@ -163,6 +163,13 @@
 
 </head>
 	<body>	
+		<% def sections = Section.getAll()%>
+		<% def section1 = Section.get(1) %>
+		<% def section2 = Section.get(2) %>
+		<% def section3 = Section.get(3) %>
+		<% def section4 = Section.get(4) %>
+		<% def section5 = Section.get(5) %>
+		<% def section6 = Section.get(6) %>
 		
 	    <div id="page">
 	      	<div id="pagetop">			
@@ -185,7 +192,7 @@
 		    </div>
 		    
 		    <div id="main" style="float:center;" >
-			    <table border="0px">
+			    <table border="2px">
 				    <tr>
 				    <td>
 					    <div id="frame">
@@ -205,10 +212,8 @@
 							     		
 							     		 
 							     		 
-							     		<% def sections = Section.getAll()%>
-										<g:findAll in="${sections}" expr="it.id == 1  ">
-											 ${it.label.description}
-										</g:findAll>
+							     		
+											 ${section1.label.description}
 							     		 
 
 										</td>
@@ -239,11 +244,25 @@
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">
 							     	    <ul class="carouselMenu1">
-									        <li>
+							     	    	<g:each var="slideElement" in="${section1.carousel.slides}">
+									        	<li>
+									        		<div id="div_imgs">									        			
+									        			<g:each var="mediaSlideElement" in="${slideElement.media}">
+									        				<g:each var="modalElement" in="${section1.carousel.modal.media}">
+														        <a class="${section1.carousel.modal.className}" href="images/${modalElement.fileName}" title="${section1.carousel.modal.title}"><g:if test="${section1.carousel.modal.media.modalOrder == 1 }"><img data-href="images/video.png" class="alwaysLoad"/></a></g:if>
+														    </g:each>
+									        				<img data-href="images/${mediaSlideElement.fileName}" src="images/loading-green.gif" class="${mediaSlideElement.classStyle}"/>
+									        			</g:each>
+									        		</div>
+									        	</li>			
+									        </g:each> <!-- 
+									        									        <li>
 									        	<div id="div_imgs">
-											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/video.png" class="alwaysLoad"/></a>
-											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
-											        <img data-href="images/cel_infonavit.png" src="images/loading-green.gif" class="alwaysLoad"/>
+									        		<g:each var="mediaElement" in="${section1.carousel.modal.media}">
+												        <a class="${section1.carousel.modal.className}" href="images/${mediaElement.fileName}" title="${section1.carousel.modal.title}"><g:if test="${mediaElement.modalOrder == 1 }"><img data-href="images/video.png" class="alwaysLoad"/></a></g:if>
+												    </g:each>
+												    <img data-href="images/cel_infonavit.png" src="images/loading-green.gif" class="alwaysLoad"/>
+												    
 									        	</div>
 										        <div id="subelem">
 											        <h2>
@@ -254,19 +273,7 @@
 											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
 										        </div>		
 									        </li>
-							                <li>							
-									        	<div id="div_imgs">
-											        <img data-href="images/balon.png" src="images/loading-green.gif" class="page2Menu1"/>
-									        	</div>
-										        <div id="subelem">
-											        <h2>
-											        	pagina 2
-											        </h2>
-											        <br />
-											        <br />
-											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
-										        </div>									        	
-									        </li>
+ -->
 									     </ul>
 								    <span class="prevMenu1"><img src="images/boton_left.png" /></span>
 								    <span class="nextMenu1"><img src="images/boton_right.png" onclick="showNextPageMenu('.page2Menu1')"/></span>
