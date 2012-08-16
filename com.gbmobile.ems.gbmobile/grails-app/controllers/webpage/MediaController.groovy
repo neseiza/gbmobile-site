@@ -1,11 +1,13 @@
 package webpage
 
 import org.springframework.dao.DataIntegrityViolationException
+import org.springframework.web.multipart.MultipartFile
 
 class MediaController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+	private MultipartFile file;
     def index() {
         redirect(action: "list", params: params)
     }
@@ -21,7 +23,13 @@ class MediaController {
 
     def save() {
         def mediaInstance = new Media(params)
+		if(!mediaImage.isEmpty()){
+			mediaInstance.fileName = FileUpload()
+		}
         if (!mediaInstance.save(flush: true)) {
+			
+			//save media if uploaded
+
             render(view: "create", model: [mediaInstance: mediaInstance])
             return
         }
@@ -99,4 +107,12 @@ class MediaController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def FileUpload(){
+		def f = request.getFile('fileName')
+		def fileName = f.getOriginalFilename()
+		f.transferTo(new File('./web-app/images/'+fileName))
+		return fileName
+	}
+
 }
