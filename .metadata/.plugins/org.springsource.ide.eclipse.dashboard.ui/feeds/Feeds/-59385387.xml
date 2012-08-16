@@ -6,6 +6,106 @@
  <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
  <language>en</language>
 <item>
+ <title>Promotion: Save 30% on Spring classes in Belgium, Ireland and UK</title>
+ <link>http://www.springsource.org/spring-promo-uk-ireland-belgium</link>
+ <description>&lt;p&gt;SpringSource/vFabric Education has launched several new Hot Seat promotions for professional Spring training classes in Belgium, Ireland and UK. If you register now, you can &lt;b&gt;SAVE 30%&lt;/b&gt; on the following professional Spring classes:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Core Spring&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;September 11 - 14: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=142213&amp;rcode=SPLPROMOCLS&quot;&gt;Brussels, Belgium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;September 18 - 21: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=142212&amp;rcode=SPLPROMOCLS&quot;&gt;Dublin, Ireland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;September 18 - 21: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=142209&amp;rcode=SPLPROMOCLS&quot;&gt;London, United Kingdom&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Rich Web Applications with Spring&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;September 04 - 07: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=142771&amp;rcode=SPLPROMOCLS&quot;&gt;Dublin, Ireland&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Please use the following discount code in the referral code field during the registration process: &lt;b&gt;SPLPROMOCLS&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;To view more training locations please visit our &lt;a href=&quot;http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&amp;ui=www_edu&quot;&gt;vFabric Education page&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/spring-promo-uk-ireland-belgium#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Thu, 16 Aug 2012 14:21:36 +0000</pubDate>
+ <dc:creator>Mark Baars</dc:creator>
+ <guid isPermaLink="false">3635 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring Security OAuth 1.0.0.RC2 released</title>
+ <link>http://www.springsource.org/node/3634</link>
+ <description>&lt;p&gt;#spring #security #oauth 1.0.0.RC2 is released today http://bit.ly/xfE5PM. Download via github or Maven (SpringSource milestone repository).&lt;/p&gt;
+&lt;p&gt;Highlights:&lt;/p&gt;
+&lt;p&gt;* Better error responses from the framework endpoints&lt;br /&gt;
+* Fixed some issues with validation and enhancement of token contents&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3634#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Thu, 16 Aug 2012 13:17:54 +0000</pubDate>
+ <dc:creator>Dave Syer</dc:creator>
+ <guid isPermaLink="false">3634 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: Spring Roo—Not Just another RAD Tool!</title>
+ <link>http://www.springsource.org/node/3633</link>
+ <description>&lt;p&gt;
+Most of you probably know Spring Roo as the Java-based rapid application development tool that uses AspectJ and a command-line shell to build Spring applications. But underneath those slick commands that set up your application components lurks an even more powerful and extensible platform, one that you can use to build anything you want.
+&lt;/p&gt;
+&lt;p&gt;
+In this presentation, SpringSource&#039;s Josh Long and Spring Roo in Action authors Ken Rimple and Srini Penchikala introduce Spring Roo 1.2, and then go further, exposing Roo&#039;s powerful addon-based underbelly. They introduce Roo&#039;s OSGi bundle support, and introduce how add-ons can be used to generate code, install templates, respond to addition / removal of annotations, and expose both open-source and internal-company libraries for use by your developers. Finally, they wrap up by discussing the recently developed Tailor add-on, and will show how it can be used to completely customize your developers&#039; shell environment.
+&lt;/p&gt;
+
+&lt;p&gt;Presenters: Ken Rimple, Srini Penchikala, and Josh Long&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/_VMmzaUxE0c&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/3633#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Thu, 16 Aug 2012 01:01:15 +0000</pubDate>
+ <dc:creator>Chloe Jackson</dc:creator>
+ <guid isPermaLink="false">3633 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: Introduction to Spring Data Neo4j</title>
+ <link>http://www.springsource.org/node/3632</link>
+ <description>&lt;p&gt;
+View this webinar for a practical guide to get started with Spring Data Neo4j. This webinar is the perfect complement to the ebook Good Relationships and is aimed toward those interested in quickly learning how to get started using Spring Data Neo4j.
+&lt;/p&gt;
+&lt;p&gt;
+During this webinar we will cover:
+  &lt;ul&gt;
+    &lt;li&gt;Spring Data Neo4j&#039;s features and benefits&lt;/li&gt;
+    &lt;li&gt;Spring Data Neo4j use case: Cineasts, the social movie recommendation site&lt;/li&gt;
+    &lt;li&gt;Step by step demo to get started working on Spring Data Neo4j&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Spring Data Neo4j is part of the Spring Data project which aims to provide convenient support for NoSQL databases.
+&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/heC-8Pq2exQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/3632#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Thu, 16 Aug 2012 00:57:56 +0000</pubDate>
+ <dc:creator>Chloe Jackson</dc:creator>
+ <guid isPermaLink="false">3632 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: What&#039;s New in RabbitMQ - June 2012 Edition</title>
+ <link>http://www.springsource.org/node/3629</link>
+ <description>&lt;p&gt;In the last year and a half, RabbitMQ has seen six major new releases. In this talk, we briefly review messaging, RabbitMQ and the AMQP protocol before covering some of the new features including easier plugin management, new plugins and extensions, publisher confirms, dead lettering, and a new high availability feature based on mirroring queues across nodes in a cluster. Presenter: Jerry Kuch, Staff Engineer, VMware&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/WCRyNesk_ak?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+&lt;p&gt;Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/3629#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Wed, 15 Aug 2012 22:40:13 +0000</pubDate>
+ <dc:creator>Chloe Jackson</dc:creator>
+ <guid isPermaLink="false">3629 at http://www.springsource.org</guid>
+</item>
+<item>
  <title>New Home for SpringSource University</title>
  <link>http://www.springsource.org/vfabric-education-home</link>
  <description>&lt;p&gt;SpringSource University has recently launched a &lt;a href=&quot;http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&amp;ui=www_edu&quot;&gt;new education website&lt;/a&gt; that will be hosted on VMware.com. Along with all the information on SpringSource / vFabric education you will find information about certification, class schedules, free class material and more. SpringSource has also released several new learning paths to assist students in becoming a professional developer, operator or administrator:&lt;/p&gt;
@@ -237,150 +337,6 @@ Readers and users of all experience levels will find something of value in this 
  <pubDate>Tue, 07 Aug 2012 13:43:42 +0000</pubDate>
  <dc:creator>Josh Long</dc:creator>
  <guid isPermaLink="false">3622 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>This Week in Spring - July 31, 2012 </title>
- <link>http://www.springsource.org/node/3615</link>
- <description> &lt;P&gt; Welcome to another installation of &lt;EM&gt;This Week in Spring&lt;/EM&gt;! 
-
- This week I&#039;m in Bangalore, India with other members of the SpringSource and Cloud Foundry teams talking to major system integrators  about Spring and  Cloud Foundry. The uptake&#039;s amazing, and the feedback is even better. 
-   &lt;/p&gt;&lt;P&gt;
- In related news, the Cloud Foundry Open Tour is coming to India next month! If you want to hear  thought leaders and experts and learn &lt;a href = &quot;http://opentour.cloudfoundry.com/india/2012&quot;&gt;about cloud computing, platform-as-a-service, architecture and Spring, then be sure to register now for either the Bangalore or Pune events&lt;/A&gt;.
- I look forward to seeing you there!
-   
-  &lt;/p&gt;
-
-&lt;OL&gt; &lt;LI&gt; Jonathan Brisbin  has announced &lt;a href = &quot;http://www.springsource.org/node/3614&quot;&gt;the latest release of Spring Data Rest, version 1.0.0.RC2&lt;/A&gt;, which features JSONPE support, and better integration with Spring MVC applications, as well as even more configuration hooks so you can exert even more control over the behavior of the framework. &lt;/LI&gt;  
-	 &lt;LI&gt;  Dr. David Syer has announced the  &lt;a href = &quot;http://www.springsource.org/node/3611&quot;&gt;1.0.0.RC1  release of Spring Security OAuth&lt;/A&gt;. Spring Security OAuth is a module that works with Spring Security
-		and lets you expose OAuth-secured RESTful resources.
-		
- The new release features lots of new extension points in the Authorization Server features, 
-		 a Whitelabel UI for better out-of-box experience,  and improved support for expressions in security filters.  Check it out!
-		 &lt;/LI&gt;
-	
-	&lt;LI&gt; WADL is a description format for RESTful web-services,  in much the same way that  WSDL describes SOAP-based web services&#039; contracts. This excellent blog post, by Pankaj Bhatt, has an interesting approach &lt;a href = &quot;http://panbhatt.blogspot.in/2012/07/spring-mvc-wadl-generation.html&quot;&gt;to generating WADL descriptions for Spring MVC-based RESTful services&lt;/a&gt;.   &lt;/LI&gt;
-	
-	&lt;LI&gt; Roger Hughes is at it again, this time with &lt;a href =&quot;http://java.dzone.com/articles/getting-started-spring-social-0&quot;&gt;part 2 of his look at Spring Social&lt;/A&gt;. &lt;/LI&gt;
-		&lt;LI&gt; Nicolas Frankel has a nice blog &lt;a href = &quot;http://java.dzone.com/articles/method-injection-spring&quot;&gt;on method injection with Spring&lt;/a&gt;. 
-			Method injection is less useful with the introduction of Java configuration support, of course. Spring   supports the injection of proxies of your beans that are recreated according to their scope on access in beans of larger scopes. In XML, this means using the &lt;CODE&gt;&amp;lt;aop:scoped-proxy/&amp;gt;&lt;/CODE&gt; element in your bean definitions, or specifying the &lt;CODE&gt;proxyMode&lt;/CODE&gt; attribute  in the &lt;CODE&gt;@Bean&lt;/CODE&gt; annotation on your Java configuration-based bean definitions.
-			
-			&lt;/LI&gt;
- 
- 						 
- 
-								 &lt;LI&gt;  Gordon Dickens is back at it, this time with a nice post on the third part of his blog series &lt;A href = &quot;http://gordondickens.com/wordpress/2012/07/30/enterprise-spring-framework-best-practices-part-3-xml-config/&quot;&gt;  introducing best practices for setting up Spring applications&lt;/A&gt;.   &lt;/LI&gt;
-								&lt;LI&gt;
- 									Semika Koku Kaluge has an interesting post on how to use  &lt;a href = &quot;http://semikas.blogspot.gr/2012/07/spring-3-internationalization-and.html&quot;&gt;Spring&#039;s &lt;CODE&gt;LocaleChangeInterceptor&lt;/CODE&gt; to 
- set the &lt;CODE&gt;Locale&lt;/CODE&gt; of  internationalized messages through an HTTP request&lt;/a&gt;.
- 							  
-								&lt;/LI&gt;
-								&lt;LI&gt; The  &lt;A href =&quot;http://www.tomcatexpert.com&quot;&gt;TomcatExpert&lt;/A&gt;  has a blog on &lt;A href = &quot;http://www.tomcatexpert.com/blog/2012/07/09/apache-tomcat-7029-released&quot;&gt; the release of Apache Tomcat 7.0.29&lt;/A&gt;. &lt;/LI&gt;&lt;LI&gt;  Then, &lt;A href =&quot;http://www.tomcatexpert.com&quot;&gt;TomcatExpert&lt;/A&gt; has  a nice blog on migrating &lt;A href= &quot;http://www.tomcatexpert.com/blog/2012/07/17/migrating-applications-websphere-or-weblogic-vfabric-tc-server-%E2%80%93-july-24th-2pm-et&quot;&gt;from Websphere to Weblogic to tcServer&lt;/A&gt;, which is the more operations-friendly version of Tomcat packaged as part of VMWare&#039;s vFabric. &lt;/LI&gt;&lt;LI&gt;  Finally, &lt;A href =&quot;http://www.tomcatexpert.com&quot;&gt;TomcatExpert&lt;/A&gt; has   a nice post on &lt;a href = &quot;http://www.tomcatexpert.com/blog/2012/07/10/enabling-ssl-communication-and-client-certificate-authentication-between-apache-web-&quot;&gt;setting up SSL in Apache Tomcat&lt;/A&gt;. &lt;/LI&gt;
-  
-
-	&lt;/OL&gt;</description>
- <comments>http://www.springsource.org/node/3615#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Wed, 01 Aug 2012 05:34:46 +0000</pubDate>
- <dc:creator>Josh Long</dc:creator>
- <guid isPermaLink="false">3615 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Spring Data REST 1.0.0.RC2 Released</title>
- <link>http://www.springsource.org/node/3614</link>
- <description>&lt;p&gt;I&#039;m pleased to announce the release of Spring Data REST 1.0.0.RC2! Beyond a number of bug fixes, this release adds support for JSONPE (JSONP with error handling), the ability to turn off CRUD methods with the @RestResource annotation, and is now built and tested against the Servlet 3.0 API (though it is not yet 3.0 specific, so will still work fine in Servlet 2.5 containers).&lt;/p&gt;
-&lt;p&gt;New functionality includes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;JSONPE - Simply add a URL parameter to have the results wrapped in a call to the Javascript function you specify. Also handles server errors by translating an error to HTTP 200 and passing the original status code as the first parameter of your error handler.&lt;/li&gt;
-&lt;li&gt;Turn off CRUD methods - The exporter now respects @RestResource annotations on CRUD methods. Just override the method from &lt;code&gt;CrudRepository&lt;/code&gt; you want to turn off and annotate it with &lt;code&gt;@RestResource(exported = false)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Better integration with existing Spring MVC applications - Simplified the internal Spring MVC configuration to make it even easier to integrate with your existing Spring MVC application. Simply including the RepositoryRestMvcConfiguration bean into your own configuration should Just Work.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;New or updated documentation includes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/SpringSource/spring-data-rest/wiki/JSONP-Support-in-Spring-Data-REST&quot;&gt;JSONP Support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/SpringSource/spring-data-rest/wiki/Configuring-the-REST-URL-path&quot;&gt;Configuring the REST URL path&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/SpringSource/spring-data-rest/wiki/Adding-Spring-Data-REST-to-an-existing-Spring-MVC-Application&quot;&gt;Adding Spring Data REST to an existing Spring MVC Application&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/springsource/spring-data-rest-webmvc&quot;&gt;Starter Web Application&lt;/a&gt; | &lt;a href=&quot;https://github.com/SpringSource/spring-data-rest/wiki/&quot;&gt;Wiki&lt;/a&gt; | &lt;a href=&quot;https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10901&amp;amp;version=13203&quot;&gt;Release Notes&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To learn more about the project, visit the Spring Data REST &lt;a href=&quot;http://www.springsource.org/spring-data/rest&quot;&gt;homepage&lt;/a&gt;, or visit &lt;a href=&quot;https://github.com/SpringSource/spring-data-rest&quot;&gt;the Github repository&lt;/a&gt; to download the source.&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3614#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Tue, 31 Jul 2012 19:48:13 +0000</pubDate>
- <dc:creator>Jonathan Brisbin</dc:creator>
- <guid isPermaLink="false">3614 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Spring Security OAuth 1.0.0.RC1 is released</title>
- <link>http://www.springsource.org/node/3611</link>
- <description>&lt;p&gt;Spring Security OAuth 1.0.0.RC1 is released. Download via &lt;a href=&quot;http://bit.ly/xfE5PM&quot;&gt;github&lt;/a&gt; or Maven (SpringSource milestone repository).&lt;/p&gt;
-&lt;p&gt;Loads of new stuff since M6. OAuth2 is looking close to stable so it seemed like a good idea to go for a release candidate. Highlights:&lt;/p&gt;
-&lt;p&gt;* Lots of new extension points in the Authorization Server features&lt;br /&gt;
-* XML goodness, e.g.&lt;br /&gt;
-* Whitelabel UI for better out-of-box experience&lt;br /&gt;
-* Improved support for expressions in security filters&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3611#comments</comments>
- <pubDate>Thu, 26 Jul 2012 10:30:49 +0000</pubDate>
- <dc:creator>Dave Syer</dc:creator>
- <guid isPermaLink="false">3611 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>This Week in Spring - July 24th, 2012</title>
- <link>http://www.springsource.org/node/3608</link>
- <description> &lt;P&gt;  Welcome to another installment of &lt;EM&gt;This Week in Spring&lt;/em&gt;. 
- Can you guys believe we&#039;re staring down August already?  Time sure has flown quickly! The good news is that we&#039;re near my favorite time of the year, &lt;EM&gt;&lt;A href = &quot;http://www.springone2gx.com/conference/washington/2012/10/home&quot;&gt; SpringOne&lt;/A&gt;&lt;/eM&gt;! 
-	
-	 This year&#039;s speaker and content lineup is going to be amazing, and
-	 it will be a unique opportunity to meet with the experts on your favorite technologies, Spring, Grails, Cloud Foundry, RabbitMQ, and much more. &lt;a href = &quot;http://www.springone2gx.com/conference/washington/2012/10/register&quot;&gt;  Register now to take advantage of early-bird rates...&lt;/A&gt;
-&lt;/P&gt;
-&lt;P&gt; What&#039;re you guys doing in 2 days, on July 26th? Want to learn more about &lt;a href = &quot;http://www.springsource.org/spring-data/neo4j&quot;&gt;Spring Data Neo4J&lt;/a&gt;?
-	 Then you   should definitely &lt;a href = &quot;http://www.springsource.org/node/3574&quot;&gt; check out the upcoming webinar on Spring Data Neo4j&lt;/A&gt;.  
-  While we&#039;re at it, I also wanted to invite you guys to come see  &lt;EM&gt;Spring Roo in Action&lt;/EM&gt; authors Ken Rimple, Srini Penchikala and I present a webinar on Spring Roo (called &lt;a href = &quot;http://www.springsource.org/node/3595&quot;&gt;&lt;EM&gt;Spring Roo -- Not Just Another RAD Tool&lt;/EM&gt;&lt;/A&gt;) on August 1, 2012 at 9:30 AM PDT.
-&lt;/P&gt; 
-&lt;p&gt; Anyway, we&#039;ve got a lot to cover, so let&#039;s get to it! &lt;/p&gt;
-&lt;OL&gt;
- &lt;LI&gt; Spring Data has hit &lt;EM&gt;stage one&lt;/EM&gt;. 
-	The releases mark the very first step to a common release train that will reach the next major release mid August and include &lt;a href = &quot;http://www.springsource.org/node/3607&quot;&gt; Spring Data Commons, JPA, MongoDB, Neo4J and Gemfire&lt;/A&gt;. 
-	  &lt;/LI&gt;
-&lt;LI&gt; &lt;a href = &quot;http://www.springsource.org/node/3600&quot;&gt;Spring Shell 1.0 M1  has just been released&lt;/a&gt;.  Spring Shell is an interactive shell that can be easily extended with commands using a Spring based programming model, extracted from the Spring Roo project.   &lt;/LI&gt;
-&lt;LI&gt; Tobias Flohre is at it again, this time with a fantastic post &lt;a href = &quot;http://blog.codecentric.de/en/2012/07/spring-dependency-injection-styles-why-i-love-java-based-configuration/&quot;&gt;on Spring Dependency Injection Styles. &lt;/a&gt;  Definitely worth a read! &lt;/LI&gt;
-&lt;LI&gt; Are you using Google App Engine and the Google   DataStore offering? Check out this &lt;A href = &quot;http://webapplicationdeveloper.blogspot.com/2012/07/google-datastore-with-jpa-and-spring.html?spref=tw&quot;&gt;blog outlining a simple integration with Spring&lt;/A&gt;.  &lt;/LI&gt; 
-&lt;LI&gt;John Esposito has a nice blog on how &lt;a href = &quot;http://architects.dzone.com/articles/spring-data-neo4j-scala&quot;&gt;to integrate Spring Data Neo4j with Scala&lt;/a&gt;.  Definitely worth a read. &lt;/LI&gt;
-&lt;LI&gt;Christian Posta has a nice &lt;A href = &quot;http://www.christianposta.com/blog/?p=161&quot;&gt;post introducing Spring Integration&lt;/A&gt; &lt;/LI&gt;
-&lt;LI&gt; Christian continues, this time with a post on using building &lt;a href = &quot;http://java.dzone.com/articles/backing-spring-integration&quot;&gt;routes backed by JMS with Spring Integration&lt;/A&gt;  &lt;/LI&gt;
- &lt;LI&gt; Koen Serneels has a quick post announcing his new book, &lt;a href = &quot;http://koenserneels.blogspot.be/2012/07/pro-spring-mvc-with-web-flow.html&quot;&gt;&lt;EM&gt;Pro Spring MVC  with Webflow&lt;/EM&gt;&lt;/a&gt;. I haven&#039;t read it yet, but it looks interesting!  &lt;/LI&gt;
- &lt;LI&gt; Readers of this column will know about Thymeleaf, an HTML5-optimized template engine that works nicely with Spring MVC as a &lt;CODE&gt;View&lt;/CODE&gt; implementation.  &lt;a href =&quot;https://github.com/thymeleaf/thymeleaf-extras-tiles2&quot;&gt;The new version now features integration with Apache Tiles&lt;/A&gt;, so you can use Thymeleaf templates and manage them in Tiles layouts. Very cool! &lt;/li&gt;
-&lt;/OL&gt;</description>
- <comments>http://www.springsource.org/node/3608#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Wed, 25 Jul 2012 05:06:46 +0000</pubDate>
- <dc:creator>Josh Long</dc:creator>
- <guid isPermaLink="false">3608 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Spring Data release train approaches stage one</title>
- <link>http://www.springsource.org/node/3607</link>
- <description>&lt;p&gt;I&#039;d like to announce the availablity of new milestone and bugfix releases of Spring Data Commons (1.3.2.RELEASE, 1.4.0.M1), JPA (1.1.1.RELEASE, 1.2.0.M1) and MongoDB (1.0.3.RELEASE, 1.1.0.M2). The releases mark the very first step to a common release train that will reach the next major release mid August and include Spring Data Commons, JPA, MongoDB, Neo4J and Gemfire. The release train is an effort to simultaneously release all store modules that support the repository abstraction and thus have a common set of functionality to provide. Beyond that this will make sure the released stores interoperate with each other seamlessly.&lt;/p&gt;
-&lt;p&gt;This first milestone release includes support for JavaConfig based repository configuration by introducing &lt;code&gt;@EnableJpaRepositories&lt;/code&gt;, &lt;code&gt;@EnableMongoRepository&lt;/code&gt; etc. Beyond that we of course have a ton of bug fixes and improvements. For details follow the links below.&lt;/p&gt;
-&lt;p&gt;We&#039;ll have release candidates for the next major versions out there in early August, followed by the GA versions briefly after that. For more detailled information on the release train please have a look at the &lt;a href=&quot;https://github.com/SpringSource/spring-data-commons/wiki/Release-planning&quot;&gt;wiki page&lt;/a&gt; in Spring Data Commons.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Spring Data Commons 1.3.2.RELEASE&lt;br /&gt;&lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cspring-data-jpa&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-commons/docs/1.3.2.RELEASE/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-commons/docs/1.3.2.RELEASE/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-commons/docs/1.3.2.RELEASE/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Commons 1.4.0.M1&lt;br /&gt;&lt;a href=&quot;http://repo.springsource.org/libs-milestone/org/springframework/data/spring-data-commons/1.4.0.M1&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-jpa/docs/1.2.0.M1/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-commons/docs/1.4.0.M1/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-commons/docs/1.4.0.M1/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Spring Data JPA 1.1.1.RELEASE&lt;br /&gt;&lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cspring-data-jpa&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-jpa/docs/1.1.1.RELEASE/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-jpa/docs/1.1.1.RELEASE/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-jpa/docs/1.1.1.RELEASE/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data JPA 1.2.0.M1&lt;br /&gt;&lt;a href=&quot;http://repo.springsource.org/libs-milestone/org/springframework/data/spring-data-jpa/1.2.0.M1&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-jpa/docs/1.2.0.M1/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-jpa/docs/1.2.0.M1/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-jpa/docs/1.2.0.M1/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Spring Data MongoDB 1.0.3.RELEASE&lt;br /&gt;&lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cspring-data-mongodb&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-mongodb/docs/1.0.3.RELEASE/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-mongodb/docs/1.0.3.RELEASE/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-mongodb/docs/1.0.3.RELEASE/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data MongoDB 1.1.0.M2&lt;br /&gt;&lt;a href=&quot;http://repo.springsource.org/libs-milestone/org/springframework/data/spring-data-mongodb/1.1.0.M2&quot;&gt;Maven artifacts&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-mongodb/docs/1.1.0.M2/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-data/data-mongodb/docs/1.1.0.M2/reference/html/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-data/data-mongodb/docs/1.1.0.M2/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The bugfix versions are available from the &lt;a href=&quot;http://repos.springsource.org/libs-releases&quot;&gt;SpringSource release repository&lt;/a&gt; and will be synced to Maven central in a bit, the milestones from our &lt;a href=&quot;http://repo.springsource.org/libs-milestones&quot;&gt;milestone repository&lt;/a&gt;. Looking forward to your feedback in the &lt;a href=&quot;http://forum.springsource.org&quot;&gt;forums&lt;/a&gt; or the &lt;a href=&quot;https://jira.springsource.org&quot;&gt;bug tracker&lt;/a&gt;.&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3607#comments</comments>
- <pubDate>Tue, 24 Jul 2012 15:17:13 +0000</pubDate>
- <dc:creator>ogierke</dc:creator>
- <guid isPermaLink="false">3607 at http://www.springsource.org</guid>
 </item>
 </channel>
 </rss>

@@ -192,7 +192,7 @@
 		    </div>
 		    
 		    <div id="main" style="float:center;" >
-			    <table border="2px">
+			    <table border="0px">
 				    <tr>
 				    <td>
 					    <div id="frame">
@@ -208,14 +208,7 @@
 							     	<tr>
 							     		<td><p>E</p></td>
 							     		<td>
-							     		
-							     		
-							     		 
-							     		 
-							     		
 											 ${section1.label.description}
-							     		 
-
 										</td>
 							     	</tr>
 					     		</table>
@@ -242,38 +235,19 @@
 					    <td> 
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
-							     <div id="slider1">
+							     <div id="slider1">							     		
 							     	    <ul class="carouselMenu1">
 							     	    	<g:each var="slideElement" in="${section1.carousel.slides}">
 									        	<li>
-									        		<div id="div_imgs">									        			
+									        		<div id="div_imgs">										        										        			
 									        			<g:each var="mediaSlideElement" in="${slideElement.media}">
 									        				<g:each var="modalElement" in="${section1.carousel.modal.media}">
-														        <a class="${section1.carousel.modal.className}" href="images/${modalElement.fileName}" title="${section1.carousel.modal.title}"><g:if test="${section1.carousel.modal.media.modalOrder == 1 }"><img data-href="images/video.png" class="alwaysLoad"/></a></g:if>
-														    </g:each>
-									        				<img data-href="images/${mediaSlideElement.fileName}" src="images/loading-green.gif" class="${mediaSlideElement.classStyle}"/>
+														        <a class="${section1.carousel.modal.className}" href="images/${modalElement.fileName}" title="${section1.carousel.modal.title}"><g:if test="${modalElement.modalOrder == 1 }"><img data-href="images/${mediaSlideElement.fileName}" src="images/loading-green.gif" class="${mediaSlideElement.classStyle}"/></g:if></a>
+														    </g:each>									        				
 									        			</g:each>
 									        		</div>
 									        	</li>			
-									        </g:each> <!-- 
-									        									        <li>
-									        	<div id="div_imgs">
-									        		<g:each var="mediaElement" in="${section1.carousel.modal.media}">
-												        <a class="${section1.carousel.modal.className}" href="images/${mediaElement.fileName}" title="${section1.carousel.modal.title}"><g:if test="${mediaElement.modalOrder == 1 }"><img data-href="images/video.png" class="alwaysLoad"/></a></g:if>
-												    </g:each>
-												    <img data-href="images/cel_infonavit.png" src="images/loading-green.gif" class="alwaysLoad"/>
-												    
-									        	</div>
-										        <div id="subelem">
-											        <h2>
-											        	Casos de Éxito
-											        </h2>
-											        <br />
-											        <br />
-											        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sapien eu tortor pellentesque egestas. Aenean magna lacus, lobortis ac porttitor vitae, dictum vel purus. Nulla cursus arcu et mauris rutrum gravida. Curabitur a vehicula diam. 
-										        </div>		
-									        </li>
- -->
+									        </g:each> 
 									     </ul>
 								    <span class="prevMenu1"><img src="images/boton_left.png" /></span>
 								    <span class="nextMenu1"><img src="images/boton_right.png" onclick="showNextPageMenu('.page2Menu1')"/></span>
@@ -316,9 +290,9 @@
 							     <div id="slider2">  
 							     	<ul class="carouselMenu2">
 								        <li>
-								        	<div id="div_imgs">
+								        	<div id="div_imgs"><!-- 
 										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/appleBanner1.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
-										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a> -->
 								        	</div>
 								        </li>
 							     	</ul>							               
@@ -362,9 +336,9 @@
 								     <div id="slider3">
 										<ul class="carouselMenu3">
 									        <li>
-									        	<div id="div_imgs">
+									        	<div id="div_imgs"><!-- 
 											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/imacBanner.jpg" src="images/loading-green.gif" width="450px" height="200px" class="loadNow"/></a>
-											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a> -->
 									        	</div>
 									        </li>
 								     	</ul>							               
@@ -407,9 +381,9 @@
 							     <div id="slider4">
 								     <ul class="carouselMenu4">
 								        <li>
-								        	<div id="div_imgs">
+								        	<div id="div_imgs"><!-- 
 										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT1.jpg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
-										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a> -->
 								        	</div>
 								        </li>
 							     	</ul>							               
@@ -449,9 +423,9 @@
 							     <div id="slider5">
 							     	<ul class="carouselMenu5">
 								        <li>
-								        	<div id="div_imgs">
+								        	<div id="div_imgs"><!--  
 										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/mobileT.jpeg" src="images/loading-green.gif" width="300px" height="250px" class="loadNow"/></a>
-										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>-->
 								        	</div>
 								        </li>
 							     	</ul>							               
@@ -493,9 +467,9 @@
 							     <div id="slider6">
 								     <ul class="carouselMenu6">
 									        <li>
-									        	<div id="div_imgs">
+									        	<div id="div_imgs"><!-- 
 											        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/i5.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
-											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a>
+											        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a> -->
 									        	</div>
 									        </li>
 								     	</ul>							               
