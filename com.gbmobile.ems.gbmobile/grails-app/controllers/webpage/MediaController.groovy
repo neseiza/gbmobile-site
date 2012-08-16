@@ -23,17 +23,12 @@ class MediaController {
 
     def save() {
         def mediaInstance = new Media(params)
-		if(!mediaImage.isEmpty()){
-			mediaInstance.fileName = FileUpload()
-		}
+		//save media if uploaded
+		mediaInstance.fileName = FileUpload()
         if (!mediaInstance.save(flush: true)) {
-			
-			//save media if uploaded
-
             render(view: "create", model: [mediaInstance: mediaInstance])
             return
         }
-
         flash.message = message(code: 'default.created.message', args: [message(code: 'media.label', default: 'Media'), mediaInstance.id])
         redirect(action: "show", id: mediaInstance.id)
     }
