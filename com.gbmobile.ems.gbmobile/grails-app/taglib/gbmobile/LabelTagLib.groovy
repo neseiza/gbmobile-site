@@ -14,6 +14,7 @@ class LabelTagLib {
 		attrs, body ->
 		Integer id = Integer.parseInt(attrs.sectionID)
 		def sectionInstance = Section.get(id)
+		
 				
 		println ('SectionID: ' + id)
 		println ('var sectionInstance: ' +[sectionInstance: sectionInstance])

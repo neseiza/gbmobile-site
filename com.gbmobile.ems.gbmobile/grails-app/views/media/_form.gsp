@@ -7,9 +7,7 @@
 		<g:message code="media.fileName.label" default="File Name" />
 		<span class="required-indicator">*</span>
 	</label>
-	<!-- <g:textField name="fileName" required="" value=""/> -->
-	<input type="file" name="fileName" required="" value="${mediaInstance?.fileName}" />
-
+	<g:textField name="fileName" required="" value="${mediaInstance?.fileName}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: mediaInstance, field: 'mediaType', 'error')} required">

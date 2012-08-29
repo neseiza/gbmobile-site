@@ -1,4 +1,7 @@
+<%@page import="webpage.CarouselController"%>
+<%@page import="webpage.Carousel"%>
 <%@ page import="webpage.Section" %>
+<%@ page import="webpage.Slide" %>
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -175,9 +178,7 @@
 	      	<div id="pagetop">			
 				<div id="menu" class="links"> 
 				
-	            	<ul>	            	
-	            		<li class="${classcontacto}"><g:link controller="inicio" action="contacto" params='aldo'>Contato</g:link></li>
-	            		<li><div id='contactclass'><a href='#' class='modalContact'>ContactoMODAL</a></div></li>
+	            	<ul>
 		                <li><a id="web_a" href="#web">Web</a></li>
 		                <li><a id="mcoupons_a" href="#mcoupons">mCoupons</a></li>	                
 		                <li><a id="apps_a" href="#apps">Apps</a></li>
@@ -196,7 +197,7 @@
 				    <tr>
 				    <td>
 					    <div id="frame">
-						    <img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" clas="flecha1Animation1"/>
+						    <img src="${resource(dir: 'images', file: 'flecha.png')}"  alt="*" class="flecha1Animation1"/>
 						  	<div id="foco-gen">
 						  		<div id="foco"></div>
 						  	</div>
@@ -230,15 +231,32 @@
 					
 						</div>
 					</td>	
-					</tr>	    
+					</tr>			     
+		     	    <% 
+						def slidesSection1 = section1.carousel.slides
+						//def slidesSection2 = section2.carousel.slides
+						//def slidesSection3 = section3.carousel.slides
+						//def slidesSection4 = section4.carousel.slides
+						//def slidesSection5 = section5.carousel.slides
+					
+						slidesSection1 = slidesSection1.sort{a, b->a.slideOrder.compareTo(b.slideOrder)}
+						//slidesSection2 = slidesSection2.sort{a, b->a.slideOrder.compareTo(b.slideOrder)}
+						//slidesSection3 = slidesSection3.sort{a, b->a.slideOrder.compareTo(b.slideOrder)}
+						//slidesSection4 = slidesSection4.sort{a, b->a.slideOrder.compareTo(b.slideOrder)}
+						//slidesSection5 = slidesSection5.sort{a, b->a.slideOrder.compareTo(b.slideOrder)}		
+		     	    %>
+		     	    
+									     
+									     
+					
 				   <tr>
 					    <td> 
 				     		<div id="menu1">
 				     		     <!-- Slider 1 -->
 							     <div id="slider1">							     		
 							     	    <ul class="carouselMenu1">
-							     	    	<g:each var="slideElement" in="${section1.carousel.slides}">
-									        	<li>
+							     	    	<g:each var="slideElement" in="${slidesSection1}">
+										        <li>
 									        		<div id="div_imgs">										        										        			
 									        			<g:each var="mediaSlideElement" in="${slideElement.media}">
 									        				<g:each var="modalElement" in="${section1.carousel.modal.media}">
@@ -246,13 +264,24 @@
 														    </g:each>									        				
 									        			</g:each>
 									        		</div>
-									        	</li>			
-									        </g:each> 
+									        		<div id="subelem">
+												        <h2>
+												        	${ slideElement.title }
+												        </h2>
+												        <br />
+												        <br />
+												        ${ slideElement.description }
+											        </div>
+										        </li>
+									        </g:each>
 									     </ul>
+									     
 								    <span class="prevMenu1"><img src="images/boton_left.png" /></span>
 								    <span class="nextMenu1"><img src="images/boton_right.png" onclick="showNextPageMenu('.page2Menu1')"/></span>
 								</div>
 							     <!-- End Slider 1 -->
+							     
+							     
 				     		</div>
 				     	</td>
 			     	</tr>	     	
@@ -289,9 +318,9 @@
 					     		 <!-- Slider 2 -->
 							     <div id="slider2">  
 							     	<ul class="carouselMenu2">
-								        <li>
+							     		<li>
 								        	<div id="div_imgs"><!-- 
-										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/appleBanner1.jpg" src="images/loading-green.gif" width="500px" height="200px" class="loadNow"/></a>
+										        <a class="modalContentImg" href="images/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee."><img data-href="images/imacBanner.jpg" src="images/loading-green.gif" width="450px" height="200px" class="loadNow"/></a>
 										        <a class="modalContentImg" href="images/ohoopee2.jpg" title="Just Me."></a> -->
 								        	</div>
 								        </li>
@@ -486,57 +515,45 @@
 				     	</td>
 			     	</tr>
 			     </table>
-		     </div>
-						     <!-- CONTACT MODAL SECTION -->
-			 <div id="ContactDivId">
-				<div id="contacto-title" class="contact"><h2>Contacto</h2></div>
-				<div id="contacto-text">
-					<p class="contact">Para saber mas de nosotros: </p>
-				</div>
-				<br>
-				<div id="contacto-wrap">
-					<div id="contacto-content" class="clearfix">
-						<g:form method="post" name="contactModal" id="contactModal" url="[controller:'inicio', action:'sendmail']">
-							<table id="table-contacto" class="contact">
-								<tr>
-									<td>Hola, mi nombre es:</td>
-									<td>
-										<label class="tooltip">
-											<span>(nombre)</span>
-											<input type="text" name="name" id="name" class="simple-input"  />
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>Y represento a la empresa:</td>
-									<td>
-										<label class="tooltip">
-											<span>(empresa)</span>
-											<input type="text" name="empresa" class="simple-input"  />
-										</label>
-									</td>
-								</tr>							
-								<tr>
-									<td>Por favor contactenme a traves de mi emal:</td>
-									<td>
-										<label class="tooltip">
-											<span>(email)</span>
-											<input type="text" name="email" id="email" class="simple-input"  />
-										</label>
-									</td>
-								</tr>
-								<tr><td colspan="2" align="center">&nbsp;</td></tr>
-								<tr><td colspan="2" align="center"><input type="submit" id="bsub" class="simple-button" value="Enviar" /></td></tr>
-							</table>
-						</g:form>
-					</div>
-				</div>				
-			 </div>	
-				<!-- preload the images -->
-			 <div style='display:none'>
-				<img src='images/x.png' alt='' />
-			 </div>	     
-		     <div id="footer">
+		     </div>     
+		     <div id="footerDivId">
+		     	<div id="MapSiteDivId">mapa</div>
+		     	<div id="AboutDivId">acerca</div>
+			     <div id="ContactDivId">
+			     	<g:form method="post" name="contactModal" id="contactModal" url="[controller:'inicio', action:'sendmail']">
+						<table id="table-contacto" class="contact">
+							<tr>
+								<td>Nombre:</td>
+								<td>
+									<label class="tooltip">
+										<span>(nombre)</span>
+										<input type="text" name="name" id="name" class="simple-input"  />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>Tel&eacute;fono:</td>
+								<td>
+									<label class="tooltip">
+										<span>(tel&eacute;fono)</span>
+										<input type="text" name="telefono" class="simple-input"  />
+									</label>
+								</td>
+							</tr>							
+							<tr>
+								<td>Por favor cont&aacute;ctenme a traves de mi emal:</td>
+								<td>
+									<label class="tooltip">
+										<span>(email)</span>
+										<input type="text" name="email" id="email" class="simple-input"  />
+									</label>
+								</td>
+							</tr>
+							<tr><td colspan="2" align="center">&nbsp;</td></tr>
+							<tr><td colspan="2" align="center"><input type="submit" id="bsub" class="simple-button" value="Enviar" /></td></tr>
+						</table>
+					</g:form>
+				</div> 	     	           	
 		     </div>
 	     </div>
 	</body>
